@@ -579,11 +579,11 @@
     },
     "egypt": {
       "stats": {
-        "total": 1,
+        "total": 6,
         "in_force": 1,
         "enacted": 0,
         "proposed": 0,
-        "guidelines": 0,
+        "guidelines": 5,
         "review": 0
       },
       "timeline": {
@@ -592,6 +592,27 @@
           "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
+          "unknown": 0
+        },
+        "2021": {
+          "in_force": 0,
+          "enacted": 0,
+          "proposed": 0,
+          "guidelines": 1,
+          "unknown": 0
+        },
+        "2025": {
+          "in_force": 0,
+          "enacted": 0,
+          "proposed": 0,
+          "guidelines": 2,
+          "unknown": 0
+        },
+        "2026": {
+          "in_force": 0,
+          "enacted": 0,
+          "proposed": 0,
+          "guidelines": 2,
           "unknown": 0
         }
       }
