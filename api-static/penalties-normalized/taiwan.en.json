@@ -1,0 +1,22 @@
+{
+  "country": "Taiwan",
+  "penalties": [
+    {
+      "country": "Taiwan",
+      "law_id": "TW_CRIMINAL_CODE_ART_319_4",
+      "offense_id": "tw_harmful_synthetic_sexual_images",
+      "offense_label": "Harmful synthetic sexual-image offence",
+      "deepfake_scope": "synthetic_sexual_image",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "<=500000 TWD",
+      "prison_range_months": "<=60 months",
+      "aggravation": "Commission for profit.",
+      "aggravated_penalty": "Up to seven years and fine up to NT$700,000.",
+      "refs": [
+        "Ref2"
+      ],
+      "last_verified_at": "2026-07-20"
+    }
+  ]
+}

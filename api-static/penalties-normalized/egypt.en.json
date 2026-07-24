@@ -1,0 +1,22 @@
+{
+  "country": "Egypt",
+  "penalties": [
+    {
+      "country": "Egypt",
+      "law_id": "EG_LAW_175_2018",
+      "offense_id": "eg_false_attribution_privacy_adjacent",
+      "offense_label": "Adjacent false-attribution and privacy cybercrime offences",
+      "deepfake_scope": "impersonation_privacy_adjacent",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Apparent enhanced punishment where false attribution is used to cause harm; OCR verification pending.",
+      "aggravated_penalty": "Exact range not entered until the official page image is verified.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-07-20"
+    }
+  ]
+}

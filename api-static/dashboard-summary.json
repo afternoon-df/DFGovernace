@@ -1,0 +1,566 @@
+{
+  "summary": {
+    "EU": {
+      "stats": {
+        "total": 2,
+        "in_force": 2,
+        "proposed": 0,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2022": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        },
+        "2025": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "united-kingdom": {
+      "stats": {
+        "total": 6,
+        "in_force": 2,
+        "proposed": 0,
+        "guidelines": 4,
+        "review": 0
+      },
+      "timeline": {
+        "2023": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        },
+        "2025": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 4,
+          "unknown": 0
+        }
+      }
+    },
+    "france": {
+      "stats": {
+        "total": 1,
+        "in_force": 1,
+        "proposed": 0,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2024": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "germany": {
+      "stats": {
+        "total": 2,
+        "in_force": 0,
+        "proposed": 2,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2024": {
+          "in_force": 0,
+          "proposed": 2,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "italy": {
+      "stats": {
+        "total": 1,
+        "in_force": 1,
+        "proposed": 0,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2025": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "russia": {
+      "stats": {
+        "total": 1,
+        "in_force": 1,
+        "proposed": 0,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2026": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "korea": {
+      "stats": {
+        "total": 13,
+        "in_force": 6,
+        "proposed": 0,
+        "guidelines": 7,
+        "review": 0
+      },
+      "timeline": {
+        "2024": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        },
+        "2025": {
+          "in_force": 3,
+          "proposed": 0,
+          "guidelines": 4,
+          "unknown": 0
+        },
+        "2026": {
+          "in_force": 3,
+          "proposed": 0,
+          "guidelines": 3,
+          "unknown": 0
+        }
+      }
+    },
+    "china": {
+      "stats": {
+        "total": 4,
+        "in_force": 3,
+        "proposed": 1,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2022": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        },
+        "2023": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        },
+        "2025": {
+          "in_force": 1,
+          "proposed": 1,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "japan": {
+      "stats": {
+        "total": 2,
+        "in_force": 2,
+        "proposed": 0,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2025": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        },
+        "2026": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "singapore": {
+      "stats": {
+        "total": 3,
+        "in_force": 1,
+        "proposed": 0,
+        "guidelines": 2,
+        "review": 0
+      },
+      "timeline": {
+        "2024": {
+          "in_force": 0,
+          "proposed": 1,
+          "guidelines": 2,
+          "unknown": 0
+        },
+        "2025": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "india": {
+      "stats": {
+        "total": 3,
+        "in_force": 1,
+        "proposed": 1,
+        "guidelines": 1,
+        "review": 0
+      },
+      "timeline": {
+        "2025": {
+          "in_force": 0,
+          "proposed": 1,
+          "guidelines": 1,
+          "unknown": 0
+        },
+        "2026": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "pakistan": {
+      "stats": {
+        "total": 4,
+        "in_force": 2,
+        "proposed": 2,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2016": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        },
+        "2025": {
+          "in_force": 1,
+          "proposed": 2,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "malaysia": {
+      "stats": {
+        "total": 1,
+        "in_force": 0,
+        "proposed": 1,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2026": {
+          "in_force": 0,
+          "proposed": 1,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "taiwan": {
+      "stats": {
+        "total": 2,
+        "in_force": 2,
+        "proposed": 0,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2023": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        },
+        "2025": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "australia": {
+      "stats": {
+        "total": 7,
+        "in_force": 5,
+        "proposed": 0,
+        "guidelines": 2,
+        "review": 0
+      },
+      "timeline": {
+        "2024": {
+          "in_force": 4,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        },
+        "2025": {
+          "in_force": 0,
+          "proposed": 0,
+          "guidelines": 2,
+          "unknown": 0
+        },
+        "2026": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "new-zealand": {
+      "stats": {
+        "total": 1,
+        "in_force": 0,
+        "proposed": 1,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2025": {
+          "in_force": 0,
+          "proposed": 1,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "united-states": {
+      "stats": {
+        "total": 19,
+        "in_force": 15,
+        "proposed": 0,
+        "guidelines": 4,
+        "review": 0
+      },
+      "timeline": {
+        "2024": {
+          "in_force": 3,
+          "proposed": 0,
+          "guidelines": 1,
+          "unknown": 0
+        },
+        "2025": {
+          "in_force": 11,
+          "proposed": 0,
+          "guidelines": 2,
+          "unknown": 0
+        },
+        "2026": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 1,
+          "unknown": 0
+        }
+      }
+    },
+    "brazil": {
+      "stats": {
+        "total": 3,
+        "in_force": 0,
+        "proposed": 3,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2023": {
+          "in_force": 0,
+          "proposed": 2,
+          "guidelines": 0,
+          "unknown": 0
+        },
+        "2025": {
+          "in_force": 0,
+          "proposed": 1,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "argentina": {
+      "stats": {
+        "total": 2,
+        "in_force": 0,
+        "proposed": 0,
+        "guidelines": 2,
+        "review": 0
+      },
+      "timeline": {
+        "2025": {
+          "in_force": 0,
+          "proposed": 0,
+          "guidelines": 2,
+          "unknown": 0
+        }
+      }
+    },
+    "mexico": {
+      "stats": {
+        "total": 3,
+        "in_force": 1,
+        "proposed": 2,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2026": {
+          "in_force": 1,
+          "proposed": 2,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "canada": {
+      "stats": {
+        "total": 1,
+        "in_force": 0,
+        "proposed": 1,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2025": {
+          "in_force": 0,
+          "proposed": 1,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "united-arab-emirates": {
+      "stats": {
+        "total": 6,
+        "in_force": 1,
+        "proposed": 0,
+        "guidelines": 5,
+        "review": 0
+      },
+      "timeline": {
+        "2019": {
+          "in_force": 0,
+          "proposed": 0,
+          "guidelines": 1,
+          "unknown": 0
+        },
+        "2021": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 1,
+          "unknown": 0
+        },
+        "2022": {
+          "in_force": 0,
+          "proposed": 0,
+          "guidelines": 2,
+          "unknown": 0
+        },
+        "2023": {
+          "in_force": 0,
+          "proposed": 0,
+          "guidelines": 1,
+          "unknown": 0
+        }
+      }
+    },
+    "saudi-arabia": {
+      "stats": {
+        "total": 2,
+        "in_force": 1,
+        "proposed": 0,
+        "guidelines": 1,
+        "review": 0
+      },
+      "timeline": {
+        "2007": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        },
+        "2021": {
+          "in_force": 0,
+          "proposed": 0,
+          "guidelines": 1,
+          "unknown": 0
+        }
+      }
+    },
+    "egypt": {
+      "stats": {
+        "total": 1,
+        "in_force": 1,
+        "proposed": 0,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2018": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "south-africa": {
+      "stats": {
+        "total": 1,
+        "in_force": 1,
+        "proposed": 0,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2021": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    },
+    "tanzania": {
+      "stats": {
+        "total": 1,
+        "in_force": 1,
+        "proposed": 0,
+        "guidelines": 0,
+        "review": 0
+      },
+      "timeline": {
+        "2015": {
+          "in_force": 1,
+          "proposed": 0,
+          "guidelines": 0,
+          "unknown": 0
+        }
+      }
+    }
+  }
+}

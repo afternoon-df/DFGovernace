@@ -1,0 +1,26 @@
+{
+  "country": "egypt",
+  "documents": [
+    {
+      "resource_dir": "egypt",
+      "name": "egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar.pdf",
+      "relative_path": "1_official-law-act/egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar.pdf",
+      "legacy_relative_path": "egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar.pdf",
+      "extension": ".pdf",
+      "classification_code": 1,
+      "classification_folder": "1_official-law-act",
+      "classification_label": "Official Law / Act",
+      "context_layer": "core_legal",
+      "legal_force": "binding_in_force",
+      "core_evidence_allowed": true,
+      "document_type": "official_law_act",
+      "law_stage": "in_force",
+      "url": "/resource/egypt/1_official-law-act/egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar.pdf",
+      "event_date": "2018-08-15",
+      "event_year": 2018,
+      "event_stage": "in_force",
+      "timeline_source": "metadata",
+      "law_unit_key": "egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar"
+    }
+  ]
+}

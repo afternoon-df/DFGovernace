@@ -1,0 +1,2 @@
+country,law_id,offense_id,offense_label,deepfake_scope,sanction_channel,effective_status,fine_range,prison_range_months,aggravation,aggravated_penalty,refs,last_verified_at
+taiwan,TW_CRIMINAL_CODE_ART_319_4,tw_harmful_synthetic_sexual_images,Harmful synthetic sexual-image offence,synthetic_sexual_image,criminal,in_force,<=500000 TWD,<=60 months,Commission for profit.,"Up to seven years and fine up to NT$700,000.",Ref2,2026-07-20

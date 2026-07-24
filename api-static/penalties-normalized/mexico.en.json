@@ -1,0 +1,40 @@
+{
+  "country": "Mexico",
+  "penalties": [
+    {
+      "country": "Mexico",
+      "law_id": "MX_LFDA_PERFORMER_AI_RIGHTS_2026",
+      "offense_id": "mx_performer_image_voice_ai_rights",
+      "offense_label": "Performer image/voice AI cloning and supplantation rights",
+      "deepfake_scope": "consent_likeness_voice",
+      "sanction_channel": "other",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Scope is strongest for performers/interpreters/executants and related-rights contexts.",
+      "aggravated_penalty": "Article-level monetary/criminal penalty values pending; treat as rights/remedy control rather than confirmed criminal penalty.",
+      "refs": [
+        "Ref2",
+        "Ref3"
+      ],
+      "last_verified_at": "2026-07-20"
+    },
+    {
+      "country": "Mexico",
+      "law_id": "MX_CPF_199_OCTIES_AI_INTIMATE_BILL_2026",
+      "offense_id": "mx_ai_intimate_content_proposed",
+      "offense_label": "Proposed AI-created intimate sexual content offense",
+      "deepfake_scope": "non_consensual_intimate",
+      "sanction_channel": "criminal",
+      "effective_status": "proposed",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Penalty values require enacted Federal Criminal Code text; current source is proposal-stage Gazette material.",
+      "aggravated_penalty": "Proposed-stage only; do not treat as in-force penalty.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-07-20"
+    }
+  ]
+}

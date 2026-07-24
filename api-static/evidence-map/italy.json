@@ -1,0 +1,17 @@
+{
+  "country": "italy",
+  "refs": [
+    {
+      "ref": "Ref1",
+      "source": "sources/official/italy/1_official-law-act/italy-2025-artificial-intelligence-law-no-132-it.pdf",
+      "type": "Act/Law`; in force from 10 October 2025.",
+      "uses": [
+        "pp. 1-3, Arts. 1-4: responsible, transparent AI use and information/privacy principles.",
+        "p. 17, Art. 26(c), new Penal Code Art. 612-quater: dissemination without consent of AI-falsified or altered images, video, or voices capable of misleading as to authenticity and causing unjust harm.",
+        "p. 17, Art. 612-quater: imprisonment from one to five years; complaint-based with listed ex officio exceptions."
+      ],
+      "verification": "Direct synthetic-media criminal-law anchor.",
+      "url": "/resource/italy/1_official-law-act/italy-2025-artificial-intelligence-law-no-132-it.pdf"
+    }
+  ]
+}

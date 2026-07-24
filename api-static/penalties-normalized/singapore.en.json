@@ -1,0 +1,59 @@
+{
+  "country": "Singapore",
+  "penalties": [
+    {
+      "country": "Singapore",
+      "law_id": "SG_ELECTIONS_ONLINE_ADVERTISING_ACT_34_2024",
+      "offense_id": "sg_false_candidate_election_advertising",
+      "offense_label": "Publishing election advertising with a realistic but false digitally generated or manipulated candidate representation",
+      "deepfake_scope": "election_candidate_deepfake",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "<=1000 SGD",
+      "prison_range_months": "<=12 months",
+      "aggravation": "No separate aggravated tier was identified in the reviewed offence clauses.",
+      "aggravated_penalty": "None separately specified.",
+      "refs": [
+        "Ref1",
+        "Ref4"
+      ],
+      "last_verified_at": "2026-07-23"
+    },
+    {
+      "country": "Singapore",
+      "law_id": "SG_ELECTIONS_ONLINE_ADVERTISING_ACT_34_2024",
+      "offense_id": "sg_social_media_provider_direction_noncompliance",
+      "offense_label": "Social media service provider failure to comply with an election-law direction without reasonable excuse",
+      "deepfake_scope": "election_platform_noncompliance",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "<=1000000 SGD",
+      "prison_range_months": "",
+      "aggravation": "The higher ceiling is an actor-specific provider tier, not a separately identified aggravating circumstance.",
+      "aggravated_penalty": "None separately specified beyond the provider-specific maximum.",
+      "refs": [
+        "Ref1",
+        "Ref4"
+      ],
+      "last_verified_at": "2026-07-23"
+    },
+    {
+      "country": "Singapore",
+      "law_id": "SG_ELECTIONS_ONLINE_ADVERTISING_ACT_34_2024",
+      "offense_id": "sg_other_relevant_person_direction_noncompliance",
+      "offense_label": "Other relevant person's failure to comply with an election-law direction without reasonable excuse",
+      "deepfake_scope": "election_direction_noncompliance",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "<=1000 SGD",
+      "prison_range_months": "<=12 months",
+      "aggravation": "No separate aggravated tier was identified in the reviewed clauses.",
+      "aggravated_penalty": "None separately specified.",
+      "refs": [
+        "Ref1",
+        "Ref4"
+      ],
+      "last_verified_at": "2026-07-23"
+    }
+  ]
+}

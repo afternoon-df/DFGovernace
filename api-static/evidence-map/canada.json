@@ -1,0 +1,17 @@
+{
+  "country": "canada",
+  "refs": [
+    {
+      "ref": "Ref1",
+      "source": "sources/official/canada/2_draft/canada-2025-bill-c-16-protecting-victims-act-en-fr.pdf",
+      "type": "Bill / Proposed`; introduced 9 December 2025.",
+      "uses": [
+        "p. 1, legislative summary: expands non-consensual intimate-image rules to electronic representations likely to be mistaken for recordings of an identifiable person.",
+        "p. 15, proposed Criminal Code s. 162.1(1.1)-(2): threats to publish and an expanded intimate-image definition covering synthetic visual representations.",
+        "p. 15, proposed penalty: indictable route up to 10 years, or summary conviction."
+      ],
+      "verification": "Official bill text; not treated as enacted or in force.",
+      "url": "/resource/canada/2_draft/canada-2025-bill-c-16-protecting-victims-act-en-fr.pdf"
+    }
+  ]
+}

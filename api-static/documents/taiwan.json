@@ -1,0 +1,47 @@
+{
+  "country": "taiwan",
+  "documents": [
+    {
+      "resource_dir": "taiwan",
+      "name": "taiwan-2023-presidential-vice-presidential-election-recall-act-article-47-3-en.pdf",
+      "relative_path": "1_official-law-act/taiwan-2023-presidential-vice-presidential-election-recall-act-article-47-3-en.pdf",
+      "legacy_relative_path": "taiwan-2023-presidential-vice-presidential-election-recall-act-article-47-3-en.pdf",
+      "extension": ".pdf",
+      "classification_code": 1,
+      "classification_folder": "1_official-law-act",
+      "classification_label": "Official Law / Act",
+      "context_layer": "core_legal",
+      "legal_force": "binding_in_force",
+      "core_evidence_allowed": true,
+      "document_type": "official_law_act",
+      "law_stage": "in_force",
+      "url": "/resource/taiwan/1_official-law-act/taiwan-2023-presidential-vice-presidential-election-recall-act-article-47-3-en.pdf",
+      "event_date": "2023-06-09",
+      "event_year": 2023,
+      "event_stage": "in_force",
+      "timeline_source": "metadata",
+      "law_unit_key": "taiwan-2023-presidential-vice-presidential-election-recall-act-article-47-3"
+    },
+    {
+      "resource_dir": "taiwan",
+      "name": "taiwan-2025-criminal-code-republic-of-china-en.pdf",
+      "relative_path": "1_official-law-act/taiwan-2025-criminal-code-republic-of-china-en.pdf",
+      "legacy_relative_path": "taiwan-2025-criminal-code-republic-of-china-en.pdf",
+      "extension": ".pdf",
+      "classification_code": 1,
+      "classification_folder": "1_official-law-act",
+      "classification_label": "Official Law / Act",
+      "context_layer": "core_legal",
+      "legal_force": "binding_in_force",
+      "core_evidence_allowed": true,
+      "document_type": "official_law_act",
+      "law_stage": "in_force",
+      "url": "/resource/taiwan/1_official-law-act/taiwan-2025-criminal-code-republic-of-china-en.pdf",
+      "event_date": "2025-08-01",
+      "event_year": 2025,
+      "event_stage": "in_force",
+      "timeline_source": "metadata",
+      "law_unit_key": "taiwan-2025-criminal-code-republic-of-china"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-07-23",
+  "method": "Curated comparison of explicit removal deadlines and qualitative response standards found in official primary or regulator sources. Absence from this file does not mean that a jurisdiction has no removal duty.",
+  "entries": [
+    {
+      "jurisdiction": "Australia",
+      "slug": "australia",
+      "deadline_type": "fixed",
+      "deadline_hours": 24,
+      "deadline_label": "24 hours",
+      "trigger": "After an eSafety removal notice is given",
+      "actor": "Online service, hosting provider, or end user named in the notice",
+      "scope": "Image-based abuse and other material covered by the Online Safety Act schemes",
+      "required_action": "Take all reasonable steps to remove or cease hosting the material",
+      "instrument": "Online Safety Act 2021 — Image-Based Abuse Scheme",
+      "source_title": "Image-Based Abuse Scheme Regulatory Guidance",
+      "source_url": "https://www.esafety.gov.au/sites/default/files/2025-01/IBA-Scheme-Regulatory-Guidance-Jan2025_2.pdf",
+      "status": "In force",
+      "note": "eSafety may specify a longer period in the notice."
+    },
+    {
+      "jurisdiction": "United States",
+      "slug": "united-states",
+      "deadline_type": "fixed",
+      "deadline_hours": 48,
+      "deadline_label": "48 hours",
+      "trigger": "After a covered platform receives a valid removal request",
+      "actor": "Covered platform",
+      "scope": "Nonconsensual intimate visual depictions, including qualifying digital forgeries",
+      "required_action": "Remove the reported depiction and make reasonable efforts to remove known identical copies",
+      "instrument": "TAKE IT DOWN Act, Pub. L. 119-12",
+      "source_title": "FTC: Complying With the TAKE IT DOWN Act",
+      "source_url": "https://www.ftc.gov/business-guidance/resources/complying-take-it-down-act",
+      "status": "In force",
+      "note": "The FTC began enforcing the platform notice-and-removal requirements on May 19, 2026."
+    },
+    {
+      "jurisdiction": "European Union",
+      "slug": "eu",
+      "deadline_type": "qualitative",
+      "deadline_hours": null,
+      "deadline_label": "Expeditiously",
+      "trigger": "After obtaining actual knowledge or awareness of illegal content",
+      "actor": "Hosting service provider",
+      "scope": "Illegal content under applicable Union or Member State law",
+      "required_action": "Remove or disable access expeditiously to retain the hosting liability exemption",
+      "instrument": "Digital Services Act, Regulation (EU) 2022/2065, Article 6",
+      "source_title": "EUR-Lex: Regulation (EU) 2022/2065",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R2065",
+      "status": "In force",
+      "note": "The DSA provision uses a qualitative standard rather than a universal fixed-hour deadline."
+    }
+  ]
+}

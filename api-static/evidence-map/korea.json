@@ -1,0 +1,59 @@
+{
+  "country": "korea",
+  "refs": [
+    {
+      "ref": "Ref1",
+      "source": "sources/official/korea/1_official-law-act/korea-2025-framework-act-on-the-development-of-artificial-intelligence-and-the-creation-of-a-foundation-for-trust-en.pdf",
+      "type": "Official Law / Act",
+      "uses": [
+        "Framework AI Act transparency duties",
+        "high-impact and generative AI compliance architecture"
+      ],
+      "verification": "Primary corpus anchor",
+      "url": "/resource/korea/1_official-law-act/korea-2025-framework-act-on-the-development-of-artificial-intelligence-and-the-creation-of-a-foundation-for-trust-en.pdf"
+    },
+    {
+      "ref": "Ref4",
+      "source": "sources/official/korea/1_official-law-act/korea-2024-korea-election-rule-deepfake-labeling-annex-1-3.pdf",
+      "type": "Official Law / Act",
+      "uses": [
+        "election-context deepfake labeling method and display items"
+      ],
+      "verification": "Primary corpus anchor",
+      "url": "/resource/korea/1_official-law-act/korea-2024-korea-election-rule-deepfake-labeling-annex-1-3.pdf"
+    },
+    {
+      "ref": "Ref5",
+      "source": "sources/official/korea/1_official-law-act/korea-2025-act-on-fair-labeling-and-advertising-law-no-20712-en.pdf",
+      "type": "Official Law / Act",
+      "uses": [
+        "unfair labeling/advertising prohibition",
+        "consumer-protection enforcement pathway"
+      ],
+      "verification": "Primary corpus anchor",
+      "url": "/resource/korea/1_official-law-act/korea-2025-act-on-fair-labeling-and-advertising-law-no-20712-en.pdf"
+    },
+    {
+      "ref": "Ref9",
+      "source": "sources/official/korea/1_official-law-act/korea-2026-information-communications-network-act-law-no-21305-en.pdf",
+      "type": "Official Law / Act",
+      "uses": [
+        "synthesized-video harm-prevention policy",
+        "online distribution and platform response layer"
+      ],
+      "verification": "Primary corpus anchor",
+      "url": "/resource/korea/1_official-law-act/korea-2026-information-communications-network-act-law-no-21305-en.pdf"
+    },
+    {
+      "ref": "Ref13",
+      "source": "sources/official/korea/1_official-law-act/korea-2025-act-on-prevention-countermeasures-against-violence-in-schools-act-no-21082-en.doc",
+      "type": "Official Law / Act",
+      "uses": [
+        "student/school-context cyber violence definition that expressly includes deepfake videos, etc.",
+        "reporting and school-response context for youth synthetic sexual abuse"
+      ],
+      "verification": "Official .doc text readable but extraction is noisy; recheck if a cleaner PDF/HTML is added",
+      "url": "/resource/korea/1_official-law-act/korea-2025-act-on-prevention-countermeasures-against-violence-in-schools-act-no-21082-en.doc"
+    }
+  ]
+}

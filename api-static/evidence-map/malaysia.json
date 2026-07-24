@@ -1,0 +1,15 @@
+{
+  "country": "malaysia",
+  "refs": [
+    {
+      "ref": "Ref1",
+      "source": "sources/official/malaysia/2_draft/malaysia-2026-cyber-crime-bill-dr-8-2026-ms.pdf",
+      "type": "Bill / Proposed`; first reading 22 June 2026.",
+      "uses": [
+        "Full-text clause and keyword review of D.R. 8/2026; no direct synthetic-media provision identified."
+      ],
+      "verification": "Official Malay bill; deepfake relevance is indirect at most.",
+      "url": "/resource/malaysia/2_draft/malaysia-2026-cyber-crime-bill-dr-8-2026-ms.pdf"
+    }
+  ]
+}
