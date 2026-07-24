@@ -4,14 +4,72 @@
     {
       "ref": "Ref1",
       "source": "sources/official/egypt/1_official-law-act/egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar.pdf",
-      "type": "Act/Law`; in force.",
+      "type": "Act/Law; in force.",
       "uses": [
-        "OCR p. 16, apparent Art. 24: creating an email, site, or private account and falsely attributing it to another person; enhanced punishment where used to cause harm.",
+        "OCR p. 16, apparent Art. 24: creating an email, site, or private account and falsely attributing it to another person; enhanced punishment where it is used to cause harm.",
         "OCR pp. 16-17, apparent Art. 25: privacy and unlawful-information-content offences.",
         "OCR pp. 5-7 and 18-20: service-provider data duties and corresponding sanctions."
       ],
-      "verification": "Article numerals are OCR-sensitive and require visual confirmation before quotation.",
+      "verification": "Article numerals and penalty figures remain image-verification sensitive.",
       "url": "/resource/egypt/1_official-law-act/egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar.pdf"
+    },
+    {
+      "ref": "Ref2",
+      "source": "sources/official/egypt/4_official-report-assessment/egypt-2025-national-artificial-intelligence-strategy-second-edition-en.pdf",
+      "type": "official government strategy/report; nonbinding context.",
+      "uses": [
+        "PDF p. 10: identifies the `Egyptian Anti-Cyber and Information Technology Crimes Law (No. 175 of 2018)` as Egypt's governing cybercrime framework and states that it penalizes predefined cybercrimes.",
+        "Use limit: supports the official English name and general governmental characterization, not article text or penalties."
+      ],
+      "verification": "",
+      "url": "/resource/egypt/4_official-report-assessment/egypt-2025-national-artificial-intelligence-strategy-second-edition-en.pdf"
+    },
+    {
+      "ref": "Ref3",
+      "source": "sources/official/egypt/3_official-guidance-warning/egypt-2025-open-data-policy-en.pdf",
+      "type": "official government policy; nonbinding guidance/context for this project.",
+      "uses": [
+        "PDF p. 10, section 10: lists `Cybercrime Law (Law No. 175/2018)` among the instruments with which the policy operates.",
+        "Use limit: corroborates the official government English reference only; it does not summarize or reproduce the Act."
+      ],
+      "verification": "",
+      "url": "/resource/egypt/3_official-guidance-warning/egypt-2025-open-data-policy-en.pdf"
+    },
+    {
+      "ref": "Ref4",
+      "source": "sources/official/egypt/3_official-guidance-warning/egypt-2026-national-ai-governance-framework-guide-en.pdf",
+      "type": "approved official governance guide; nonbinding guidance, not an Act.",
+      "uses": [
+        "PDF p. 5: distinguishes the Framework suite, the Guide, the operational Guidelines, and future products.",
+        "PDF p. 9: names Law No. 175 of 2018 and describes it as the legal framework for combating cyber-enabled threats.",
+        "PDF p. 21: places generative AI including deepfakes in Tier 3 `Limited Risk` and calls for disclosure of machine interaction plus labeling or watermarking of AI-generated content.",
+        "Use limit: supports a direct official-guidance labeling pathway, but not a binding statutory labeling offense."
+      ],
+      "verification": "",
+      "url": "/resource/egypt/3_official-guidance-warning/egypt-2026-national-ai-governance-framework-guide-en.pdf"
+    },
+    {
+      "ref": "Ref5",
+      "source": "sources/official/egypt/3_official-guidance-warning/egypt-2026-national-guidelines-trustworthy-responsible-ai-en.pdf",
+      "type": "approved official operational guidelines; nonbinding guidance, not an Act.",
+      "uses": [
+        "PDF p. 3: records version 2.0, final release by NCAI, dated 25 March 2026.",
+        "PDF p. 18, Audit & Assurance Procedure: includes disclosure when interacting with AI and labeling of AI-generated content, including watermarking for generative AI.",
+        "Use limit: supports implementation-oriented labeling guidance, not criminal or administrative penalties."
+      ],
+      "verification": "",
+      "url": "/resource/egypt/3_official-guidance-warning/egypt-2026-national-guidelines-trustworthy-responsible-ai-en.pdf"
+    },
+    {
+      "ref": "Ref6",
+      "source": "sources/official/egypt/4_official-report-assessment/egypt-2021-national-artificial-intelligence-strategy-en.pdf",
+      "type": "official government strategy/report; nonbinding historical context.",
+      "uses": [
+        "The 2025 second-edition strategy states that the first National AI Strategy launched in May 2021.",
+        "Use limit: no direct deepfake provision or Law No. 175 reference was identified in the extracted text."
+      ],
+      "verification": "",
+      "url": "/resource/egypt/4_official-report-assessment/egypt-2021-national-artificial-intelligence-strategy-en.pdf"
     }
   ]
 }
