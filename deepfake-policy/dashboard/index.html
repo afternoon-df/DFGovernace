@@ -1,0 +1,1782 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dashboard overview for the Deepfake Policy Observatory, including KPI cards, regulatory fragmentation, geographic memos, word clouds, and coding charts." />
+  <link rel="canonical" href="https://anonymous.4open.science/w/DFGovernace/deepfake-policy/dashboard/index.html" />
+  <meta property="og:title" content="Deepfake Policy Dashboard" />
+  <meta property="og:description" content="Review project-level policy indicators, regulatory pathways, geographic memo cards, and clause-coding distributions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://anonymous.4open.science/w/DFGovernace/deepfake-policy/dashboard/index.html" />
+  <title>Deepfake Policy Dashboard</title>
+  <link rel="stylesheet" href="/w/DFGovernace/assets/palette.css" />
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      --ink: #111827;
+      --muted: #667085;
+      --line: rgba(15, 23, 42, .08);
+      --paper: rgba(255, 255, 255, .84);
+      --paper-strong: #fffdf8;
+      --navy: #0f172a;
+      --gold: #b87516;
+      --gold-soft: #fff4df;
+      --blue: #5577a6;
+      --blue-soft: #eef5ff;
+      --green: #4d8b5a;
+      --green-soft: #eef8ee;
+      --red: #b9564d;
+      --red-soft: #fff0ee;
+    }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Poppins", "Noto Sans KR", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 10% 6%, rgba(184, 117, 22, 0.10), transparent 25%),
+        linear-gradient(180deg, #f5f3ee 0%, #fbfaf7 100%);
+    }
+    .wrap {
+      max-width: 1520px;
+      margin: 0 auto;
+      padding: 28px;
+    }
+    .geo-hero,
+    .dashboard-section,
+    .kpi-card,
+    .chart-card,
+    .geo-map-card,
+    .memo-card {
+      border: 1px solid transparent;
+      border-radius: 28px;
+      background: var(--paper);
+    }
+    .geo-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 24px;
+      align-items: start;
+      padding: 30px;
+      margin-bottom: 22px;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 5vw, 68px);
+      line-height: .98;
+      letter-spacing: -.07em;
+    }
+    .lead {
+      max-width: 920px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.72;
+    }
+    .geo-lang {
+      display: none;
+    }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: flex-start;
+      margin-bottom: 18px;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(24px, 3vw, 34px);
+      letter-spacing: -.055em;
+    }
+    .section-head p {
+      max-width: 780px;
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      border-radius: 999px;
+      padding: 8px 12px;
+      background: var(--gold-soft);
+      color: #6f450a;
+      font-size: 12px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    .dashboard-section {
+      padding: 26px;
+      margin-bottom: 22px;
+    }
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    .kpi-card {
+      min-height: 156px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .kpi-card strong {
+      display: block;
+      font-size: clamp(28px, 3.8vw, 46px);
+      line-height: .95;
+      letter-spacing: -.065em;
+    }
+    .kpi-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 850;
+      line-height: 1.42;
+    }
+    .kpi-card small {
+      display: block;
+      margin-top: 8px;
+      color: #98a2b3;
+      font-size: 11px;
+      font-weight: 750;
+      line-height: 1.45;
+    }
+    .kpi-split {
+      display: grid;
+      gap: 8px;
+    }
+    .split-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 850;
+    }
+    .split-row b {
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .fragment-grid {
+      display: grid;
+      grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+      gap: 18px;
+      align-items: start;
+    }
+    .fragment-copy {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.78;
+    }
+    .pathway-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .pathway-card {
+      border-radius: 22px;
+      padding: 16px;
+      background: var(--paper-strong);
+    }
+    .pathway-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .pathway-card h3 {
+      margin: 0;
+      font-size: 15px;
+      letter-spacing: -.025em;
+    }
+    .pathway-card strong {
+      color: var(--gold);
+      font-size: 22px;
+      letter-spacing: -.04em;
+    }
+    .pathway-card p {
+      margin: 9px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.55;
+    }
+    .geo-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(360px, .85fr);
+      gap: 22px;
+      align-items: start;
+      margin-bottom: 22px;
+    }
+    .geo-map-card {
+      padding: 24px;
+    }
+    .map-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: end;
+      margin-bottom: 18px;
+    }
+    .map-head h2 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: -.04em;
+    }
+    .map-note {
+      margin: 6px 0 0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+    .memo-count {
+      border-radius: 999px;
+      padding: 9px 12px;
+      background: #eef2f7;
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    .map-stage {
+      position: relative;
+      min-height: 590px;
+      overflow: hidden;
+      border-radius: 24px;
+      background:
+        radial-gradient(circle at 18% 42%, rgba(184,117,22,.18), transparent 0 9%, transparent 10%),
+        radial-gradient(circle at 50% 35%, rgba(15,23,42,.09), transparent 0 13%, transparent 14%),
+        radial-gradient(circle at 72% 47%, rgba(184,117,22,.13), transparent 0 11%, transparent 12%),
+        linear-gradient(135deg, #eef2f7 0%, #fbfaf7 54%, #f2eadc 100%);
+    }
+    .policy-map {
+      position: absolute;
+      inset: 0;
+    }
+    .mapcn-badge {
+      position: absolute;
+      left: 14px;
+      top: 14px;
+      z-index: 2;
+      border-radius: 999px;
+      padding: 8px 11px;
+      background: rgba(255,255,255,.86);
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 900;
+      backdrop-filter: blur(12px);
+    }
+    .map-marker {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border: 2px solid rgba(255,255,255,.92);
+      border-radius: 999px;
+      background: var(--navy);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 950;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(15,23,42,.18);
+      transform: translateY(0);
+      transition: transform .18s ease, background .18s ease;
+    }
+    .map-marker:hover,
+    .map-marker.is-open {
+      background: var(--gold);
+      transform: translateY(-2px);
+    }
+    .map-marker.is-thin {
+      background: #98a2b3;
+    }
+    .maplibregl-popup-content {
+      border-radius: 16px;
+      border: 0;
+      padding: 10px 12px;
+      color: var(--navy);
+      font-family: "Poppins", "Noto Sans KR", "Segoe UI", sans-serif;
+      font-size: 12px;
+      font-weight: 850;
+      box-shadow: 0 14px 34px rgba(15,23,42,.14);
+    }
+    .maplibregl-ctrl-group {
+      border: 0 !important;
+      border-radius: 14px !important;
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(15,23,42,.12) !important;
+    }
+    .map-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(15,23,42,.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15,23,42,.05) 1px, transparent 1px);
+      background-size: 58px 58px;
+      mask-image: radial-gradient(circle, #000 55%, transparent 95%);
+      opacity: .5;
+    }
+    .continent-label {
+      position: absolute;
+      color: rgba(17,24,39,.32);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      pointer-events: none;
+    }
+    .pin {
+      position: absolute;
+      left: var(--x);
+      top: var(--y);
+      transform: translate(-50%, -50%);
+      display: grid;
+      place-items: center;
+      width: 35px;
+      height: 35px;
+      border: 0;
+      border-radius: 999px;
+      background: var(--navy);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .pin.is-open {
+      background: var(--gold);
+    }
+    .pin::after {
+      content: attr(data-label);
+      position: absolute;
+      left: 50%;
+      top: 38px;
+      transform: translateX(-50%);
+      padding: 5px 7px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.86);
+      color: var(--ink);
+      font-size: 11px;
+      white-space: nowrap;
+    }
+    .memo-panel {
+      display: grid;
+      gap: 14px;
+    }
+    .memo-card {
+      padding: 20px;
+    }
+    .memo-card h3 {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: -.04em;
+    }
+    .memo-card p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      line-height: 1.62;
+      font-size: 14px;
+    }
+    .memo-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 14px;
+    }
+    .memo-chip {
+      display: inline-flex;
+      border-radius: 999px;
+      padding: 7px 9px;
+      background: #eef2f7;
+      color: #344054;
+      font-size: 12px;
+      font-weight: 850;
+    }
+    .memo-actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      margin-top: 16px;
+    }
+    .memo-detail,
+    .memo-close {
+      border: 0;
+      border-radius: 999px;
+      padding: 10px 13px;
+      font-size: 13px;
+      font-weight: 900;
+      text-decoration: none;
+    }
+    .memo-detail {
+      background: var(--navy);
+      color: #fff;
+    }
+    .memo-close {
+      background: #eef2f7;
+      color: var(--navy);
+      cursor: pointer;
+    }
+    .memo-empty {
+      padding: 28px;
+      border-radius: 28px;
+      background: rgba(255,255,255,.66);
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    .wordcloud-card {
+      background:
+        radial-gradient(circle at 12% 10%, rgba(11,110,105,0.12), transparent 28%),
+        radial-gradient(circle at 88% 20%, rgba(183,121,31,0.12), transparent 24%),
+        rgba(255,255,255,0.92);
+    }
+    .wordcloud-tools {
+      display: inline-flex;
+      gap: 6px;
+      padding: 4px;
+      border: 1px solid #d9e3f2;
+      border-radius: 999px;
+      background: #fff;
+      flex-wrap: wrap;
+    }
+    .wordcloud-tools button {
+      border: 0;
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: transparent;
+      color: #475569;
+      font-size: 11px;
+      font-weight: 900;
+      font-family: inherit;
+      cursor: pointer;
+    }
+    .wordcloud-tools button.is-active {
+      background: var(--navy);
+      color: #fff;
+      box-shadow: 0 7px 18px rgba(18,53,91,0.18);
+    }
+    .wordcloud-explain {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.55;
+      max-width: 74ch;
+    }
+    .wordcloud-cloud {
+      min-height: 160px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px 14px;
+      padding: 18px 8px 10px;
+    }
+    .word-term {
+      display: inline-flex;
+      align-items: center;
+      color: var(--term-color, var(--navy));
+      font-weight: 900;
+      line-height: 1;
+      font-size: var(--term-size, 1rem);
+      letter-spacing: -.035em;
+      transform: rotate(var(--term-tilt, 0deg));
+      text-shadow: 0 1px 0 rgba(255,255,255,0.82);
+      white-space: nowrap;
+    }
+    .wordcloud-empty {
+      min-height: 130px;
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+    .chart-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+    .chart-card {
+      padding: 22px;
+    }
+    .chart-card h2 {
+      margin: 0 0 14px;
+      font-size: 22px;
+      letter-spacing: -.045em;
+    }
+    .bar-list,
+    .timeline-list {
+      display: grid;
+      gap: 12px;
+    }
+    .bar-row {
+      display: grid;
+      grid-template-columns: minmax(120px, .45fr) minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      color: #344054;
+      font-size: 12px;
+      font-weight: 850;
+    }
+    .bar-track {
+      height: 12px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #eef2f7;
+    }
+    .bar-fill {
+      height: 100%;
+      width: var(--w);
+      border-radius: inherit;
+      background: var(--bar, var(--gold));
+    }
+    .stacked-row {
+      display: grid;
+      grid-template-columns: minmax(120px, .36fr) minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      color: #344054;
+      font-size: 12px;
+      font-weight: 850;
+    }
+    .stacked-track {
+      display: flex;
+      height: 14px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #eef2f7;
+    }
+    .stack-seg {
+      width: var(--w);
+      min-width: 2px;
+      background: var(--c);
+    }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .legend span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 850;
+    }
+    .legend i {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: var(--c);
+    }
+    .timeline-card {
+      margin-bottom: 0;
+    }
+    .timeline-row {
+      display: grid;
+      grid-template-columns: 64px minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      color: #344054;
+      font-size: 12px;
+      font-weight: 850;
+    }
+    .coverage-insights {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .coverage-insight,
+    .coverage-card {
+      border-radius: 22px;
+      background: var(--paper-strong);
+    }
+    .coverage-insight {
+      padding: 18px;
+    }
+    .coverage-insight strong {
+      display: block;
+      color: var(--navy);
+      font-size: 28px;
+      line-height: 1;
+      letter-spacing: -.055em;
+    }
+    .coverage-insight span {
+      display: block;
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.55;
+    }
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .coverage-card {
+      padding: 20px;
+    }
+    .coverage-card h3 {
+      margin: 0 0 16px;
+      font-size: 18px;
+      letter-spacing: -.035em;
+    }
+    .coverage-wide {
+      grid-column: 1 / -1;
+    }
+    .coverage-caveat {
+      margin: 18px 0 0;
+      padding: 13px 15px;
+      border-radius: 16px;
+      background: #f2f4f7;
+      color: #475467;
+      font-size: 12px;
+      font-weight: 750;
+      line-height: 1.65;
+    }
+    .response-scale {
+      position: relative;
+      display: grid;
+      gap: 14px;
+      margin-top: 6px;
+      padding: 20px 0 6px;
+    }
+    .response-scale::before {
+      content: "";
+      position: absolute;
+      left: 180px;
+      right: 92px;
+      top: 0;
+      height: 1px;
+      background: #d7dde7;
+    }
+    .response-row {
+      display: grid;
+      grid-template-columns: minmax(130px, 160px) minmax(0, 1fr) 74px;
+      gap: 18px;
+      align-items: center;
+    }
+    .response-country {
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 900;
+    }
+    .response-track {
+      height: 18px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #edf1f5;
+    }
+    .response-fill {
+      width: var(--w);
+      height: 100%;
+      min-width: 12px;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--gold), #e4b45e);
+    }
+    .response-hours {
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 900;
+      text-align: right;
+    }
+    .response-detail {
+      grid-column: 2 / -1;
+      margin-top: -8px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.55;
+    }
+    .response-detail a,
+    .qualitative-source {
+      color: #8a570d;
+      font-weight: 900;
+      text-decoration: none;
+    }
+    .response-qualitative {
+      display: grid;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .qualitative-row {
+      display: grid;
+      grid-template-columns: minmax(130px, 160px) minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: start;
+      padding: 16px;
+      border-radius: 18px;
+      background: var(--blue-soft);
+    }
+    .qualitative-row p {
+      margin: 0;
+      color: #475467;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+    .heatmap-wrap {
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+    .dimension-heatmap {
+      display: grid;
+      min-width: 920px;
+      gap: 5px;
+    }
+    .heatmap-label,
+    .heatmap-cell {
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 7px;
+      font-size: 11px;
+      font-weight: 850;
+      text-align: center;
+    }
+    .heatmap-label {
+      justify-content: flex-start;
+      color: #475467;
+    }
+    .heatmap-label.is-head {
+      justify-content: center;
+      color: var(--navy);
+      line-height: 1.25;
+    }
+    .heatmap-cell {
+      background: rgba(184,117,22,var(--alpha));
+      color: var(--cell-ink, #5f3b09);
+    }
+    .loading {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    @media (max-width: 1180px) {
+      .kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .fragment-grid,
+      .chart-grid,
+      .coverage-grid { grid-template-columns: 1fr; }
+      .coverage-wide { grid-column: auto; }
+    }
+    @media (max-width: 980px) {
+      .wrap { padding: 14px; }
+      .geo-hero,
+      .geo-layout,
+      .section-head { grid-template-columns: 1fr; }
+      .geo-layout { grid-template-columns: 1fr; }
+      .map-stage { min-height: 520px; }
+      .kpi-grid { grid-template-columns: 1fr; }
+      .pathway-grid { grid-template-columns: 1fr; }
+      .coverage-insights { grid-template-columns: 1fr; }
+      .bar-row,
+      .stacked-row,
+      .timeline-row,
+      .response-row,
+      .qualitative-row { grid-template-columns: 1fr; }
+      .response-detail { grid-column: auto; margin-top: 0; }
+      .response-hours { text-align: left; }
+      .response-scale::before { display: none; }
+      .wordcloud-tools { justify-content: flex-start; }
+    }
+  </style>
+  <link rel="stylesheet" href="/w/DFGovernace/deepfake-policy/dashboard-shell.css?v=20260720-jurisdictions1" />
+
+  <!-- anonymous-english-only -->
+  <script>
+    (() => {
+      try { localStorage.setItem('deepfakePolicyLang', 'en'); } catch (_) {}
+      const url = new URL(window.location.href);
+      if (url.searchParams.get('lang') && url.searchParams.get('lang') !== 'en') {
+        url.searchParams.set('lang', 'en');
+        history.replaceState(null, '', url.pathname + url.search + url.hash);
+      }
+      const NativeURLSearchParams = window.URLSearchParams;
+      window.URLSearchParams = class EnglishOnlySearchParams extends NativeURLSearchParams {
+        get(name) { return name === 'lang' ? 'en' : super.get(name); }
+        has(name) { return name === 'lang' ? true : super.has(name); }
+      };
+    })();
+  </script>
+  <style>
+    #uiLang, #lang, #policyShellLang, #langLabel,
+    label[for="uiLang"], label[for="lang"], label[for="policyShellLang"],
+    .geo-lang, .language-switch, .language-select, .lang-switch {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="geo-hero">
+      <div>
+        <p class="eyebrow" id="eyebrow"></p>
+        <h1 id="title"></h1>
+        <p class="lead" id="lead"></p>
+      </div>
+      <select id="lang" class="geo-lang" aria-label="Language">
+        <option value="en">English</option>
+        <option value="ko">koreax</option>
+      </select>
+    </section>
+
+    <section class="kpi-grid" id="kpiGrid" aria-label="Top KPI cards"></section>
+
+    <section class="dashboard-section">
+      <div class="section-head">
+        <div>
+          <h2 id="fragmentTitle"></h2>
+          <p id="fragmentLead"></p>
+        </div>
+        <span class="section-kicker" id="fragmentKicker"></span>
+      </div>
+      <div class="fragment-grid">
+        <p class="fragment-copy" id="fragmentCopy"></p>
+        <div class="pathway-grid" id="pathwayGrid"></div>
+      </div>
+    </section>
+
+    <section class="dashboard-section" id="coverageSection">
+      <div class="section-head">
+        <div>
+          <h2 id="coverageTitle"></h2>
+          <p id="coverageLead"></p>
+        </div>
+        <span class="section-kicker" id="coverageKicker"></span>
+      </div>
+      <div class="coverage-insights" id="coverageInsights"></div>
+      <div class="coverage-grid">
+        <article class="coverage-card">
+          <h3 id="topCountriesTitle"></h3>
+          <div class="bar-list" id="topCountriesChart"></div>
+        </article>
+        <article class="coverage-card">
+          <h3 id="regionDocsTitle"></h3>
+          <div class="bar-list" id="regionDocsChart"></div>
+        </article>
+        <article class="coverage-card coverage-wide">
+          <h3 id="regionTierTitle"></h3>
+          <div class="bar-list" id="regionTierChart"></div>
+          <div class="legend" id="regionTierLegend"></div>
+        </article>
+      </div>
+      <p class="coverage-caveat" id="coverageCaveat"></p>
+    </section>
+
+    <section class="geo-layout" id="memoMapSection">
+      <article class="geo-map-card">
+        <div class="map-head">
+          <div>
+            <h2 id="mapTitle"></h2>
+            <p class="map-note" id="mapNote"></p>
+          </div>
+          <span class="memo-count" id="memoCount"></span>
+        </div>
+        <div class="map-stage" id="mapStage">
+          <div id="policyMap" class="policy-map" aria-label="Interactive policy map"></div>
+          <span class="mapcn-badge">MapLibre · mapcn style</span>
+        </div>
+      </article>
+      <aside class="memo-panel" id="memoPanel"></aside>
+    </section>
+
+    <section class="dashboard-section response-card">
+      <div class="section-head">
+        <div>
+          <h2 id="responseTitle"></h2>
+          <p id="responseLead"></p>
+        </div>
+        <span class="section-kicker" id="responseKicker"></span>
+      </div>
+      <div class="response-scale" id="responseScale"></div>
+      <div class="response-qualitative" id="responseQualitative"></div>
+      <p class="coverage-caveat" id="responseCaveat"></p>
+    </section>
+
+    <section class="dashboard-section wordcloud-card">
+      <div class="section-head">
+        <div>
+          <h2 id="wordTitle"></h2>
+          <p id="wordLead"></p>
+          <p class="wordcloud-explain" id="wordExplain"></p>
+        </div>
+        <div class="wordcloud-tools" id="wordTools"></div>
+      </div>
+      <div class="wordcloud-cloud" id="wordCloud"></div>
+    </section>
+
+    <section class="chart-grid">
+      <article class="chart-card">
+        <h2 id="regionChartTitle"></h2>
+        <div class="bar-list" id="regionChart"></div>
+        <div class="legend" id="regionLegend"></div>
+      </article>
+      <article class="chart-card">
+        <h2 id="policyChartTitle"></h2>
+        <div class="bar-list" id="policyChart"></div>
+      </article>
+      <article class="chart-card">
+        <h2 id="riskChartTitle"></h2>
+        <div class="bar-list" id="riskChart"></div>
+      </article>
+      <article class="chart-card">
+        <h2 id="forceChartTitle"></h2>
+        <div class="bar-list" id="forceChart"></div>
+        <div class="legend" id="forceLegend"></div>
+      </article>
+    </section>
+
+    <section class="dashboard-section heatmap-card">
+      <div class="section-head">
+        <div>
+          <h2 id="heatmapTitle"></h2>
+          <p id="heatmapLead"></p>
+        </div>
+        <span class="section-kicker" id="heatmapKicker"></span>
+      </div>
+      <div class="heatmap-wrap">
+        <div class="dimension-heatmap" id="dimensionHeatmap"></div>
+      </div>
+      <p class="coverage-caveat" id="heatmapCaveat"></p>
+    </section>
+
+    <section class="dashboard-section timeline-card">
+      <div class="section-head">
+        <div>
+          <h2 id="timelineTitle"></h2>
+          <p id="timelineLead"></p>
+        </div>
+        <span class="section-kicker" id="timelineKicker"></span>
+      </div>
+      <div class="timeline-list" id="timelineChart"></div>
+      <div class="legend" id="timelineLegend"></div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script>
+    const LANG_KEY = 'deepfakePolicyLang';
+    let countries = [];
+    const STAGE_COLORS = {
+      in_force: '#0f172a',
+      proposed: '#b87516',
+      guidelines: '#5577a6',
+      review: '#4d8b5a',
+      other: '#9aa4b2'
+    };
+    const TIER_COLORS = {
+      specific: '#0f172a',
+      synthetic: '#b87516',
+      adjacent: '#9aa4b2'
+    };
+    const T = {
+      en: {
+        eyebrow:'Dashboard',
+        title:'',
+        lead:'A project-level overview of policy scale, legal pathways, geographic coverage, and clause-coding distributions. The map remains comparative, but the page now starts from measurable corpus indicators.',
+        kpis: {
+          countries:'jurisdictions analyzed',
+          countriesNote:'17 countries plus the EU.',
+          docs:'official documents',
+          clauses:'coded clauses',
+          specificity:'regulatory specificity',
+          force:'legal force mix',
+          specific:'deepfake-specific',
+          general:'general / adjacent',
+          forceRows:{ in_force:'in force', proposed:'draft / proposed', guidelines:'guidance' }
+        },
+        fragmentTitle:'Regulatory Fragmentation',
+        fragmentLead:'The comparison should not stop at whether a jurisdiction has a deepfake-specific law.',
+        fragmentKicker:'legal pathways',
+        fragmentCopy:'Deepfake and synthetic-media harms become enforceable through overlapping pathways: NCII and image-based abuse, election manipulation, platform duties, labeling and disclosure, fraud or impersonation, privacy and consent, and cybercrime. This dashboard treats fragmentation as the structure of enforcement rather than as a data-cleaning problem.',
+        pathways:[
+          ['NCII / image abuse','Non-consensual intimate imagery, sexual deepfake harm, image-based abuse.'],
+          ['Election','Campaign deception, political manipulation, electoral communications.'],
+          ['Platform duty','Provider obligations, notice-and-action, safety duties, content moderation.'],
+          ['Labeling','Disclosure, watermarking, provenance, synthetic-content notice.'],
+          ['Fraud','Impersonation, scam, identity misuse, deception-based loss.'],
+          ['Privacy','Consent, personality rights, data protection, reputation.'],
+          ['Cybercrime','Computer misuse, online harms, public-order cyber provisions.']
+        ],
+        mapTitle:'Geographic Policy Map',
+        mapNote:'Pins are schematic rather than cartographic. Open up to four memo cards for side-by-side comparison.',
+        memoCount:(n)=>`${n}/4 memos open`,
+        empty:'Select country pins to open memo cards. Up to four memos can stay open for side-by-side comparison.',
+        detail:'Details',
+        close:'Close',
+        wordTitle:'Global Word Cloud',
+        wordLead:'Frequent terms from official law text, shown as a quick lexical view of the corpus.',
+        wordButtons:{ source:'Source/English', kor:'Korean', context:'Context layer' },
+        wordExplain:{
+          source:'Source/English uses terms extracted from source-language official law text. English terms dominate because the cross-jurisdiction comparison normalizes many source texts into English.',
+          kor:'Korean uses Korean translations of official law/act segments, mainly for Korean reading and explanation.',
+          context:'Context layer uses adjacent AI governance, platform, safety, and policy context materials rather than core law/act clauses.'
+        },
+        regionChartTitle:'Regional regulation type',
+        policyChartTitle:'Policy dimension distribution',
+        riskChartTitle:'Risk tag distribution',
+        forceChartTitle:'Document legal force',
+        timelineTitle:'Timeline of regulatory signals',
+        timelineLead:'Official documents are grouped by event year and legal force to show when different regulatory forms became visible.',
+        timelineKicker:'by document year',
+        stage:{ in_force:'In force', proposed:'Draft', guidelines:'Guidance', review:'Review', other:'Other' },
+        loading:'Loading dashboard analytics...'
+      },
+      ko: {
+        eyebrow:'Dashboard',
+        title:'x x',
+        lead:'x x, x x, x x, x x x x x x x x x. x x x, x corpus x x x x.',
+        kpis: {
+          countries:'x x x',
+          countriesNote:'17x x EUx x.',
+          docs:'x x x',
+          clauses:'coded clause x',
+          specificity:'x x',
+          force:'x x x',
+          specific:'deepfake-specific',
+          general:'non-specific / adjacent',
+          forceRows:{ in_force:'x x', proposed:'x / x', guidelines:'x' }
+        },
+        fragmentTitle:'Regulatory Fragmentation',
+        fragmentLead:'x x “x x x”x x x x.',
+        fragmentKicker:'legal pathways',
+        fragmentCopy:'x x x NCIIx x x x x, x x, x x, x x, x x, x x, x x x x x x x x x. x x fragmentationx x x x x x x x.',
+        pathways:[
+          ['NCII / x x','x x x, x x x, x x x.'],
+          ['x','x x, x x, x x.'],
+          ['x x','x x, x x, x x, x x.'],
+          ['x','x, x, x x, x x.'],
+          ['x','x, x, x x, x x x.'],
+          ['x','x, x, x, x x.'],
+          ['x','x x, x x, x x x.']
+        ],
+        mapTitle:'Geographic Policy Map',
+        mapNote:'x x x x x x x x x x. x 4x x x x x x x x.',
+        memoCount:(n)=>`${n}/4 x x`,
+        empty:'x x x x x x. x 4x x x x x x.',
+        detail:'x',
+        close:'x',
+        wordTitle:'Global Word Cloud',
+        wordLead:'x x x x x x corpusx x x x x.',
+        wordButtons:{ source:'Source/English', kor:'Korean', context:'Context layer' },
+        wordExplain:{
+          source:'Source/Englishx x x x x x x. x x x x x x/x x x x.',
+          kor:'Koreanx x x/x x koreax x x x x x x.',
+          context:'Context layerx x x/x x x x x, x, x, x x x x x.'
+        },
+        regionChartTitle:'x x x',
+        policyChartTitle:'Policy dimension x',
+        riskChartTitle:'Risk tag x',
+        forceChartTitle:'x x x x',
+        timelineTitle:'x x x',
+        timelineLead:'x x x x x x x x x x x x.',
+        timelineKicker:'document year',
+        stage:{ in_force:'x x', proposed:'x', guidelines:'x', review:'x', other:'x' },
+        loading:'x x x x x...'
+      }
+    };
+    Object.assign(T.en, {
+      mapNote:'This map is a corpus coverage diagnostic, not a policy ranking. Grey markers indicate thin or missing document coverage; open up to four memos for comparison.',
+      coverageTitle:'Geographic Coverage',
+      coverageLead:'Corpus scale and composition vary across jurisdictions. These diagnostics describe the evidence base, not the quality or strength of regulation.',
+      coverageKicker:'coverage diagnostic',
+      topCountriesTitle:'Top jurisdictions by official documents',
+      regionDocsTitle:'Official documents by region',
+      regionTierTitle:'Region × regulatory pathway',
+      coverageInsights:{
+        concentration:'documents in the five largest jurisdiction corpora',
+        languages:'source-language and English accessibility shape collection depth',
+        missing:'grey or absent coverage means insufficient corpus evidence'
+      },
+      coverageCaveat:'Coverage is not a policy ranking. A large corpus may reflect a complex publication system, broad collection access, or more source languages; a small corpus does not establish weak regulation.',
+      tiers:{ specific:'Deepfake-specific', synthetic:'Synthetic-media-specific', adjacent:'Adjacent legal pathway' },
+      responseTitle:'Removal and Response Timelines',
+      responseLead:'A verified comparison of when the legal clock starts, who must act, and whether the rule uses a fixed deadline or a qualitative standard.',
+      responseKicker:'official sources only',
+      responseCaveat:'Only explicit rules verified in official sources are shown. No listed fixed deadline does not mean that a jurisdiction has no removal duty.',
+      fixedDeadline:'Fixed deadlines',
+      qualitativeStandard:'Qualitative standard',
+      officialSource:'Official source',
+      hours:'hours',
+      heatmapTitle:'Clause Coding Coverage by Jurisdiction',
+      heatmapLead:'The matrix shows where coded policy evidence is concentrated across the six comparison dimensions.',
+      heatmapKicker:'coverage, not strength',
+      heatmapCaveat:'Darker cells indicate more coded clause evidence in this corpus. They do not imply stronger, better, or more effective regulation.'
+    });
+    T.en.kpis.countriesNote = '25 countries plus the EU.';
+    T.ko = {
+      eyebrow:'x',
+      title:'',
+      lead:'x x, x x, x x x x x x x x x x.',
+      kpis:{
+        countries:'x x',
+        countriesNote:'25x x EU.',
+        docs:'x x',
+        clauses:'x x',
+        specificity:'x x',
+        force:'x x x',
+        specific:'x x',
+        general:'x·x x',
+        forceRows:{ in_force:'x x', proposed:'x·x', guidelines:'x' }
+      },
+      fragmentTitle:'x x',
+      fragmentLead:'x x x x x x x x.',
+      fragmentKicker:'x x',
+      fragmentCopy:'x x x NCIIx x x x x, x x, x x, x x, x x, x x, x x x x x x x x x x. x x x x x x x x x.',
+      pathways:[
+        ['NCII / x x','x x x, x x x, x x x.'],
+        ['x','x x, x x, x x.'],
+        ['x x','x x, x x, x x, x x.'],
+        ['x·x','x, x, x x, x x x.'],
+        ['x','x, x, x x, x x x.'],
+        ['x','x, x, x x, x.'],
+        ['x','x x, x x, x x x.']
+      ],
+      coverageTitle:'x x x',
+      coverageLead:'x corpus x x x. x x x x x x x x x.',
+      coverageKicker:'coverage x',
+      topCountriesTitle:'x x x x',
+      regionDocsTitle:'x x x x',
+      regionTierTitle:'x × x x',
+      coverageInsights:{
+        concentration:'x 5x x corpusx x x x',
+        languages:'x x x x x x x x',
+        missing:'x x x x corpus x x x'
+      },
+      coverageCaveat:'Coveragex x x x. x x x x x x x x x x x, x x x x x x x.',
+      tiers:{ specific:'x x', synthetic:'x x', adjacent:'x x x' },
+      mapTitle:'x x x',
+      mapNote:'x x x x corpus coverage x. x 4x x x x x x x.',
+      memoCount:(n)=>`${n}/4 x x`,
+      empty:'x x x x x x. x 4x x x x x.',
+      detail:'x',
+      close:'x',
+      responseTitle:'x x x x',
+      responseLead:'x x x x, x x, x x x x x x x.',
+      responseKicker:'x x',
+      responseCaveat:'x x x x x x. x x x x x x x x x.',
+      fixedDeadline:'x x',
+      qualitativeStandard:'x x',
+      officialSource:'x x',
+      hours:'x',
+      wordTitle:'x x x',
+      wordLead:'x x x x x x x x.',
+      wordButtons:{ source:'x/x', kor:'koreax', context:'x x' },
+      wordExplain:{
+        source:'x/x x x x x x x x x x.',
+        kor:'koreax x x·x x koreax x x x.',
+        context:'x x x x x x x AI x x·x x x x.'
+      },
+      regionChartTitle:'x x x x',
+      policyChartTitle:'x x x',
+      riskChartTitle:'x x x',
+      forceChartTitle:'x x x',
+      heatmapTitle:'x x x x',
+      heatmapLead:'x x x x x x x x x x.',
+      heatmapKicker:'x x coverage',
+      heatmapCaveat:'x x x corpusx x x x x x x. x x x x x x.',
+      timelineTitle:'x x x x',
+      timelineLead:'x x x x x x x x x x x.',
+      timelineKicker:'x x x',
+      stage:{ in_force:'x x', proposed:'x', guidelines:'x', review:'x', other:'x' },
+      loading:'x x x x x...'
+    };
+    let open = [];
+    let data = { inventory:null, coding:null, wordcloud:null, dimensions:null, responses:null };
+    let wordMode = null;
+    let policyMap = null;
+    let policyMapMarkers = new Map();
+
+    function lang() {
+      const q = new URLSearchParams(location.search).get('lang');
+      if (q === 'ko' || q === 'en') return q;
+      try { return localStorage.getItem(LANG_KEY) === 'ko' ? 'ko' : 'en'; } catch (_) { return 'en'; }
+    }
+    function withLang(path) {
+      const url = new URL(path, location.origin);
+      url.searchParams.set('lang', lang());
+      return url.pathname + url.search;
+    }
+    function defaultWordMode() {
+      return lang() === 'ko' ? 'kor' : 'source';
+    }
+    function activeWordMode() {
+      if (!wordMode) wordMode = defaultWordMode();
+      return wordMode;
+    }
+    function esc(value) {
+      return String(value ?? '').replace(/[&<>"']/g, (ch) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+    }
+    function fmt(value) {
+      return new Intl.NumberFormat(lang() === 'ko' ? 'ko-KR' : 'en-US').format(Number(value) || 0);
+    }
+    function continentLabel(continent, currentLang = lang()) {
+      if (currentLang !== 'ko') return continent;
+      return {
+        Asia: 'x',
+        Europe: 'x',
+        Africa: 'x',
+        'Middle East': 'x',
+        Americas: 'x x',
+        Oceania: 'x'
+      }[continent] || continent;
+    }
+    function pct(num, den) {
+      return den ? Math.round((num / den) * 100) : 0;
+    }
+    function fetchJson(path) {
+      return fetch(path).then((res) => {
+        if (!res.ok) throw new Error(path);
+        return res.json();
+      });
+    }
+    function stageKey(row) {
+      const raw = String(row?.law_stage || row?.event_stage || row?.legal_force || '').toLowerCase();
+      if (raw.includes('force') || raw.includes('binding')) return 'in_force';
+      if (raw.includes('draft') || raw.includes('proposed') || raw.includes('proposal')) return 'proposed';
+      if (raw.includes('guidance') || raw.includes('guideline') || raw.includes('warning') || raw.includes('advisory')) return 'guidelines';
+      if (raw.includes('review')) return 'review';
+      return 'other';
+    }
+    function regionFor(row) {
+      const slug = String(row?.country_dir || row?.country_slug || '').toLowerCase();
+      const label = String(row?.country_label || '').toLowerCase();
+      const match = countries.find((country) => (
+        country.slug === slug ||
+        String(country.dataKey || '').toLowerCase() === label ||
+        String(country.en || '').toLowerCase() === label ||
+        String(country.ko || '').toLowerCase() === label
+      ));
+      return match?.continent || match?.region || 'Other';
+    }
+    function rowText(row) {
+      return [
+        row?.policy_dimension_primary,
+        ...(row?.policy_dimension_tags || []),
+        ...(row?.risk_tags || []),
+        ...(row?.life_cycle_tags || []),
+        ...(row?.defense_layer_tags || []),
+        ...(row?.defense_subcodes || []),
+        ...(row?.topic_tags || []),
+        row?.clause_label,
+        row?.heading,
+        row?.file_name
+      ].join(' ').toLowerCase();
+    }
+    function countSpecificDocs(rows) {
+      return rows.filter((row) => {
+        const text = [
+          row.file_name,
+          row.relative_path,
+          row.classification_label,
+          row.document_type
+        ].join(' ').toLowerCase();
+        return /deepfake|deep synthesis|synthetic|ai-generated|generated ai|generative ai|digital replica|labeling/.test(text);
+      }).length;
+    }
+    function specificityTier(row) {
+      const text = [
+        row?.file_name,
+        row?.relative_path,
+        row?.classification_label,
+        row?.document_type
+      ].join(' ').toLowerCase();
+      if (/deepfake|deep fake|digital replica|deep synthesis/.test(text)) return 'specific';
+      if (/synthetic|ai-generated|generated ai|generative ai|labeling|watermark/.test(text)) return 'synthetic';
+      return 'adjacent';
+    }
+    function countryLabel(row) {
+      return String(row?.country_label || row?.country_dir || 'Unknown');
+    }
+    function documentCountForSlug(slug) {
+      return (data.inventory?.rows || []).filter((row) =>
+        String(row?.country_dir || '').toLowerCase() === String(slug || '').toLowerCase()
+      ).length;
+    }
+    function topEntries(obj, limit = 8) {
+      return Object.entries(obj || {})
+        .map(([name, value]) => {
+          if (value && typeof value === 'object') return [value.label || name, Number(value.count) || 0];
+          return [name, Number(value) || 0];
+        })
+        .filter(([, value]) => value > 0)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, limit);
+    }
+    function makeBarRows(entries, color = '#b87516') {
+      const max = Math.max(1, ...entries.map(([, value]) => value));
+      return entries.map(([name, value]) => `
+        <div class="bar-row">
+          <span>${esc(name)}</span>
+          <div class="bar-track"><div class="bar-fill" style="--w:${Math.max(3, pct(value, max))}%;--bar:${color};"></div></div>
+          <b>${fmt(value)}</b>
+        </div>
+      `).join('');
+    }
+    function summaryCount(group, re) {
+      return Object.entries(group || {}).reduce((sum, [key, value]) => {
+        const label = String((value && typeof value === 'object' ? value.label : key) || '');
+        const count = Number(value && typeof value === 'object' ? value.count : value) || 0;
+        return re.test(label.toLowerCase()) ? sum + count : sum;
+      }, 0);
+    }
+    function pathwayCounts(rows) {
+      const summary = data.coding?.summary || {};
+      const specs = [
+        { key:'ncii', labelIndex:0, re:/ncii|sexual|intimate|image[- ]based|consent/, count: summaryCount(summary.by_risk, /synthetic sexual|sexual/) },
+        { key:'election', labelIndex:1, re:/election|political|campaign|vote|voting/, count: Math.max(summaryCount(summary.by_primary_policy_dimension, /election/), summaryCount(summary.by_defense_subcode, /election/), summaryCount(summary.by_risk, /political/)) },
+        { key:'platform', labelIndex:2, re:/platform|provider|service|moderation|accountability|duty|duties/, count: Math.max(summaryCount(summary.by_primary_policy_dimension, /platform/), summaryCount(summary.by_defense_layer, /platform/)) },
+        { key:'labeling', labelIndex:3, re:/label|disclosure|watermark|provenance|transparency/, count: Math.max(summaryCount(summary.by_primary_policy_dimension, /disclosure|label/), summaryCount(summary.by_defense_layer, /provenance/)) + summaryCount(summary.by_defense_subcode, /disclosure|label|watermark|marker|transparency/) },
+        { key:'fraud', labelIndex:4, re:/fraud|impersonation|scam|identity|deception/, count: summaryCount(summary.by_risk, /fraud|impersonation/) },
+        { key:'privacy', labelIndex:5, re:/privacy|data protection|personality|publicity|reputation|consent/, count: Math.max(summaryCount(summary.by_primary_policy_dimension, /remedies|consent/), summaryCount(summary.by_defense_subcode, /consent/)) },
+        { key:'cybercrime', labelIndex:6, re:/cyber|computer misuse|online harm|public order/, count: countries.filter((country) => /cybercrime/i.test(`${country.status} ${country.dims} ${country.note}`)).length }
+      ];
+      return specs.map((spec) => ({
+        ...spec,
+        count: spec.count || rows.filter((row) => spec.re.test(rowText(row))).length
+      })).sort((a, b) => b.count - a.count);
+    }
+    function renderKpis() {
+      const t = T[lang()];
+      const inventoryRows = data.inventory?.rows || [];
+      const coding = data.coding || {};
+      const codingRows = coding.rows || [];
+      const jurisdictionCount = countries.length;
+      const docCount = inventoryRows.length;
+      const codedClauses = coding.total_coded_rows || codingRows.length;
+      const specificDocs = countSpecificDocs(inventoryRows);
+      const forceCounts = inventoryRows.reduce((acc, row) => {
+        const key = stageKey(row);
+        acc[key] = (acc[key] || 0) + 1;
+        return acc;
+      }, {});
+      const specificPct = pct(specificDocs, docCount);
+      const forceRows = ['in_force', 'proposed', 'guidelines'].map((key) => `
+        <div class="split-row"><span>${t.kpis.forceRows[key]}</span><b>${pct(forceCounts[key] || 0, docCount)}%</b></div>
+      `).join('');
+      document.getElementById('kpiGrid').innerHTML = [
+        `<article class="kpi-card"><div><strong>${fmt(jurisdictionCount)}</strong><span>${t.kpis.countries}</span><small>${esc(t.kpis.countriesNote)}</small></div></article>`,
+        `<article class="kpi-card"><div><strong>${fmt(docCount)}</strong><span>${t.kpis.docs}</span></div></article>`,
+        `<article class="kpi-card"><div><strong>${fmt(codedClauses)}</strong><span>${t.kpis.clauses}</span></div></article>`,
+        `<article class="kpi-card"><div><strong>${specificPct}%</strong><span>${t.kpis.specificity}</span></div><div class="kpi-split"><div class="split-row"><span>${t.kpis.specific}</span><b>${fmt(specificDocs)}</b></div><div class="split-row"><span>${t.kpis.general}</span><b>${fmt(Math.max(0, docCount - specificDocs))}</b></div></div></article>`,
+        `<article class="kpi-card"><div><strong>${pct(forceCounts.in_force || 0, docCount)}%</strong><span>${t.kpis.force}</span></div><div class="kpi-split">${forceRows}</div></article>`
+      ].join('');
+    }
+    function renderFragmentation() {
+      const t = T[lang()];
+      const rows = data.coding?.rows || [];
+      document.getElementById('fragmentTitle').textContent = t.fragmentTitle;
+      document.getElementById('fragmentLead').textContent = t.fragmentLead;
+      document.getElementById('fragmentKicker').textContent = t.fragmentKicker;
+      document.getElementById('fragmentCopy').textContent = t.fragmentCopy;
+      const counts = pathwayCounts(rows);
+      document.getElementById('pathwayGrid').innerHTML = counts.map((item) => {
+        const [title, desc] = t.pathways[item.labelIndex];
+        return `<article class="pathway-card">
+          <div class="pathway-top"><h3>${esc(title)}</h3><strong>${fmt(item.count)}</strong></div>
+          <p>${esc(desc)}</p>
+        </article>`;
+      }).join('');
+    }
+    function renderCoverage() {
+      const t = T[lang()];
+      const rows = data.inventory?.rows || [];
+      const regions = ['Asia', 'Europe', 'Africa', 'Middle East', 'Americas', 'Oceania'];
+      const tiers = ['specific', 'synthetic', 'adjacent'];
+      const byCountry = rows.reduce((acc, row) => {
+        const key = countryLabel(row);
+        acc[key] = (acc[key] || 0) + 1;
+        return acc;
+      }, {});
+      const countryEntries = Object.entries(byCountry).sort((a, b) => b[1] - a[1]);
+      const topFive = countryEntries.slice(0, 5).reduce((sum, [, count]) => sum + count, 0);
+      const topFivePct = pct(topFive, rows.length);
+      document.getElementById('coverageTitle').textContent = t.coverageTitle;
+      document.getElementById('coverageLead').textContent = t.coverageLead;
+      document.getElementById('coverageKicker').textContent = t.coverageKicker;
+      document.getElementById('topCountriesTitle').textContent = t.topCountriesTitle;
+      document.getElementById('regionDocsTitle').textContent = t.regionDocsTitle;
+      document.getElementById('regionTierTitle').textContent = t.regionTierTitle;
+      document.getElementById('coverageCaveat').textContent = t.coverageCaveat;
+      document.getElementById('coverageInsights').innerHTML = [
+        `<article class="coverage-insight"><strong>${topFivePct}%</strong><span>${esc(t.coverageInsights.concentration)}</span></article>`,
+        `<article class="coverage-insight"><strong>Language</strong><span>${esc(t.coverageInsights.languages)}</span></article>`,
+        `<article class="coverage-insight"><strong>N/A ≠ 0</strong><span>${esc(t.coverageInsights.missing)}</span></article>`
+      ].join('');
+      document.getElementById('topCountriesChart').innerHTML = makeBarRows(countryEntries.slice(0, 10), '#b87516');
+      const regionCounts = rows.reduce((acc, row) => {
+        const key = regionFor(row);
+        acc[key] = (acc[key] || 0) + 1;
+        return acc;
+      }, {});
+      document.getElementById('regionDocsChart').innerHTML = makeBarRows(
+        regions.map((region) => [continentLabel(region), regionCounts[region] || 0]),
+        '#5577a6'
+      );
+      const tierGroups = rows.reduce((acc, row) => {
+        const region = regionFor(row);
+        const tier = specificityTier(row);
+        acc[region] ||= {};
+        acc[region][tier] = (acc[region][tier] || 0) + 1;
+        return acc;
+      }, {});
+      document.getElementById('regionTierChart').innerHTML = regions.map((region) => {
+        const counts = tierGroups[region] || {};
+        const total = tiers.reduce((sum, tier) => sum + (counts[tier] || 0), 0);
+        const segments = tiers.filter((tier) => counts[tier]).map((tier) =>
+          `<span class="stack-seg" title="${esc(t.tiers[tier])}: ${fmt(counts[tier])}" style="--w:${pct(counts[tier], total)}%;--c:${TIER_COLORS[tier]};"></span>`
+        ).join('');
+        return `<div class="stacked-row"><span>${esc(continentLabel(region))}</span><div class="stacked-track">${segments}</div><b>${fmt(total)}</b></div>`;
+      }).join('');
+      document.getElementById('regionTierLegend').innerHTML = tiers.map((tier) =>
+        `<span><i style="--c:${TIER_COLORS[tier]}"></i>${esc(t.tiers[tier])}</span>`
+      ).join('');
+    }
+    function renderResponseTimelines() {
+      const t = T[lang()];
+      const entries = data.responses?.entries || [];
+      const fixed = entries.filter((entry) => entry.deadline_type === 'fixed');
+      const qualitative = entries.filter((entry) => entry.deadline_type === 'qualitative');
+      const maxHours = Math.max(1, ...fixed.map((entry) => Number(entry.deadline_hours) || 0));
+      document.getElementById('responseTitle').textContent = t.responseTitle;
+      document.getElementById('responseLead').textContent = t.responseLead;
+      document.getElementById('responseKicker').textContent = t.responseKicker;
+      document.getElementById('responseCaveat').textContent = t.responseCaveat;
+      document.getElementById('responseScale').innerHTML = fixed.length ? fixed.map((entry) => `
+        <article class="response-row">
+          <span class="response-country">${esc(entry.jurisdiction)}</span>
+          <div class="response-track"><div class="response-fill" style="--w:${Math.max(8, pct(entry.deadline_hours, maxHours))}%"></div></div>
+          <span class="response-hours">${fmt(entry.deadline_hours)}h</span>
+          <div class="response-detail">${esc(entry.trigger)} · ${esc(entry.scope)} · <a href="${esc(entry.source_url)}" target="_blank" rel="noopener noreferrer">${esc(t.officialSource)}</a></div>
+        </article>
+      `).join('') : `<p class="loading">${esc(t.loading)}</p>`;
+      document.getElementById('responseQualitative').innerHTML = qualitative.map((entry) => `
+        <article class="qualitative-row">
+          <span class="response-country">${esc(entry.jurisdiction)}</span>
+          <p><strong>${esc(entry.deadline_label)}</strong> · ${esc(entry.trigger)}. ${esc(entry.required_action)}</p>
+          <a class="qualitative-source" href="${esc(entry.source_url)}" target="_blank" rel="noopener noreferrer">${esc(t.officialSource)}</a>
+        </article>
+      `).join('');
+    }
+    function renderDimensionHeatmap() {
+      const t = T[lang()];
+      const source = data.dimensions || {};
+      const dimensions = source.policy_dimensions || [];
+      const rows = (source.rows || []).filter((row) => row.level === 'country');
+      const grouped = rows.reduce((acc, row) => {
+        acc[row.group] ||= {};
+        acc[row.group][row.dimension] = Number(row.clause_rows) || 0;
+        return acc;
+      }, {});
+      const countriesByEvidence = Object.entries(grouped)
+        .map(([name, values]) => [name, dimensions.reduce((sum, dimension) => sum + (values[dimension] || 0), 0)])
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 16)
+        .map(([name]) => name);
+      const max = Math.max(1, ...rows.map((row) => Number(row.clause_rows) || 0));
+      const host = document.getElementById('dimensionHeatmap');
+      document.getElementById('heatmapTitle').textContent = t.heatmapTitle;
+      document.getElementById('heatmapLead').textContent = t.heatmapLead;
+      document.getElementById('heatmapKicker').textContent = t.heatmapKicker;
+      document.getElementById('heatmapCaveat').textContent = t.heatmapCaveat;
+      host.style.gridTemplateColumns = `minmax(150px, 1.35fr) repeat(${dimensions.length}, minmax(105px, 1fr))`;
+      host.innerHTML = [
+        '<span class="heatmap-label is-head"></span>',
+        ...dimensions.map((dimension) => `<span class="heatmap-label is-head">${esc(dimension)}</span>`),
+        ...countriesByEvidence.flatMap((country) => [
+          `<span class="heatmap-label">${esc(country)}</span>`,
+          ...dimensions.map((dimension) => {
+            const value = grouped[country]?.[dimension] || 0;
+            const alpha = value ? (0.10 + (value / max) * 0.72).toFixed(2) : 0.04;
+            const ink = value / max > 0.56 ? '#ffffff' : '#5f3b09';
+            return `<span class="heatmap-cell" title="${esc(country)} · ${esc(dimension)}: ${fmt(value)}" style="--alpha:${alpha};--cell-ink:${ink}">${fmt(value)}</span>`;
+          })
+        ])
+      ].join('');
+    }
+    function renderWordcloud() {
+      const t = T[lang()];
+      const mode = activeWordMode();
+      document.getElementById('wordTitle').textContent = t.wordTitle;
+      document.getElementById('wordLead').textContent = t.wordLead;
+      document.getElementById('wordExplain').textContent = t.wordExplain?.[mode] || '';
+      document.getElementById('wordTools').innerHTML = `
+        <button type="button" data-word="source" class="${mode === 'source' ? 'is-active' : ''}">${t.wordButtons.source}</button>
+        <button type="button" data-word="kor" class="${mode === 'kor' ? 'is-active' : ''}">${t.wordButtons.kor}</button>
+        <button type="button" data-word="context" class="${mode === 'context' ? 'is-active' : ''}">${t.wordButtons.context}</button>
+      `;
+      document.querySelectorAll('[data-word]').forEach((btn) => btn.addEventListener('click', () => {
+        wordMode = btn.dataset.word;
+        renderWordcloud();
+      }));
+      const global = data.wordcloud?.global || {};
+      const buckets = {
+        source: global.official_law_text || [],
+        kor: global.official_law_text_kor || global.official_law_text || [],
+        context: global.context_layer_text_kor || []
+      };
+      const top = (buckets[mode] || []).slice(0, 76);
+      const cloud = document.getElementById('wordCloud');
+      if (!top.length) {
+        cloud.className = 'wordcloud-empty';
+        cloud.textContent = t.loading;
+        return;
+      }
+      const palette = ['#12355b', '#0b6e69', '#b7791f', '#7c2d12', '#334155', '#1d4ed8', '#0f766e'];
+      const max = Math.max(1, ...top.map((item) => Number(item.value || item.count || 0)));
+      cloud.className = 'wordcloud-cloud';
+      cloud.innerHTML = top.map((item, index) => {
+        const value = Number(item.value || item.count || 0);
+        const weight = Math.sqrt(value / max);
+        const size = 0.78 + weight * 2.35;
+        const color = palette[index % palette.length];
+        const tilt = index % 8 === 0 ? -2 : (index % 7 === 0 ? 2 : 0);
+        const title = `${item.text || item.word || item.term || ''}: ${value}`;
+        return `<span class="word-term" title="${esc(title)}" style="--term-size:${size.toFixed(2)}rem;--term-color:${color};--term-tilt:${tilt}deg;">${esc(item.text || item.word || item.term)}</span>`;
+      }).join('');
+    }
+    function renderRegionChart() {
+      const t = T[lang()];
+      const rows = data.inventory?.rows || [];
+      const regions = ['Asia', 'Europe', 'Africa', 'Middle East', 'Americas', 'Oceania'];
+      const stages = ['in_force', 'proposed', 'guidelines', 'review', 'other'];
+      const grouped = rows.reduce((acc, row) => {
+        const region = regionFor(row);
+        const stage = stageKey(row);
+        acc[region] ||= {};
+        acc[region][stage] = (acc[region][stage] || 0) + 1;
+        return acc;
+      }, {});
+      document.getElementById('regionChartTitle').textContent = t.regionChartTitle;
+      document.getElementById('regionChart').innerHTML = regions.map((region) => {
+        const counts = grouped[region] || {};
+        const total = stages.reduce((sum, key) => sum + (counts[key] || 0), 0);
+        const segs = stages.filter((key) => counts[key]).map((key) => `<span class="stack-seg" title="${esc(t.stage[key])}: ${fmt(counts[key])}" style="--w:${pct(counts[key], total)}%;--c:${STAGE_COLORS[key]};"></span>`).join('');
+        return `<div class="stacked-row"><span>${esc(continentLabel(region))}</span><div class="stacked-track">${segs}</div><b>${fmt(total)}</b></div>`;
+      }).join('');
+      document.getElementById('regionLegend').innerHTML = stages.map((key) => `<span><i style="--c:${STAGE_COLORS[key]}"></i>${esc(t.stage[key])}</span>`).join('');
+    }
+    function renderCharts() {
+      const t = T[lang()];
+      const summary = data.coding?.summary || {};
+      const rows = data.inventory?.rows || [];
+      document.getElementById('policyChartTitle').textContent = t.policyChartTitle;
+      document.getElementById('riskChartTitle').textContent = t.riskChartTitle;
+      document.getElementById('forceChartTitle').textContent = t.forceChartTitle;
+      document.getElementById('policyChart').innerHTML = makeBarRows(topEntries(summary.by_primary_policy_dimension, 8), '#b87516');
+      document.getElementById('riskChart').innerHTML = makeBarRows(topEntries(summary.by_risk, 8), '#5577a6');
+      const forceCounts = rows.reduce((acc, row) => {
+        const key = stageKey(row);
+        acc[t.stage[key]] = (acc[t.stage[key]] || 0) + 1;
+        return acc;
+      }, {});
+      document.getElementById('forceChart').innerHTML = makeBarRows(topEntries(forceCounts, 8), '#0f172a');
+      document.getElementById('forceLegend').innerHTML = Object.keys(STAGE_COLORS).map((key) => `<span><i style="--c:${STAGE_COLORS[key]}"></i>${esc(t.stage[key])}</span>`).join('');
+      renderRegionChart();
+    }
+    function renderTimeline() {
+      const t = T[lang()];
+      const rows = data.inventory?.rows || [];
+      const stages = ['in_force', 'proposed', 'guidelines', 'review', 'other'];
+      const byYear = rows.reduce((acc, row) => {
+        const year = Number(row.event_year) || Number(String(row.event_date || '').slice(0, 4)) || null;
+        if (!year) return acc;
+        const stage = stageKey(row);
+        acc[year] ||= {};
+        acc[year][stage] = (acc[year][stage] || 0) + 1;
+        return acc;
+      }, {});
+      const years = Object.keys(byYear).map(Number).sort((a, b) => a - b);
+      document.getElementById('timelineTitle').textContent = t.timelineTitle;
+      document.getElementById('timelineLead').textContent = t.timelineLead;
+      document.getElementById('timelineKicker').textContent = t.timelineKicker;
+      document.getElementById('timelineChart').innerHTML = years.map((year) => {
+        const counts = byYear[year];
+        const total = stages.reduce((sum, key) => sum + (counts[key] || 0), 0);
+        const segs = stages.filter((key) => counts[key]).map((key) => `<span class="stack-seg" title="${esc(t.stage[key])}: ${fmt(counts[key])}" style="--w:${pct(counts[key], total)}%;--c:${STAGE_COLORS[key]};"></span>`).join('');
+        return `<div class="timeline-row"><span>${year}</span><div class="stacked-track">${segs}</div><b>${fmt(total)}</b></div>`;
+      }).join('');
+      document.getElementById('timelineLegend').innerHTML = stages.map((key) => `<span><i style="--c:${STAGE_COLORS[key]}"></i>${esc(t.stage[key])}</span>`).join('');
+    }
+    function renderFallbackPins(stage, l) {
+      stage.querySelectorAll('.pin').forEach((el) => el.remove());
+      countries.forEach((c) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'pin' + (open.includes(c.slug) ? ' is-open' : '');
+        btn.style.setProperty('--x', c.x + '%');
+        btn.style.setProperty('--y', c.y + '%');
+        btn.dataset.slug = c.slug;
+        btn.dataset.label = l === 'ko' ? c.ko : c.en;
+        btn.textContent = c.code;
+        btn.addEventListener('click', () => toggle(c.slug));
+        stage.appendChild(btn);
+      });
+    }
+    function ensurePolicyMap() {
+      const host = document.getElementById('policyMap');
+      if (!host || policyMap || !window.maplibregl) return;
+      policyMap = new maplibregl.Map({
+        container: host,
+        style: 'https://tiles.openfreemap.org/styles/bright',
+        center: [28, 22],
+        zoom: 1.15,
+        attributionControl: true
+      });
+      policyMap.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+      policyMap.on('load', () => {
+        policyMap.fitBounds([[-130, -48], [154, 64]], { padding: 36, duration: 0 });
+        renderPolicyMapMarkers();
+      });
+    }
+    function renderPolicyMapMarkers() {
+      if (!policyMap || !window.maplibregl) return;
+      const l = lang();
+      countries.forEach((c) => {
+        let item = policyMapMarkers.get(c.slug);
+        if (!item) {
+          const el = document.createElement('button');
+          el.type = 'button';
+          el.className = 'map-marker';
+          el.textContent = c.code;
+          el.setAttribute('aria-label', l === 'ko' ? c.ko : c.en);
+          el.addEventListener('click', (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            toggle(c.slug);
+          });
+          const popup = new maplibregl.Popup({ offset: 18, closeButton: false, closeOnClick: false })
+            .setHTML(`<strong>${esc(l === 'ko' ? c.ko : c.en)}</strong><br>${esc(continentLabel(c.continent || c.region, l))}`);
+          const marker = new maplibregl.Marker({ element: el, anchor: 'center' })
+            .setLngLat([c.lng, c.lat])
+            .setPopup(popup)
+            .addTo(policyMap);
+          item = { el, marker, popup };
+          policyMapMarkers.set(c.slug, item);
+        }
+        item.el.classList.toggle('is-open', open.includes(c.slug));
+        item.el.classList.toggle('is-thin', Boolean(data.inventory) && documentCountForSlug(c.slug) < 2);
+        item.el.setAttribute('aria-label', l === 'ko' ? c.ko : c.en);
+        item.popup.setHTML(`<strong>${esc(l === 'ko' ? c.ko : c.en)}</strong><br>${esc(continentLabel(c.continent || c.region, l))} · ${fmt(documentCountForSlug(c.slug))} docs`);
+      });
+      if (policyMapMarkers.size) policyMap.resize();
+    }
+    function renderAnalytics() {
+      if (!data.inventory || !data.coding) {
+        document.getElementById('kpiGrid').innerHTML = `<article class="kpi-card"><span>${T[lang()].loading}</span></article>`;
+        return;
+      }
+      renderKpis();
+      renderFragmentation();
+      renderCoverage();
+      renderResponseTimelines();
+      renderWordcloud();
+      renderCharts();
+      renderDimensionHeatmap();
+      renderTimeline();
+    }
+    function renderMap() {
+      const l = lang();
+      const t = T[l];
+      document.documentElement.lang = l;
+      document.getElementById('lang').value = l;
+      document.getElementById('eyebrow').textContent = t.eyebrow;
+      document.getElementById('title').textContent = t.title;
+      document.getElementById('lead').textContent = t.lead;
+      document.getElementById('mapTitle').textContent = t.mapTitle;
+      document.getElementById('mapNote').textContent = t.mapNote;
+      const stage = document.getElementById('mapStage');
+      ensurePolicyMap();
+      if (policyMap) {
+        stage.querySelectorAll('.pin').forEach((el) => el.remove());
+        renderPolicyMapMarkers();
+      } else {
+        renderFallbackPins(stage, l);
+      }
+      document.getElementById('memoCount').textContent = t.memoCount(open.length);
+      const panel = document.getElementById('memoPanel');
+      panel.innerHTML = open.length ? open.map((slug) => {
+        const c = countries.find((item) => item.slug === slug);
+        return `<article class="memo-card">
+          <h3>${l === 'ko' ? c.ko : c.en}</h3>
+          <p>${esc(c.note)}</p>
+          <div class="memo-meta">
+            <span class="memo-chip">${esc(continentLabel(c.continent || c.region, l))}</span>
+            <span class="memo-chip">${esc(c.status)}</span>
+            <span class="memo-chip">${esc(c.dims)}</span>
+          </div>
+          <div class="memo-actions">
+            <a class="memo-detail" href="${withLang('/w/DFGovernace/deepfake-policy/country/' + c.slug + '/index.html')}">${t.detail}</a>
+            <button class="memo-close" type="button" data-close="${c.slug}">${t.close}</button>
+          </div>
+        </article>`;
+      }).join('') : `<div class="memo-empty">${t.empty}</div>`;
+      panel.querySelectorAll('[data-close]').forEach((btn) => btn.addEventListener('click', () => toggle(btn.dataset.close, true)));
+    }
+    function render() {
+      renderMap();
+      renderAnalytics();
+    }
+    function toggle(slug, forceClose = false) {
+      if (open.includes(slug) || forceClose) open = open.filter((item) => item !== slug);
+      else {
+        if (open.length >= 4) open.shift();
+        open.push(slug);
+      }
+      render();
+    }
+    async function loadData() {
+      try {
+        const [inventory, coding, wordcloud, dimensions, responses] = await Promise.all([
+          fetchJson('/w/DFGovernace/api-static/document-inventory.json?v=20260708-brazil1'),
+          fetchJson('/w/DFGovernace/api-static/coding-results.json?v=20260708-brazil1'),
+          fetchJson('/w/DFGovernace/api-static/analysis-wordclouds.json?v=20260708-brazil1'),
+          fetchJson('/w/DFGovernace/api-static/analysis-dimension-scores.json?v=20260723-coverage1'),
+          fetchJson('/w/DFGovernace/api-static/removal-response-timelines.json?v=20260723-coverage1')
+        ]);
+        data = { inventory, coding, wordcloud, dimensions, responses };
+      } catch (err) {
+        console.warn('Dashboard analytics failed to load', err);
+      }
+      render();
+    }
+    document.getElementById('lang').addEventListener('change', (event) => {
+      try { localStorage.setItem(LANG_KEY, event.target.value); } catch (_) {}
+      const url = new URL(location.href);
+      url.searchParams.set('lang', event.target.value);
+      location.href = url.pathname + url.search + url.hash;
+    });
+    async function initializeDashboard() {
+      try {
+        countries = await fetchJson('/w/DFGovernace/api-static/jurisdictions.json?v=20260720-jurisdictions1');
+      } catch (error) {
+        console.warn('Dashboard jurisdiction data failed to load', error);
+        countries = [];
+      }
+      open = ['korea', 'china'].filter((slug) => countries.some((country) => country.slug === slug));
+      render();
+      loadData();
+    }
+    initializeDashboard();
+  </script>
+  <script src="/w/DFGovernace/deepfake-policy/dashboard-shell.js?v=20260720-jurisdictions1"></script>
+</body>
+</html>

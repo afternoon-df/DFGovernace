@@ -1,0 +1,22 @@
+{
+  "country": "Italy",
+  "penalties": [
+    {
+      "country": "Italy",
+      "law_id": "IT_LAW_132_2025_ART_612_QUATER",
+      "offense_id": "it_harmful_ai_falsified_media_distribution",
+      "offense_label": "Non-consensual dissemination of harmful AI-falsified media",
+      "deepfake_scope": "non_consensual_harmful_synthetic_media",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "12-60 months",
+      "aggravation": "The law lists circumstances permitting ex officio prosecution rather than a separately verified higher sentencing range.",
+      "aggravated_penalty": "No separate aggravated numeric range verified in Art. 612-quater.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-07-20"
+    }
+  ]
+}

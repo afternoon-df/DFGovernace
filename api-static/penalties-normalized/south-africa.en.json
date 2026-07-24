@@ -1,0 +1,22 @@
+{
+  "country": "South Africa",
+  "penalties": [
+    {
+      "country": "South Africa",
+      "law_id": "ZA_CYBERCRIMES_ACT_19_2020",
+      "offense_id": "za_simulated_intimate_image_disclosure",
+      "offense_label": "Non-consensual disclosure of real or simulated intimate images",
+      "deepfake_scope": "non_consensual_simulated_intimate",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "<=36 months",
+      "aggravation": "No separate aggravated numeric tier verified in s. 19(7).",
+      "aggravated_penalty": "None separately verified.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-07-20"
+    }
+  ]
+}

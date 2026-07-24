@@ -1,0 +1,47 @@
+{
+  "country": "EU",
+  "documents": [
+    {
+      "resource_dir": "EU",
+      "name": "eu-2022-dsa.pdf",
+      "relative_path": "1_official-law-act/eu-2022-dsa.pdf",
+      "legacy_relative_path": "eu-2022-dsa.pdf",
+      "extension": ".pdf",
+      "classification_code": 1,
+      "classification_folder": "1_official-law-act",
+      "classification_label": "Official Law / Act",
+      "context_layer": "core_legal",
+      "legal_force": "binding_in_force",
+      "core_evidence_allowed": true,
+      "document_type": "official_law_act",
+      "law_stage": "in_force",
+      "url": "/resource/EU/1_official-law-act/eu-2022-dsa.pdf",
+      "event_date": "2022-10-19",
+      "event_year": 2022,
+      "event_stage": "in_force",
+      "timeline_source": "metadata",
+      "law_unit_key": "eu-2022-dsa"
+    },
+    {
+      "resource_dir": "EU",
+      "name": "EU-2025-EU_AI_ACt.pdf",
+      "relative_path": "1_official-law-act/EU-2025-EU_AI_ACt.pdf",
+      "legacy_relative_path": "EU-2025-EU_AI_ACt.pdf",
+      "extension": ".pdf",
+      "classification_code": 1,
+      "classification_folder": "1_official-law-act",
+      "classification_label": "Official Law / Act",
+      "context_layer": "core_legal",
+      "legal_force": "binding_in_force",
+      "core_evidence_allowed": true,
+      "document_type": "official_law_act",
+      "law_stage": "in_force",
+      "url": "/resource/EU/1_official-law-act/EU-2025-EU_AI_ACt.pdf",
+      "event_date": "2025-01-01",
+      "event_year": 2025,
+      "event_stage": "in_force",
+      "timeline_source": "metadata",
+      "law_unit_key": "eu-2025-eu_ai_act"
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "penalties": [
+    {
+      "country": "European Union",
+      "law_id": "EU_AI_ACT_DSA",
+      "offense_id": "eu_transparency_platform_noncompliance",
+      "offense_label": "AI transparency and platform-duty noncompliance",
+      "deepfake_scope": "platform_noncompliance",
+      "sanction_channel": "administrative",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Severity may increase based on risk scale, systemic impact, and repeated noncompliance.",
+      "aggravated_penalty": "Escalated administrative measures/fines may apply under EU enforcement pathways.",
+      "refs": [
+        "Ref1",
+        "Ref2"
+      ],
+      "last_verified_at": "2026-03-10"
+    },
+    {
+      "country": "United Kingdom",
+      "law_id": "UK_OSA_2023",
+      "offense_id": "uk_non_consensual_intimate_synthetic",
+      "offense_label": "Non-consensual intimate/sexual synthetic content harms",
+      "deepfake_scope": "non_consensual",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Aggravating factors may apply depending on offense context and harm severity.",
+      "aggravated_penalty": "Exact aggravated penalty values pending latest official article-level verification.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-03-10"
+    },
+    {
+      "country": "France",
+      "law_id": "FR_SREN_2024",
+      "offense_id": "fr_platform_safety_noncompliance",
+      "offense_label": "Platform-safety and digital-service noncompliance linked to synthetic harms",
+      "deepfake_scope": "platform_noncompliance",
+      "sanction_channel": "administrative",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Aggravation may depend on harm scale and repeated compliance failures.",
+      "aggravated_penalty": "Precise aggravated levels require latest official article-by-article extraction.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-03-10"
+    },
+    {
+      "country": "Germany",
+      "law_id": "DE_BUNDESRAT_DEEPFAKE_DRAFT",
+      "offense_id": "de_personality_rights_deepfake_draft",
+      "offense_label": "Draft criminal protection of personality rights against deepfakes",
+      "deepfake_scope": "non_consensual",
+      "sanction_channel": "criminal",
+      "effective_status": "proposed",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Aggravation is expected to depend on harm severity and distribution context once finalized.",
+      "aggravated_penalty": "Proposed-stage only; exact aggravated ranges pending enacted text.",
+      "refs": [
+        "Ref1",
+        "Ref2"
+      ],
+      "last_verified_at": "2026-03-10"
+    },
+    {
+      "country": "Italy",
+      "law_id": "IT_LAW_132_2025_ART_612_QUATER",
+      "offense_id": "it_harmful_ai_falsified_media_distribution",
+      "offense_label": "Non-consensual dissemination of harmful AI-falsified media",
+      "deepfake_scope": "non_consensual_harmful_synthetic_media",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "12-60 months",
+      "aggravation": "The law lists circumstances permitting ex officio prosecution rather than a separately verified higher sentencing range.",
+      "aggravated_penalty": "No separate aggravated numeric range verified in Art. 612-quater.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-07-20"
+    },
+    {
+      "country": "Korea",
+      "law_id": "KR_AI_BASIC_ACT_AND_SUBORDINATE_RULES",
+      "offense_id": "kr_non_consensual_and_platform_duties",
+      "offense_label": "Non-consensual synthetic-content offenses and platform-duty violations",
+      "deepfake_scope": "non_consensual",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Aggravation may apply by offense type, dissemination scale, and victim impact.",
+      "aggravated_penalty": "Exact aggravated ranges should be confirmed against latest official consolidated articles.",
+      "refs": [
+        "Ref2",
+        "Ref4"
+      ],
+      "last_verified_at": "2026-03-10"
+    },
+    {
+      "country": "China",
+      "law_id": "CN_DEEP_SYNTHESIS_2022",
+      "offense_id": "cn_labeling_and_platform_compliance",
+      "offense_label": "Labeling and platform-compliance violations for deep-synthesis services",
+      "deepfake_scope": "labeling_violation",
+      "sanction_channel": "administrative",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Escalation may occur where violations cause broader public-order harm.",
+      "aggravated_penalty": "Escalated administrative/criminal handling may apply under related laws.",
+      "refs": [
+        "Ref1",
+        "Ref2",
+        "Ref3"
+      ],
+      "last_verified_at": "2026-03-10"
+    },
+    {
+      "country": "Japan",
+      "law_id": "JP_APPI_2026",
+      "offense_id": "jp_appi_personal_information_misuse_adjacent",
+      "offense_label": "Adjacent personal-information misuse and order-violation penalties",
+      "deepfake_scope": "privacy_data_adjacent",
+      "sanction_channel": "mixed",
+      "effective_status": "in_force",
+      "fine_range": "<=100000000 JPY",
+      "prison_range_months": "<=24 months",
+      "aggravation": "Corporate fine up to 100 million yen applies to Article 178/179 violation categories under Article 184.",
+      "aggravated_penalty": "Individuals: up to 2 years imprisonment or 1 million yen for selected violations; corporations: up to 100 million yen for Article 178/179 categories.",
+      "refs": [
+        "Ref2"
+      ],
+      "last_verified_at": "2026-07-20"
+    },
+    {
+      "country": "Singapore",
+      "law_id": "SG_ELECTIONS_ONLINE_ADVERTISING_ACT_34_2024",
+      "offense_id": "sg_false_candidate_election_advertising",
+      "offense_label": "Publishing election advertising with a realistic but false digitally generated or manipulated candidate representation",
+      "deepfake_scope": "election_candidate_deepfake",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "<=1000 SGD",
+      "prison_range_months": "<=12 months",
+      "aggravation": "No separate aggravated tier was identified in the reviewed offence clauses.",
+      "aggravated_penalty": "None separately specified.",
+      "refs": [
+        "Ref1",
+        "Ref4"
+      ],
+      "last_verified_at": "2026-07-23"
+    },
+    {
+      "country": "Singapore",
+      "law_id": "SG_ELECTIONS_ONLINE_ADVERTISING_ACT_34_2024",
+      "offense_id": "sg_social_media_provider_direction_noncompliance",
+      "offense_label": "Social media service provider failure to comply with an election-law direction without reasonable excuse",
+      "deepfake_scope": "election_platform_noncompliance",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "<=1000000 SGD",
+      "prison_range_months": "",
+      "aggravation": "The higher ceiling is an actor-specific provider tier, not a separately identified aggravating circumstance.",
+      "aggravated_penalty": "None separately specified beyond the provider-specific maximum.",
+      "refs": [
+        "Ref1",
+        "Ref4"
+      ],
+      "last_verified_at": "2026-07-23"
+    },
+    {
+      "country": "Singapore",
+      "law_id": "SG_ELECTIONS_ONLINE_ADVERTISING_ACT_34_2024",
+      "offense_id": "sg_other_relevant_person_direction_noncompliance",
+      "offense_label": "Other relevant person's failure to comply with an election-law direction without reasonable excuse",
+      "deepfake_scope": "election_direction_noncompliance",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "<=1000 SGD",
+      "prison_range_months": "<=12 months",
+      "aggravation": "No separate aggravated tier was identified in the reviewed clauses.",
+      "aggravated_penalty": "None separately specified.",
+      "refs": [
+        "Ref1",
+        "Ref4"
+      ],
+      "last_verified_at": "2026-07-23"
+    },
+    {
+      "country": "India",
+      "law_id": "IN_IT_RULES_AND_DRAFT_NOTICE",
+      "offense_id": "in_intermediary_noncompliance_and_synthetic_harms",
+      "offense_label": "Intermediary noncompliance and synthetic-harm handling offenses",
+      "deepfake_scope": "platform_noncompliance",
+      "sanction_channel": "administrative",
+      "effective_status": "proposed",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Aggravation may depend on harm profile and repeated platform noncompliance.",
+      "aggravated_penalty": "Final aggravated penalty levels are pending post-draft finalization.",
+      "refs": [
+        "Ref1",
+        "Ref2",
+        "Ref3"
+      ],
+      "last_verified_at": "2026-03-10"
+    },
+    {
+      "country": "Pakistan",
+      "law_id": "PK_PECA_2016_2025_AMENDMENT",
+      "offense_id": "pk_social_media_unlawful_content_noncompliance",
+      "offense_label": "Unlawful/offensive social-media content and platform noncompliance",
+      "deepfake_scope": "platform_noncompliance",
+      "sanction_channel": "administrative",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Aggravation may apply depending on content severity, public-order risk, and repeated noncompliance.",
+      "aggravated_penalty": "Exact aggravated schedules require latest official clause-by-clause verification.",
+      "refs": [
+        "Ref1",
+        "Ref2"
+      ],
+      "last_verified_at": "2026-03-10"
+    },
+    {
+      "country": "Taiwan",
+      "law_id": "TW_CRIMINAL_CODE_ART_319_4",
+      "offense_id": "tw_harmful_synthetic_sexual_images",
+      "offense_label": "Harmful synthetic sexual-image offence",
+      "deepfake_scope": "synthetic_sexual_image",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "<=500000 TWD",
+      "prison_range_months": "<=60 months",
+      "aggravation": "Commission for profit.",
+      "aggravated_penalty": "Up to seven years and fine up to NT$700,000.",
+      "refs": [
+        "Ref2"
+      ],
+      "last_verified_at": "2026-07-20"
+    },
+    {
+      "country": "Australia",
+      "law_id": "AU_C2024A00078",
+      "offense_id": "au_deepfake_sexual_material",
+      "offense_label": "Non-consensual deepfake sexual material offenses",
+      "deepfake_scope": "non_consensual",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Aggravation may depend on distribution scale, victim impact, and offense context.",
+      "aggravated_penalty": "Exact aggravated ranges require current consolidated article-level verification.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-03-10"
+    },
+    {
+      "country": "New Zealand",
+      "law_id": "NZ_BILL_213_1_2025",
+      "offense_id": "nz_synthetic_intimate_depiction_proposed",
+      "offense_label": "Proposed synthetic intimate-depiction coverage",
+      "deepfake_scope": "non_consensual_intimate",
+      "sanction_channel": "criminal",
+      "effective_status": "proposed",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Not specified in the reviewed amendment text.",
+      "aggravated_penalty": "Numeric range pending cross-reference; proposal-stage only.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-07-20"
+    },
+    {
+      "country": "United States",
+      "law_id": "US_TAKE_IT_DOWN",
+      "offense_id": "us_non_consensual_intimate_distribution",
+      "offense_label": "Non-consensual intimate/synthetic content circulation offenses",
+      "deepfake_scope": "non_consensual",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Aggravation may apply based on victim age, intent, repeat conduct, and distribution breadth.",
+      "aggravated_penalty": "Exact aggravated penalty values vary by jurisdiction and require state-level verification.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-03-10"
+    },
+    {
+      "country": "Mexico",
+      "law_id": "MX_LFDA_PERFORMER_AI_RIGHTS_2026",
+      "offense_id": "mx_performer_image_voice_ai_rights",
+      "offense_label": "Performer image/voice AI cloning and supplantation rights",
+      "deepfake_scope": "consent_likeness_voice",
+      "sanction_channel": "other",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Scope is strongest for performers/interpreters/executants and related-rights contexts.",
+      "aggravated_penalty": "Article-level monetary/criminal penalty values pending; treat as rights/remedy control rather than confirmed criminal penalty.",
+      "refs": [
+        "Ref2",
+        "Ref3"
+      ],
+      "last_verified_at": "2026-07-20"
+    },
+    {
+      "country": "Mexico",
+      "law_id": "MX_CPF_199_OCTIES_AI_INTIMATE_BILL_2026",
+      "offense_id": "mx_ai_intimate_content_proposed",
+      "offense_label": "Proposed AI-created intimate sexual content offense",
+      "deepfake_scope": "non_consensual_intimate",
+      "sanction_channel": "criminal",
+      "effective_status": "proposed",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Penalty values require enacted Federal Criminal Code text; current source is proposal-stage Gazette material.",
+      "aggravated_penalty": "Proposed-stage only; do not treat as in-force penalty.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-07-20"
+    },
+    {
+      "country": "Canada",
+      "law_id": "CA_BILL_C16_2025",
+      "offense_id": "ca_synthetic_intimate_image_proposed",
+      "offense_label": "Proposed synthetic intimate-image publication and threat offences",
+      "deepfake_scope": "non_consensual_intimate",
+      "sanction_channel": "criminal",
+      "effective_status": "proposed",
+      "fine_range": "",
+      "prison_range_months": "<=120 months",
+      "aggravation": "No separate aggravated range verified in the reviewed clause.",
+      "aggravated_penalty": "None separately verified; proposal-stage only.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-07-20"
+    },
+    {
+      "country": "United Arab Emirates",
+      "law_id": "UAE_FDL_34_2021",
+      "offense_id": "uae_cybercrime_synthetic_harms",
+      "offense_label": "Cybercrime-law offenses applicable to synthetic/deepfake harms",
+      "deepfake_scope": "non_consensual",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Aggravation may depend on victim impact, public-order harm, and dissemination context.",
+      "aggravated_penalty": "Exact aggravated ranges should be confirmed with latest official article-level text.",
+      "refs": [
+        "Ref1",
+        "Ref2"
+      ],
+      "last_verified_at": "2026-03-10"
+    },
+    {
+      "country": "Saudi Arabia",
+      "law_id": "SA_ANTI_CYBER_CRIME_M17_2007",
+      "offense_id": "sa_privacy_defamation_unlawful_dissemination",
+      "offense_label": "Privacy/reputation and unlawful dissemination harms via synthetic media",
+      "deepfake_scope": "non_consensual",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Aggravation may occur depending on public-order impact and severity of privacy/reputation harm.",
+      "aggravated_penalty": "Exact aggravated ranges require article-level confirmation in current official text.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-03-10"
+    },
+    {
+      "country": "Egypt",
+      "law_id": "EG_LAW_175_2018",
+      "offense_id": "eg_false_attribution_privacy_adjacent",
+      "offense_label": "Adjacent false-attribution and privacy cybercrime offences",
+      "deepfake_scope": "impersonation_privacy_adjacent",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "",
+      "aggravation": "Apparent enhanced punishment where false attribution is used to cause harm; OCR verification pending.",
+      "aggravated_penalty": "Exact range not entered until the official page image is verified.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-07-20"
+    },
+    {
+      "country": "South Africa",
+      "law_id": "ZA_CYBERCRIMES_ACT_19_2020",
+      "offense_id": "za_simulated_intimate_image_disclosure",
+      "offense_label": "Non-consensual disclosure of real or simulated intimate images",
+      "deepfake_scope": "non_consensual_simulated_intimate",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": "",
+      "prison_range_months": "<=36 months",
+      "aggravation": "No separate aggravated numeric tier verified in s. 19(7).",
+      "aggravated_penalty": "None separately verified.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-07-20"
+    },
+    {
+      "country": "Tanzania",
+      "law_id": "TZ_CYBERCRIMES_ACT_2015_S15",
+      "offense_id": "tz_computer_impersonation_adjacent",
+      "offense_label": "Computer impersonation offence adjacent to deepfake harms",
+      "deepfake_scope": "impersonation_adjacent",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": ">=5000000 TZS",
+      "prison_range_months": ">=84 months",
+      "aggravation": "Alternative fine can be three times the undue advantage; no separate aggravated tier verified.",
+      "aggravated_penalty": "No separate range verified.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-07-20"
+    },
+    {
+      "country": "Tanzania",
+      "law_id": "TZ_CYBERCRIMES_ACT_2015_S16",
+      "offense_id": "tz_false_misleading_information_adjacent",
+      "offense_label": "False, deceptive, or misleading computer information offence",
+      "deepfake_scope": "deceptive_information_adjacent",
+      "sanction_channel": "criminal",
+      "effective_status": "in_force",
+      "fine_range": ">=5000000 TZS",
+      "prison_range_months": ">=36 months",
+      "aggravation": "Listed harmful intent is an offence element; no separate aggravated tier verified.",
+      "aggravated_penalty": "No separate range verified.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-07-20"
+    }
+  ]
+}

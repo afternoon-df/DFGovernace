@@ -1,0 +1,17 @@
+{
+  "country": "egypt",
+  "refs": [
+    {
+      "ref": "Ref1",
+      "source": "sources/official/egypt/1_official-law-act/egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar.pdf",
+      "type": "Act/Law`; in force.",
+      "uses": [
+        "OCR p. 16, apparent Art. 24: creating an email, site, or private account and falsely attributing it to another person; enhanced punishment where used to cause harm.",
+        "OCR pp. 16-17, apparent Art. 25: privacy and unlawful-information-content offences.",
+        "OCR pp. 5-7 and 18-20: service-provider data duties and corresponding sanctions."
+      ],
+      "verification": "Article numerals are OCR-sensitive and require visual confirmation before quotation.",
+      "url": "/resource/egypt/1_official-law-act/egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar.pdf"
+    }
+  ]
+}

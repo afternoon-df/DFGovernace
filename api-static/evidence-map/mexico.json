@@ -1,0 +1,63 @@
+{
+  "country": "mexico",
+  "refs": [
+    {
+      "ref": "Ref1",
+      "source": "sources/official/mexico/2_draft/mexico-2026-federal-criminal-code-ai-intimate-content-bill-gazette.pdf",
+      "type": "Bill/Proposed law",
+      "uses": [
+        "proposed criminal-law treatment of AI-created intimate sexual content",
+        "non-consensual deepfake status",
+        "proposed penalty/sanctions status",
+        "Gazette heading, normalized lines 7 and 15-17: proposal to add Article 199 Octies to the Federal Criminal Code on creation of intimate content through AI.",
+        "Explanatory text, normalized lines 32-34: defines deepfakes as AI-generated video/image/audio imitating appearance and sound.",
+        "Harm framing, normalized line 81 area: links deepfakes to revenge dissemination of intimate/sexually explicit content without consent.",
+        "Proposed Article 199 Octies text, normalized lines 90-97: use of AI techniques/applications/programs for creation, manipulation, and distribution of video, audio, images, or prints with intimate sexual content without consent, approval, or authorization."
+      ],
+      "verification": "Primary proposal-stage criminal-law anchor; not treated as in force",
+      "url": "/resource/mexico/2_draft/mexico-2026-federal-criminal-code-ai-intimate-content-bill-gazette.pdf"
+    },
+    {
+      "ref": "Ref2",
+      "source": "sources/official/mexico/1_official-law-act/mexico-2026-labor-copyright-performers-ai-rights-dof-decree.pdf",
+      "type": "Act/Law",
+      "uses": [
+        "enacted labor/copyright reform for performer image/voice AI use",
+        "consent, contract conditions, remuneration, and written agreement controls",
+        "adjacent non-consensual synthetic-media protection for performers",
+        "Article 305 Bis, normalized line 17: labor contracts must specifically stipulate conditions and remuneration for use of image or voice through AI systems or other technology.",
+        "Article 87, normalized lines 44-49: image including voice and characters may only be used/published with express consent; protection covers AI-generated results; different use requires new authorization/remuneration; parody/satire/creative imitation exception when not cloning/supplanting or replacing professional performance.",
+        "Article 118(VII), normalized line 59: performers may authorize/prohibit AI or other technology supplanting performances, generating clones, or simulating identifiable voice, with parody/satire/creative imitation and substitution-market limits.",
+        "Article 121, normalized lines 65-66: AI cloning or supplantation of voice/image requires prior written agreement between parties."
+      ],
+      "verification": "Primary in-force statutory anchor for performer image/voice AI rights",
+      "url": "/resource/mexico/1_official-law-act/mexico-2026-labor-copyright-performers-ai-rights-dof-decree.pdf"
+    },
+    {
+      "ref": "Ref3",
+      "source": "sources/official/mexico/1_official-law-act/mexico-2026-federal-copyright-law-current-lfda.pdf",
+      "type": "Act/Law",
+      "uses": [
+        "current-law context after the 14 May 2026 reform",
+        "performer image/voice consent and AI cloning/supplantation provisions in consolidated law",
+        "online removal/disable-access context for copyright/conex rights material",
+        "Article 87, normalized lines 366-377: express consent for image/voice use; protection extends to AI-generated results; new use requires new authorization/remuneration; exception for parody/satire/creative imitation if not cloning/supplanting/substituting professional performance.",
+        "Article 118(VII), normalized line 593: right to authorize/prohibit AI supplantation/clones/identifiable voice simulation.",
+        "Article 121, normalized lines 606-607: voice/image cloning or supplantation through AI requires prior written agreement.",
+        "Online service context, normalized line 532 area: removal/disable-access after notice for materials/content hosted without consent of copyright or related-rights holder."
+      ],
+      "verification": "Current-law context anchor",
+      "url": "/resource/mexico/1_official-law-act/mexico-2026-federal-copyright-law-current-lfda.pdf"
+    },
+    {
+      "ref": "Ref4",
+      "source": "sources/official/mexico/2_draft/mexico-2026-labor-copyright-performers-ai-rights-chamber-minuta.pdf",
+      "type": "Legislative process document",
+      "uses": [
+        "legislative history for performer image/voice AI-rights reform"
+      ],
+      "verification": "Supplementary process anchor",
+      "url": "/resource/mexico/2_draft/mexico-2026-labor-copyright-performers-ai-rights-chamber-minuta.pdf"
+    }
+  ]
+}

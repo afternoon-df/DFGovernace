@@ -1,0 +1,26 @@
+{
+  "country": "south-africa",
+  "documents": [
+    {
+      "resource_dir": "south-africa",
+      "name": "south-africa-2020-cybercrimes-act-no-19-en-af.pdf",
+      "relative_path": "1_official-law-act/south-africa-2020-cybercrimes-act-no-19-en-af.pdf",
+      "legacy_relative_path": "south-africa-2020-cybercrimes-act-no-19-en-af.pdf",
+      "extension": ".pdf",
+      "classification_code": 1,
+      "classification_folder": "1_official-law-act",
+      "classification_label": "Official Law / Act",
+      "context_layer": "core_legal",
+      "legal_force": "binding_in_force",
+      "core_evidence_allowed": true,
+      "document_type": "official_law_act",
+      "law_stage": "in_force",
+      "url": "/resource/south-africa/1_official-law-act/south-africa-2020-cybercrimes-act-no-19-en-af.pdf",
+      "event_date": "2021-12-01",
+      "event_year": 2021,
+      "event_stage": "in_force",
+      "timeline_source": "metadata",
+      "law_unit_key": "south-africa-2020-cybercrimes-act-no-19-en-af"
+    }
+  ]
+}

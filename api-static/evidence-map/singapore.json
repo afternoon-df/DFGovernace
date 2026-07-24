@@ -1,0 +1,69 @@
+{
+  "country": "singapore",
+  "refs": [
+    {
+      "ref": "Ref1",
+      "source": "sources/official/singapore/1_official-law-act/singapore-2024-elections-integrity-of-online-advertising-amendment-act-no-34-en.pdf",
+      "type": "Act/Law",
+      "uses": [
+        "election-period prohibition on realistic but false digitally generated or manipulated candidate representations",
+        "election authority directions",
+        "social media provider and other relevant-person non-compliance penalties",
+        "Evidence locators:",
+        "PDF p. 1: official identifier, passage date, and assent date",
+        "PDF pp. 2-4: section 2(c), inserted Parliamentary Elections Act section 61MA",
+        "PDF p. 3: generative AI example and section 61MA(2) penalty",
+        "PDF pp. 4-5: amended section 61N direction and non-compliance penalties",
+        "PDF pp. 6-8: section 3(c), inserted Presidential Elections Act section 42LA",
+        "PDF p. 7: generative AI example and section 42LA(2) penalty",
+        "PDF p. 8: amended section 42M direction and non-compliance penalties"
+      ],
+      "verification": "Official enacted text verified",
+      "url": "/resource/singapore/1_official-law-act/singapore-2024-elections-integrity-of-online-advertising-amendment-act-no-34-en.pdf"
+    },
+    {
+      "ref": "Ref2",
+      "source": "sources/official/singapore/2_draft/elections-(integrity-of-online-advertising)-(amendment)-bill-29-2024.pdf",
+      "type": "Bill/Proposed law",
+      "uses": [
+        "legislative history only",
+        "proposal event for the Act No. 34 of 2024 lifecycle"
+      ],
+      "verification": "Do not count as a separate law from Ref1",
+      "url": "/resource/singapore/2_draft/elections-(integrity-of-online-advertising)-(amendment)-bill-29-2024.pdf"
+    },
+    {
+      "ref": "Ref3",
+      "source": "sources/official/singapore/3_official-guidance-warning/singapore-2024-guide-on-use-of-generative-ai-tools-by-court-users.pdf",
+      "type": "Official Guidance",
+      "uses": [
+        "court-user generative AI practice controls",
+        "verification and responsibility context outside deepfake-specific legislation"
+      ],
+      "verification": "Guidance only; not an enacted deepfake law or penalty source",
+      "url": "/resource/singapore/3_official-guidance-warning/singapore-2024-guide-on-use-of-generative-ai-tools-by-court-users.pdf"
+    },
+    {
+      "ref": "Ref4",
+      "source": "sources/official/singapore/1_official-law-act/singapore-2025-elections-integrity-of-online-advertising-amendment-act-commencement-notification-s47-en.pdf",
+      "type": "Commencement Notification",
+      "uses": [
+        "confirms commencement on `2025-01-22`",
+        "Evidence locator:",
+        "paragraph 2"
+      ],
+      "verification": "Official local PDF verified",
+      "url": "/resource/singapore/1_official-law-act/singapore-2025-elections-integrity-of-online-advertising-amendment-act-commencement-notification-s47-en.pdf"
+    },
+    {
+      "ref": "Ref5",
+      "source": "sources/official/singapore/4_official-report-assessment/singapore-2024-smartnation2-report.pdf",
+      "type": "Official Report",
+      "uses": [
+        "broader national digital-policy context only"
+      ],
+      "verification": "Not a direct deepfake prohibition or penalty source",
+      "url": "/resource/singapore/4_official-report-assessment/singapore-2024-smartnation2-report.pdf"
+    }
+  ]
+}

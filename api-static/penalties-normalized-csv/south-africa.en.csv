@@ -1,0 +1,2 @@
+country,law_id,offense_id,offense_label,deepfake_scope,sanction_channel,effective_status,fine_range,prison_range_months,aggravation,aggravated_penalty,refs,last_verified_at
+south-africa,ZA_CYBERCRIMES_ACT_19_2020,za_simulated_intimate_image_disclosure,Non-consensual disclosure of real or simulated intimate images,non_consensual_simulated_intimate,criminal,in_force,,<=36 months,No separate aggravated numeric tier verified in s. 19(7).,None separately verified.,Ref1,2026-07-20

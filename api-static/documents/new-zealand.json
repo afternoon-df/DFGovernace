@@ -1,0 +1,26 @@
+{
+  "country": "new-zealand",
+  "documents": [
+    {
+      "resource_dir": "new-zealand",
+      "name": "new-zealand-2025-deepfake-digital-harm-exploitation-bill-213-1-en.pdf",
+      "relative_path": "2_draft/new-zealand-2025-deepfake-digital-harm-exploitation-bill-213-1-en.pdf",
+      "legacy_relative_path": "new-zealand-2025-deepfake-digital-harm-exploitation-bill-213-1-en.pdf",
+      "extension": ".pdf",
+      "classification_code": 2,
+      "classification_folder": "2_draft",
+      "classification_label": "Draft",
+      "context_layer": "context_a",
+      "legal_force": "draft_not_in_force",
+      "core_evidence_allowed": false,
+      "document_type": "draft",
+      "law_stage": "proposed",
+      "url": "/resource/new-zealand/2_draft/new-zealand-2025-deepfake-digital-harm-exploitation-bill-213-1-en.pdf",
+      "event_date": "2025-10-23",
+      "event_year": 2025,
+      "event_stage": "proposed",
+      "timeline_source": "metadata",
+      "law_unit_key": "new-zealand-2025-deepfake-digital-harm-exploitation-bill-213-1"
+    }
+  ]
+}

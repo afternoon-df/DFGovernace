@@ -1,0 +1,17 @@
+{
+  "country": "new-zealand",
+  "refs": [
+    {
+      "ref": "Ref1",
+      "source": "sources/official/new-zealand/2_draft/new-zealand-2025-deepfake-digital-harm-exploitation-bill-213-1-en.pdf",
+      "type": "Bill / Proposed`; introduced 23 October 2025.",
+      "uses": [
+        "pp. 1-2, explanatory note: expands intimate visual recording definitions so existing offences and remedies apply to created images.",
+        "p. 4, proposed Crimes Act s. 216G(1A): created, synthesised, or altered intimate depictions made without knowledge or consent.",
+        "p. 4, proposed Harmful Digital Communications Act definition amendment: parallel coverage for synthetic intimate visual recordings."
+      ],
+      "verification": "Direct but proposed deepfake intimate-image coverage.",
+      "url": "/resource/new-zealand/2_draft/new-zealand-2025-deepfake-digital-harm-exploitation-bill-213-1-en.pdf"
+    }
+  ]
+}

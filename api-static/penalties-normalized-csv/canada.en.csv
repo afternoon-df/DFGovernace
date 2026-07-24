@@ -1,0 +1,2 @@
+country,law_id,offense_id,offense_label,deepfake_scope,sanction_channel,effective_status,fine_range,prison_range_months,aggravation,aggravated_penalty,refs,last_verified_at
+canada,CA_BILL_C16_2025,ca_synthetic_intimate_image_proposed,Proposed synthetic intimate-image publication and threat offences,non_consensual_intimate,criminal,proposed,,<=120 months,No separate aggravated range verified in the reviewed clause.,None separately verified; proposal-stage only.,Ref1,2026-07-20

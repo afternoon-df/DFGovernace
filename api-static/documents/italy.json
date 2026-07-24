@@ -1,0 +1,26 @@
+{
+  "country": "italy",
+  "documents": [
+    {
+      "resource_dir": "italy",
+      "name": "italy-2025-artificial-intelligence-law-no-132-it.pdf",
+      "relative_path": "1_official-law-act/italy-2025-artificial-intelligence-law-no-132-it.pdf",
+      "legacy_relative_path": "italy-2025-artificial-intelligence-law-no-132-it.pdf",
+      "extension": ".pdf",
+      "classification_code": 1,
+      "classification_folder": "1_official-law-act",
+      "classification_label": "Official Law / Act",
+      "context_layer": "core_legal",
+      "legal_force": "binding_in_force",
+      "core_evidence_allowed": true,
+      "document_type": "official_law_act",
+      "law_stage": "in_force",
+      "url": "/resource/italy/1_official-law-act/italy-2025-artificial-intelligence-law-no-132-it.pdf",
+      "event_date": "2025-10-10",
+      "event_year": 2025,
+      "event_stage": "in_force",
+      "timeline_source": "metadata",
+      "law_unit_key": "italy-2025-artificial-intelligence-law-no-132-it"
+    }
+  ]
+}

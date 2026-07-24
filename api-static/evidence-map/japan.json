@@ -1,0 +1,38 @@
+{
+  "country": "japan",
+  "refs": [
+    {
+      "ref": "Ref1",
+      "source": "sources/official/japan/1_official-law-act/japan-2025-ai-technology-act-no-53.txt",
+      "type": "Act/Law",
+      "uses": [
+        "AI governance framework and institutional responsibilities",
+        "transparency/appropriateness pathway for AI development and utilization",
+        "service/operator cooperation as adjacent governance, not deepfake-specific platform liability",
+        "Article 3(4), normalized line 14 area: misuse may facilitate crimes, personal-information leaks, copyright infringement, and harms to citizens' rights/interests; transparency and other necessary measures are required.",
+        "Article 7, normalized line 29 area: utilization business operators must cooperate with national/local government measures.",
+        "Article 13, normalized line 42 area: national government must establish guidelines and necessary measures to ensure appropriate implementation of AI R&D and utilization."
+      ],
+      "verification": "Primary AI-governance statutory anchor; not a dedicated deepfake statute",
+      "url": "/resource/japan/1_official-law-act/japan-2025-ai-technology-act-no-53.txt"
+    },
+    {
+      "ref": "Ref2",
+      "source": "sources/official/japan/1_official-law-act/japan-2026-act-on-the-protection-of-personal-information-appi-amended-april-2026.txt",
+      "type": "Act/Law",
+      "uses": [
+        "personal-information/privacy adjacent-law pathway",
+        "consent/third-party provision, disclosure/correction, and PPC enforcement framework",
+        "penalty and corporate fine context for personal-information misuse, not deepfake-specific punishment",
+        "Article 3, normalized line 73 area: personal information must be handled prudently with respect for individual autonomy.",
+        "Article 28, normalized line 207 area: third-country provision requires identifiable-person consent and information provision.",
+        "Articles 29-31, normalized lines 211-221 area: record/confirmation obligations for third-party provision and information related to personal information.",
+        "Articles 32-35, normalized lines 227-244 area: accessibility, disclosure, correction/deletion, and use-suspension request pathway.",
+        "Article 148, normalized lines 834-836 area: PPC recommendation/order powers where rights and interests need protection.",
+        "Articles 176-184, normalized lines 932-944 area: imprisonment/fines for specified personal-information violations and corporate fines up to 100 million yen for Articles 178/179 violations."
+      ],
+      "verification": "Primary adjacent privacy/data-protection statutory anchor",
+      "url": "/resource/japan/1_official-law-act/japan-2026-act-on-the-protection-of-personal-information-appi-amended-april-2026.txt"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <meta http-equiv="refresh" content="0; url=/w/DFGovernace/deepfake-policy/dashboard/index.html" />
+  <link rel="canonical" href="https://anonymous.4open.science/w/DFGovernace/deepfake-policy/dashboard/index.html" />
+  <title>Redirecting to Deepfake Policy Dashboard</title>
+  <script>
+    const target = new URL('/w/DFGovernace/deepfake-policy/dashboard/index.html', location.origin);
+    target.search = location.search;
+    target.hash = location.hash;
+    location.replace(target.pathname + target.search + target.hash);
+  </script>
+  <link rel="stylesheet" href="/w/DFGovernace/deepfake-policy/dashboard-shell.css?v=20260720-jurisdictions1" />
+
+  <!-- anonymous-english-only -->
+  <script>
+    (() => {
+      try { localStorage.setItem('deepfakePolicyLang', 'en'); } catch (_) {}
+      const url = new URL(window.location.href);
+      if (url.searchParams.get('lang') && url.searchParams.get('lang') !== 'en') {
+        url.searchParams.set('lang', 'en');
+        history.replaceState(null, '', url.pathname + url.search + url.hash);
+      }
+      const NativeURLSearchParams = window.URLSearchParams;
+      window.URLSearchParams = class EnglishOnlySearchParams extends NativeURLSearchParams {
+        get(name) { return name === 'lang' ? 'en' : super.get(name); }
+        has(name) { return name === 'lang' ? true : super.has(name); }
+      };
+    })();
+  </script>
+  <style>
+    #uiLang, #lang, #policyShellLang, #langLabel,
+    label[for="uiLang"], label[for="lang"], label[for="policyShellLang"],
+    .geo-lang, .language-switch, .language-select, .lang-switch {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <p><a href="/w/DFGovernace/deepfake-policy/dashboard/index.html">Go to the Deepfake Policy Dashboard</a></p>
+  <script src="/w/DFGovernace/deepfake-policy/dashboard-shell.js?v=20260720-jurisdictions1"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "country": "south-africa",
+  "refs": [
+    {
+      "ref": "Ref1",
+      "source": "sources/official/south-africa/1_official-law-act/south-africa-2020-cybercrimes-act-no-19-en-af.pdf",
+      "type": "Act/Law`; relevant provisions commenced 1 December 2021.",
+      "uses": [
+        "p. 22, s. 16: unlawful intentional disclosure without consent of an intimate image; definition includes a depiction that is `real or simulated, and made by any means`.",
+        "p. 28, s. 19(7): fine or imprisonment up to three years, or both, for ss. 14-16.",
+        "pp. 28-36, ss. 20-22: protective orders and orders directing electronic communications service providers to remove or disable access."
+      ],
+      "verification": "Direct simulated-intimate-image statutory coverage; not a general-purpose deepfake law.",
+      "url": "/resource/south-africa/1_official-law-act/south-africa-2020-cybercrimes-act-no-19-en-af.pdf"
+    }
+  ]
+}

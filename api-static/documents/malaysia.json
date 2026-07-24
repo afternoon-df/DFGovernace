@@ -1,0 +1,26 @@
+{
+  "country": "malaysia",
+  "documents": [
+    {
+      "resource_dir": "malaysia",
+      "name": "malaysia-2026-cyber-crime-bill-dr-8-2026-ms.pdf",
+      "relative_path": "2_draft/malaysia-2026-cyber-crime-bill-dr-8-2026-ms.pdf",
+      "legacy_relative_path": "malaysia-2026-cyber-crime-bill-dr-8-2026-ms.pdf",
+      "extension": ".pdf",
+      "classification_code": 2,
+      "classification_folder": "2_draft",
+      "classification_label": "Draft",
+      "context_layer": "context_a",
+      "legal_force": "draft_not_in_force",
+      "core_evidence_allowed": false,
+      "document_type": "draft",
+      "law_stage": "proposed",
+      "url": "/resource/malaysia/2_draft/malaysia-2026-cyber-crime-bill-dr-8-2026-ms.pdf",
+      "event_date": "2026-06-22",
+      "event_year": 2026,
+      "event_stage": "proposed",
+      "timeline_source": "metadata",
+      "law_unit_key": "malaysia-2026-cyber-crime-bill-dr-8-2026-ms"
+    }
+  ]
+}

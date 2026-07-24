@@ -1,0 +1,2492 @@
+﻿<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Topic (RQ)</title>
+  <script>
+    if (location.pathname === '/rq.html') {
+      location.replace('/w/DFGovernace/deepfake-policy/rq/index.html' + location.search + location.hash);
+    }
+  </script>
+  <link rel="stylesheet" href="/w/DFGovernace/assets/palette.css" />
+  <style>
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      font-family:"Poppins","Noto Sans KR","Segoe UI",sans-serif;
+      color:#0f172a;
+      background:
+        radial-gradient(circle at top left, rgba(15,94,234,0.12), transparent 28%),
+        radial-gradient(circle at 85% 20%, rgba(148,163,184,0.18), transparent 22%),
+        linear-gradient(180deg, #f8fbff 0%, #f8fafc 44%, #ffffff 100%);
+    }
+    .wrap { max-width:var(--layout-page-max-width); margin:0 auto; padding:var(--layout-page-padding-top) var(--layout-page-padding-x) var(--layout-page-padding-bottom); }
+    .card { background:linear-gradient(135deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.84) 100%); border:1px solid #d9e3f2; border-radius:24px; padding:var(--layout-card-padding); box-shadow:0 22px 60px rgba(15,23,42,0.08); overflow:hidden; }
+    .shell { display:grid; grid-template-columns:var(--layout-sidebar-width) minmax(0,1fr); gap:var(--layout-shell-gap); align-items:start; }
+    .sidebar { position:sticky; top:24px; display:grid; gap:14px; }
+    .sidebar-card { border:1px solid #d9e3f2; border-radius:20px; background:rgba(255,255,255,0.88); padding:18px; box-shadow:0 10px 28px rgba(15,23,42,0.05); }
+    .sidebar-kicker { margin:0 0 8px; color:#0f5eea; font-size:12px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+    .global-tabs { display:grid; gap:8px; }
+    .g-tab { text-decoration:none; font-size:12px; font-weight:700; padding:10px 12px; border-radius:14px; border:1px solid var(--line); background:#fff; color:var(--sub); font-family:"Poppins","Noto Sans KR","Segoe UI",sans-serif; }
+    .g-tab.active { background:var(--accent-soft); border-color:var(--accent-line); color:var(--accent-strong); }
+    h1 { margin:0 0 10px; text-align:left; font-size:34px; line-height:1.04; letter-spacing:-.05em; width:auto; }
+    .ctrl { display:inline-flex; align-items:center; gap:8px; padding:8px 10px; border-radius:999px; border:1px solid #d6deea; background:rgba(255,255,255,0.82); width:fit-content; }
+    select { font-size:14px; padding:6px 8px; border-radius:8px; border:1px solid #d6deea; background:#fff; }
+    .content { display:grid; gap:18px; min-width:0; }
+    .rq-grid { display:grid; gap:16px; margin-top:18px; }
+    .rq-item { width:min(100%, 100%); border:1px solid #d9e3f2; border-radius:20px; background:rgba(255,255,255,0.92); padding:20px; box-shadow:0 10px 28px rgba(15,23,42,0.05); }
+    .rq-head { display:grid; gap:10px; margin-bottom:8px; }
+    .rq-chip {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:fit-content;
+      padding:6px 10px;
+      border-radius:999px;
+      background:#eef4ff;
+      border:1px solid #bfd0f6;
+      color:#1d4ed8;
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+    }
+    .rq-q { margin:0; font-size:16px; font-weight:700; line-height:1.4; color:#0f172a; }
+    .rq-a { margin:0; font-size:13px; line-height:1.55; color:#1f2937; }
+    .rq-points { margin:8px 0 0; padding-left:18px; font-size:12px; color:#334155; line-height:1.45; }
+    .rq-points li { margin:3px 0; }
+    .muted { color:#475569; font-size:14px; margin:0; line-height:1.7; max-width:34ch; }
+    .rq-block {
+      width:min(100%, 1100px);
+      margin: 0;
+      border: 1px solid #c7d6f3;
+      border-radius: 18px;
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      padding: 16px 18px;
+      box-shadow: 0 10px 28px rgba(15,23,42,0.05);
+    }
+    .rq-block::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background: linear-gradient(90deg, rgba(15,94,234,0.16) 0%, rgba(15,94,234,0.08) 28%, rgba(255,255,255,0.92) 56%, rgba(255,255,255,1) 78%);
+    }
+    .rq-block > * { position: relative; z-index: 2; }
+    .rq-art {
+      position: absolute;
+      pointer-events: none;
+      z-index: 1;
+      opacity: .16;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      filter: saturate(.8);
+    }
+    .rq-map {
+      left: -40px;
+      top: -18px;
+      width: 760px;
+      height: 260px;
+      opacity: .1;
+      background-image: url("/w/DFGovernace/assets/world-map-real.png");
+      background-size: cover;
+      background-position: center center;
+      filter: grayscale(1) contrast(1.02);
+    }
+    .rq-law {
+      right: 10px;
+      bottom: 0;
+      width: 150px;
+      height: 120px;
+      opacity: .2;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cg fill='none' stroke='%231d4ed8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M128 32v144' stroke-width='10' opacity='.8'/%3E%3Cpath d='M64 84h128' stroke-width='10' opacity='.8'/%3E%3Cpath d='M86 84l-26 44h52z' stroke-width='8' opacity='.7'/%3E%3Cpath d='M170 84l-26 44h52z' stroke-width='8' opacity='.7'/%3E%3Cpath d='M76 198h104' stroke-width='10' opacity='.8'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: contain;
+      filter: none;
+    }
+    .rq-panel-title { margin: 0 0 8px; font-size: 14px; color: #0f172a; font-weight: 700; }
+    .rq-panel-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 6px;
+    }
+    .rq-panel-list-merged {
+      margin-top: 14px;
+      gap: 10px;
+    }
+    .rq-panel-item {
+      font-size: 12px;
+      line-height: 1.5;
+      color: #1f2937;
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      gap: 8px;
+      align-items: start;
+    }
+    .rq-panel-item-merged {
+      grid-template-columns: 24px minmax(0, 1fr);
+      gap: 10px;
+      padding: 14px 14px 14px 12px;
+      border-radius: 16px;
+      border: 1px solid #d9e3f2;
+      background: rgba(255,255,255,0.9);
+      box-shadow: 0 10px 24px rgba(15,23,42,0.04);
+    }
+    .rq-panel-main {
+      min-width: 0;
+      display: grid;
+      gap: 10px;
+    }
+    .rq-panel-link { color: inherit; text-decoration: none; display: block; border-radius: 10px; }
+    .rq-panel-link:hover { color:#0f5eea; }
+    .rq-panel-link-merged {
+      font-size: 15px;
+      line-height: 1.45;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .rq-panel-answer {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #1f2937;
+    }
+    .rq-panel-points {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 12px;
+      line-height: 1.5;
+      color: #334155;
+    }
+    .rq-panel-points li { margin: 3px 0; }
+    .rq-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      border: 1px solid #bfd0f6;
+      background: #eef4ff;
+      color: #1d4ed8;
+      font-size: 10px;
+      font-weight: 800;
+      line-height: 1;
+      margin-top: 1px;
+    }
+    .rq-badge-link {
+      text-decoration: none;
+      width: fit-content;
+    }
+    .method-wrap, .cmp-wrap, .land-wrap, .wordcloud-wrap {
+      width:min(100%, 1100px);
+      border:1px solid #d9e3f2;
+      border-radius:20px;
+      background:rgba(255,255,255,0.9);
+      padding:20px;
+      box-shadow:0 10px 28px rgba(15,23,42,0.05);
+    }
+    .section-title { margin:0 0 8px; font-size:14px; color:#0f172a; }
+    .method-points { margin:0; padding-left:18px; font-size:12px; color:#334155; line-height:1.5; }
+    .land-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 320px)); gap:10px; justify-content:start; }
+    .land-card { width:100%; border:1px solid #d9e3f2; border-radius:14px; background:#fcfcfd; padding:12px; }
+    .land-card h3 { margin:0 0 6px; font-size:13px; color:#0f172a; }
+    .land-card p { margin:0; font-size:12px; line-height:1.45; color:#334155; }
+    .wordcloud-wrap {
+      background:
+        radial-gradient(circle at 12% 10%, rgba(11,110,105,0.12), transparent 28%),
+        radial-gradient(circle at 88% 20%, rgba(183,121,31,0.12), transparent 24%),
+        rgba(255,255,255,0.92);
+    }
+    .wordcloud-head {
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:14px;
+      margin-bottom:14px;
+    }
+    .wordcloud-note { margin:0; font-size:12px; line-height:1.55; color:#64748b; max-width:74ch; }
+    .wordcloud-switch { display:inline-flex; gap:6px; padding:4px; border:1px solid #d9e3f2; border-radius:999px; background:#fff; }
+    .wordcloud-btn {
+      border:0;
+      border-radius:999px;
+      padding:7px 10px;
+      background:transparent;
+      color:#475569;
+      cursor:pointer;
+      font-size:11px;
+      font-weight:800;
+      font-family:inherit;
+    }
+    .wordcloud-btn.active { background:#12355b; color:#fff; box-shadow:0 7px 18px rgba(18,53,91,0.18); }
+    .wordcloud-terms {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:10px 14px;
+      min-height:160px;
+      padding:18px 8px 10px;
+    }
+    .wordcloud-term {
+      display:inline-flex;
+      align-items:center;
+      line-height:1;
+      font-size:var(--term-size, 1rem);
+      font-weight:900;
+      letter-spacing:-.035em;
+      color:var(--term-color, #12355b);
+      transform:rotate(var(--term-tilt, 0deg));
+      text-shadow:0 1px 0 rgba(255,255,255,0.82);
+      white-space:nowrap;
+    }
+    .wordcloud-empty { min-height:130px; display:grid; place-items:center; color:#64748b; font-size:12px; text-align:center; }
+    .gov-review-head {
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:14px;
+      margin-bottom:14px;
+    }
+    .gov-review-note { margin:0; font-size:12px; line-height:1.55; color:#64748b; max-width:74ch; }
+    .gov-review-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+      gap:12px;
+    }
+    .gov-card {
+      border:1px solid #d9e3f2;
+      border-radius:18px;
+      background:linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      padding:14px;
+      display:grid;
+      gap:10px;
+      box-shadow:0 10px 24px rgba(15,23,42,0.04);
+    }
+    .gov-card-head { display:flex; justify-content:space-between; gap:10px; align-items:flex-start; }
+    .gov-country { margin:0; font-size:15px; color:#0f172a; }
+    .gov-type {
+      display:inline-flex;
+      width:fit-content;
+      max-width:100%;
+      padding:6px 9px;
+      border-radius:999px;
+      border:1px solid #bfd0f6;
+      background:#eef4ff;
+      color:#1d4ed8;
+      font-size:11px;
+      font-weight:800;
+      line-height:1.25;
+    }
+    .gov-status {
+      display:inline-flex;
+      width:fit-content;
+      padding:5px 8px;
+      border-radius:999px;
+      border:1px solid #d9e3f2;
+      background:#fff;
+      color:#475569;
+      font-size:10px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.04em;
+    }
+    .gov-status.review { border-color:#fed7aa; background:#fff7ed; color:#9a3412; }
+    .gov-status.context { border-color:#bae6fd; background:#f0f9ff; color:#0369a1; }
+    .gov-metrics { display:grid; grid-template-columns:repeat(3, 1fr); gap:8px; }
+    .gov-metric { border:1px solid #e5edf8; border-radius:12px; padding:8px; background:rgba(255,255,255,0.78); }
+    .gov-label { margin:0 0 3px; color:#64748b; font-size:10px; font-weight:800; letter-spacing:.04em; text-transform:uppercase; }
+    .gov-value { margin:0; color:#0f172a; font-size:13px; font-weight:800; }
+    .gov-top { display:grid; gap:7px; }
+    .gov-bar-row { display:grid; grid-template-columns:120px 1fr 40px; gap:8px; align-items:center; }
+    .gov-bar-label { font-size:11px; color:#334155; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .gov-bar-track { height:7px; border-radius:999px; background:#e5edf8; overflow:hidden; }
+    .gov-bar-fill { height:100%; border-radius:999px; background:linear-gradient(90deg, #0f5eea, #38bdf8); }
+    .gov-bar-score { font-size:11px; font-weight:800; color:#0f172a; text-align:right; }
+    .gov-empty { margin:0; color:#64748b; font-size:12px; }
+    .cmp-grid {
+      display:grid;
+      gap:12px;
+    }
+    .rq2-zone {
+      background:
+        radial-gradient(circle at top left, rgba(168,85,247,0.13), transparent 34%),
+        linear-gradient(180deg, rgba(250,245,255,0.96) 0%, rgba(245,243,255,0.9) 100%);
+      border-color:#ddd6fe;
+      box-shadow:0 14px 34px rgba(109,40,217,0.08);
+    }
+    .rq2-zone .section-title,
+    .rq2-zone .sim-distance-title,
+    .rq2-zone .peer-chart-title,
+    .rq2-zone .deep-sim-title,
+    .rq2-zone .dim-sim-title {
+      color:#4c1d95;
+    }
+    .rq2-zone .sim-cluster-card,
+    .rq2-zone .sim-distance,
+    .rq2-zone .peer-chart,
+    .rq2-zone .peer-map-card,
+    .rq2-zone .deep-sim,
+    .rq2-zone .dim-sim,
+    .rq2-zone .cmp-card {
+      border-color:#ddd6fe;
+      background:rgba(255,255,255,0.84);
+    }
+    .rq2-zone .cmp-field-common,
+    .rq2-zone .peer-map-axis-tag,
+    .rq2-zone .deep-country,
+    .rq2-zone .dim-peer-score {
+      border-color:#c4b5fd;
+      background:#f5f3ff;
+      color:#5b21b6;
+    }
+    .rq2-question-card {
+      border:1px solid #c4b5fd;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,255,255,0.92), rgba(245,243,255,0.94));
+      padding:16px;
+      display:grid;
+      gap:9px;
+      box-shadow:0 12px 26px rgba(109,40,217,0.07);
+    }
+    .rq2-question-chip {
+      display:inline-flex;
+      width:fit-content;
+      padding:5px 9px;
+      border-radius:999px;
+      background:#ede9fe;
+      border:1px solid #c4b5fd;
+      color:#5b21b6;
+      font-size:11px;
+      font-weight:900;
+      letter-spacing:.05em;
+      text-transform:uppercase;
+    }
+    .rq2-question-title { margin:0; font-size:17px; line-height:1.35; color:#3b0764; }
+    .rq2-question-details {
+      border-top:1px solid #ddd6fe;
+      padding-top:8px;
+    }
+    .rq2-question-details summary {
+      cursor:pointer;
+      width:fit-content;
+      color:#5b21b6;
+      font-size:12px;
+      font-weight:900;
+    }
+    .rq2-question-answer { margin:8px 0 0; font-size:12px; line-height:1.6; color:#4c1d95; }
+    .sim-note { margin:0 0 12px; font-size:12px; line-height:1.55; color:#64748b; }
+    .sim-cluster-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+      gap:12px;
+      margin-bottom:14px;
+    }
+    .sim-cluster-card {
+      border:1px solid #d9e3f2;
+      border-radius:16px;
+      background:#fcfcfd;
+      padding:16px;
+      display:grid;
+      gap:10px;
+    }
+    .sim-cluster-card h3 { margin:0; font-size:15px; color:#0f172a; }
+    .sim-cluster-copy { margin:0; font-size:12px; line-height:1.55; color:#334155; }
+    .sim-mini { display:grid; gap:6px; }
+    .sim-mini-label {
+      margin:0;
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.05em;
+      text-transform:uppercase;
+      color:#64748b;
+    }
+    .peer-map-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+      gap:12px;
+      margin-bottom:14px;
+    }
+    .peer-map-intro {
+      margin:0 0 12px;
+      font-size:12px;
+      line-height:1.55;
+      color:#64748b;
+    }
+    .sim-distance {
+      border:1px solid #d9e3f2;
+      border-radius:18px;
+      background:#fff;
+      padding:16px;
+      margin-bottom:14px;
+      display:grid;
+      gap:12px;
+    }
+    .sim-distance-title { margin:0; font-size:15px; color:#0f172a; }
+    .sim-distance-note { margin:4px 0 0; font-size:12px; line-height:1.55; color:#64748b; }
+    .sim-distance-stage {
+      border:1px solid #d9e3f2;
+      border-radius:14px;
+      background:#f8fbff;
+      padding:12px;
+      overflow:auto;
+    }
+    .sim-distance-svg {
+      width:100%;
+      min-width:640px;
+      height:320px;
+      display:block;
+    }
+    .sim-distance-legend {
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      font-size:12px;
+      color:#475569;
+    }
+    .sim-distance-key {
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+    }
+    .sim-distance-swatch {
+      width:12px;
+      height:12px;
+      border-radius:3px;
+      border:1px solid rgba(15,23,42,0.12);
+    }
+    .peer-chart {
+      border:1px solid #d9e3f2;
+      border-radius:18px;
+      background:#fff;
+      padding:16px;
+      margin-bottom:14px;
+      display:grid;
+      gap:12px;
+    }
+    .peer-chart-head {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .peer-chart-copy { min-width:0; }
+    .peer-chart-title { margin:0; font-size:15px; color:#0f172a; }
+    .peer-chart-note { margin:4px 0 0; font-size:12px; line-height:1.55; color:#64748b; }
+    .peer-chart-controls {
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+    .peer-chart-controls label {
+      font-size:12px;
+      font-weight:700;
+      color:#475569;
+    }
+    .peer-chart-stage {
+      border:1px solid #d9e3f2;
+      border-radius:14px;
+      background:#f8fbff;
+      padding:12px;
+      overflow-x:auto;
+    }
+    .peer-chart-svg {
+      width:100%;
+      min-width:640px;
+      height:300px;
+      display:block;
+    }
+    .peer-chart-legend {
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      font-size:12px;
+      color:#475569;
+    }
+    .peer-chart-key {
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+    }
+    .peer-chart-swatch {
+      width:12px;
+      height:12px;
+      border-radius:3px;
+      border:1px solid rgba(15,23,42,0.12);
+    }
+    .peer-map-card {
+      border:1px solid #d9e3f2;
+      border-radius:16px;
+      background:#fff;
+      padding:16px;
+      display:grid;
+      gap:10px;
+    }
+    .peer-map-card h3 { margin:0; font-size:15px; color:#0f172a; }
+    .peer-map-score { margin:0; font-size:12px; color:#64748b; }
+    .peer-map-list { display:grid; gap:8px; }
+    .peer-map-item {
+      display:grid;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      background:#f8fbff;
+      border:1px solid #d9e3f2;
+    }
+    .peer-map-top {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+    }
+    .peer-map-name { font-size:12px; font-weight:700; color:#1f2937; }
+    .peer-map-dist { font-size:11px; color:#64748b; }
+    .peer-map-axis {
+      display:flex;
+      flex-wrap:wrap;
+      gap:6px;
+    }
+    .peer-map-axis-tag {
+      display:inline-flex;
+      align-items:center;
+      padding:4px 8px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid #d9e3f2;
+      font-size:10px;
+      font-weight:700;
+      color:#475569;
+    }
+    .deep-sim {
+      border:1px solid #d9e3f2;
+      border-radius:18px;
+      background:#fff;
+      padding:16px;
+      display:grid;
+      gap:14px;
+      margin-bottom:14px;
+    }
+    .deep-sim-head { display:grid; gap:4px; }
+    .deep-sim-title { margin:0; font-size:15px; color:#0f172a; }
+    .deep-sim-note { margin:0; font-size:12px; line-height:1.55; color:#64748b; }
+    .deep-sim-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+      gap:12px;
+    }
+    .deep-card {
+      border:1px solid #d9e3f2;
+      border-radius:16px;
+      background:#fcfcfd;
+      padding:14px;
+      display:grid;
+      gap:10px;
+    }
+    .deep-card h4 { margin:0; font-size:13px; color:#0f172a; }
+    .deep-pair { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+    .deep-country {
+      display:inline-flex;
+      padding:5px 8px;
+      border-radius:999px;
+      background:#eef4ff;
+      border:1px solid #bfd0f6;
+      color:#1d4ed8;
+      font-size:11px;
+      font-weight:800;
+    }
+    .deep-arrow { color:#94a3b8; font-weight:800; }
+    .deep-copy { margin:0; font-size:12px; line-height:1.55; color:#334155; }
+    .deep-axis-list { display:grid; gap:6px; }
+    .deep-axis-row { display:grid; grid-template-columns:106px 1fr auto; gap:8px; align-items:center; }
+    .deep-axis-name { font-size:11px; color:#475569; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .deep-axis-track { height:7px; border-radius:999px; background:#e5edf8; overflow:hidden; }
+    .deep-axis-fill { height:100%; border-radius:999px; background:linear-gradient(90deg, #0f5eea, #22c55e); }
+    .deep-axis-value { font-size:11px; font-weight:800; color:#0f172a; }
+    .deep-empty { margin:0; font-size:12px; color:#64748b; }
+    .dim-sim {
+      border:1px solid #d9e3f2;
+      border-radius:18px;
+      background:#fff;
+      padding:16px;
+      display:grid;
+      gap:14px;
+      margin-bottom:14px;
+    }
+    .dim-sim-head {
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+    .dim-sim-title { margin:0; font-size:15px; color:#0f172a; }
+    .dim-sim-note { margin:4px 0 0; font-size:12px; line-height:1.55; color:#64748b; max-width:74ch; }
+    .dim-sim-control { display:flex; align-items:center; gap:8px; }
+    .dim-sim-control label { font-size:12px; color:#475569; font-weight:800; }
+    .dim-sim-subtitle { margin:0 0 8px; font-size:12px; color:#0f172a; font-weight:900; letter-spacing:.03em; text-transform:uppercase; }
+    .dim-final-grid,
+    .dim-axis-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:12px;
+    }
+    .dim-peer-card {
+      border:1px solid #d9e3f2;
+      border-radius:16px;
+      background:#fcfcfd;
+      padding:12px;
+      display:grid;
+      gap:9px;
+    }
+    .dim-peer-head { display:flex; justify-content:space-between; gap:10px; align-items:flex-start; }
+    .dim-peer-title { margin:0; font-size:13px; color:#0f172a; }
+    .dim-peer-score {
+      display:inline-flex;
+      padding:4px 7px;
+      border-radius:999px;
+      background:#eef4ff;
+      border:1px solid #bfd0f6;
+      color:#1d4ed8;
+      font-size:10px;
+      font-weight:900;
+      white-space:nowrap;
+    }
+    .dim-peer-list { display:grid; gap:7px; }
+    .dim-peer-row {
+      display:grid;
+      grid-template-columns:minmax(84px, 1fr) 1fr auto;
+      gap:8px;
+      align-items:center;
+      padding:7px 8px;
+      border-radius:12px;
+      background:#fff;
+      border:1px solid #e5edf8;
+    }
+    .dim-peer-name { font-size:11px; font-weight:800; color:#1f2937; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .dim-peer-track { height:7px; border-radius:999px; background:#e5edf8; overflow:hidden; }
+    .dim-peer-fill { height:100%; border-radius:999px; background:linear-gradient(90deg, #38bdf8, #0f5eea); }
+    .dim-peer-gap { font-size:10px; font-weight:900; color:#475569; text-align:right; }
+    .dim-empty { margin:0; font-size:12px; color:#64748b; }
+    .dim-heatmap {
+      display:grid;
+      grid-template-columns:minmax(0, 1fr) 92px;
+      gap:12px;
+      padding:12px;
+      border:1px solid #ddd6fe;
+      border-radius:16px;
+      background:rgba(255,255,255,0.72);
+      overflow-x:auto;
+    }
+    .dim-heat-table { display:grid; gap:8px; min-width:780px; }
+    .dim-heat-row {
+      display:grid;
+      grid-template-columns:150px repeat(6, minmax(86px, 1fr)) 96px;
+      gap:7px;
+      align-items:center;
+    }
+    .dim-heat-head {
+      font-size:10px;
+      font-weight:900;
+      color:#6d28d9;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+    }
+    .dim-heat-country { font-size:12px; font-weight:900; color:#1f2937; }
+    .dim-heat-cell {
+      border-radius:10px;
+      padding:7px 8px;
+      min-height:31px;
+      border:1px solid rgba(76,29,149,0.18);
+      color:#1f2937;
+      font-size:11px;
+      font-weight:900;
+      text-align:center;
+    }
+    .dim-heat-distance {
+      font-size:11px;
+      font-weight:900;
+      color:#4c1d95;
+      text-align:right;
+    }
+    .dim-heat-summary {
+      grid-column:1 / -1;
+      border:1px solid #c4b5fd;
+      border-radius:14px;
+      background:linear-gradient(90deg, rgba(237,233,254,0.96), rgba(245,243,255,0.86));
+      color:#4c1d95;
+      padding:10px 12px;
+      font-size:12px;
+      line-height:1.55;
+      font-weight:800;
+    }
+    .dim-heat-summary strong { color:#312e81; }
+    .dim-spectrum {
+      display:grid;
+      grid-template-rows:auto 1fr auto;
+      gap:8px;
+      align-self:stretch;
+      min-height:220px;
+      padding:8px;
+      border:1px solid #ddd6fe;
+      border-radius:14px;
+      background:rgba(255,255,255,0.78);
+    }
+    .dim-spectrum-label {
+      margin:0;
+      font-size:10px;
+      font-weight:900;
+      color:#4c1d95;
+      text-align:center;
+      line-height:1.25;
+    }
+    .dim-spectrum-gap {
+      display:block;
+      margin-top:2px;
+      color:#64748b;
+      font-size:9px;
+      font-weight:800;
+    }
+    .dim-spectrum-bar {
+      border-radius:999px;
+      border:1px solid rgba(76,29,149,0.18);
+    }
+    @media (max-width:900px) {
+      .dim-heatmap { grid-template-columns:1fr; }
+      .dim-spectrum { grid-template-columns:60px 1fr 60px; grid-template-rows:auto; min-height:auto; align-items:center; }
+      .dim-spectrum-bar { height:16px; background:linear-gradient(90deg, hsl(263 86% 97%) 0%, hsl(263 86% 58%) 58%, hsl(263 86% 24%) 100%); }
+    }
+    .cmp-card {
+      width:min(100%, 940px);
+      margin:0;
+      border:1px solid #d9e3f2;
+      border-radius:16px;
+      background:#fcfcfd;
+      padding:16px;
+      display:grid;
+      gap:12px;
+    }
+    .cmp-card-4,
+    .cmp-card-3 { grid-template-columns:1fr; }
+    .cmp-card-sim { gap:14px; }
+    .cmp-dimension {
+      margin:0;
+      font-size:18px;
+      line-height:1.2;
+      font-weight:800;
+      color:#0f172a;
+      letter-spacing:-.02em;
+    }
+    .cmp-body-2 {
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+    .cmp-field-common {
+      padding:12px;
+      border-radius:14px;
+      background:#f8fbff;
+      border:1px solid #d9e8ff;
+    }
+    .cmp-field { display:grid; gap:4px; min-width:0; }
+    .cmp-label { margin:0; font-size:11px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; color:#64748b; }
+    .cmp-value { margin:0; font-size:var(--layout-main-table-font-size); line-height:var(--layout-main-table-line-height); color:#1f2937; overflow-wrap:anywhere; }
+    .cmp-tags { display:flex; flex-wrap:wrap; gap:8px; }
+    .cmp-tag {
+      display:inline-flex;
+      align-items:center;
+      padding:6px 10px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid #d9e3f2;
+      font-size:12px;
+      font-weight:700;
+      color:#334155;
+    }
+    .gap-wrap {
+      width:min(100%, 1100px);
+      border:1px solid #d9e3f2;
+      border-radius:20px;
+      background:rgba(255,255,255,0.9);
+      padding:20px;
+      box-shadow:0 10px 28px rgba(15,23,42,0.05);
+    }
+    .gap-note { margin:0 0 12px; font-size:12px; line-height:1.55; color:#64748b; }
+    .gap-scroll { overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; border:1px solid #d9e3f2; border-radius:14px; background:#fff; }
+    .gap-table {
+      width:max-content;
+      min-width:100%;
+      border-collapse:collapse;
+    }
+    .gap-table th, .gap-table td {
+      border:1px solid #d9e3f2;
+      padding:10px 12px;
+      font-size:12px;
+      line-height:1.45;
+      text-align:left;
+      vertical-align:top;
+      white-space:nowrap;
+    }
+    .gap-table th {
+      background:#f8fbff;
+      color:#0f172a;
+      font-weight:700;
+    }
+    .gap-country {
+      min-width:140px;
+      font-weight:700;
+      color:#0f172a;
+      background:#fcfdff;
+    }
+    .gap-status {
+      display:inline-flex;
+      align-items:center;
+      padding:4px 8px;
+      border-radius:999px;
+      border:1px solid #d9e3f2;
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.03em;
+      text-transform:uppercase;
+    }
+    .gap-status-clear { background:#ecfdf3; border-color:#b7e4c7; color:#166534; }
+    .gap-status-partial { background:#fff7ed; border-color:#fed7aa; color:#9a3412; }
+    .gap-status-weak { background:#fff1f2; border-color:#fecdd3; color:#be123c; }
+    .gap-status-unknown { background:#f8fafc; border-color:#e2e8f0; color:#475569; }
+    .flow-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(210px, 1fr));
+      gap:12px;
+    }
+    .flow-card {
+      border:1px solid #d9e3f2;
+      border-radius:16px;
+      background:#fcfcfd;
+      padding:16px;
+      display:grid;
+      gap:10px;
+    }
+    .flow-step {
+      display:inline-flex;
+      width:fit-content;
+      align-items:center;
+      justify-content:center;
+      padding:5px 9px;
+      border-radius:999px;
+      background:#eef4ff;
+      border:1px solid #bfd0f6;
+      color:#1d4ed8;
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+    }
+    .flow-card h3 { margin:0; font-size:15px; color:#0f172a; }
+    .flow-card p { margin:0; font-size:12px; line-height:1.55; color:#334155; }
+    .flow-countries { display:flex; flex-wrap:wrap; gap:8px; }
+    .flow-tag {
+      display:inline-flex;
+      align-items:center;
+      padding:6px 10px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid #d9e3f2;
+      font-size:11px;
+      font-weight:700;
+      color:#475569;
+    }
+    .peer-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:12px;
+    }
+    .peer-card {
+      border:1px solid #d9e3f2;
+      border-radius:16px;
+      background:#fcfcfd;
+      padding:16px;
+      display:grid;
+      gap:10px;
+    }
+    .peer-title { margin:0; font-size:15px; color:#0f172a; }
+    .peer-copy { margin:0; font-size:12px; line-height:1.55; color:#334155; }
+    .peer-block { display:grid; gap:6px; }
+    .peer-label {
+      margin:0;
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.05em;
+      text-transform:uppercase;
+      color:#64748b;
+    }
+    .peer-tags { display:flex; flex-wrap:wrap; gap:8px; }
+    .wb-wrap, .ev-wrap {
+      width:min(100%, 1100px);
+      border:1px solid #d9e3f2;
+      border-radius:20px;
+      background:rgba(255,255,255,0.9);
+      padding:20px;
+      box-shadow:0 10px 28px rgba(15,23,42,0.05);
+    }
+    .wb-head { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:8px; }
+    .wb-copy { min-width:0; }
+    .wb-title { margin:0; font-size:14px; color:#0f172a; }
+    .wb-note { margin:4px 0 0; font-size:12px; color:#64748b; }
+    .wb-controls { display:flex; align-items:center; gap:8px; }
+    .wb-preview { overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; border:1px solid #d9e3f2; border-radius:14px; background:#fff; }
+    .wb-table { width:max-content; min-width:100%; border-collapse:collapse; }
+    .wb-table th, .wb-table td { border:1px solid var(--line); padding:8px; font-size:12px; line-height:1.45; text-align:left; vertical-align:top; white-space:pre-wrap; }
+    .wb-table th { background:var(--table-head); }
+    .wb-empty { margin:0; padding:10px; font-size:12px; color:#64748b; }
+    .ev-head { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:8px; }
+    .ev-title { margin:0; font-size:14px; color:#0f172a; }
+    .ev-note { margin:0; font-size:12px; color:#64748b; }
+    .ev-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:8px; }
+    .ev-card { border:1px solid #d9e3f2; border-radius:14px; padding:10px; background:#fcfcfd; }
+    .ev-country { margin:0 0 6px; font-size:13px; font-weight:700; color:#1f2937; }
+    .ev-dim { margin:0 0 4px; font-size:12px; line-height:1.45; color:#334155; }
+    .ev-special { margin:6px 0 4px; font-size:12px; line-height:1.45; color:#0f3b4a; }
+    .ev-loc { margin:0 0 3px; font-size:11px; line-height:1.35; color:#64748b; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .ev-ref { margin:0; font-size:11px; line-height:1.4; color:#6b7280; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .ev-empty { font-size:12px; color:#64748b; padding:8px 2px; }
+    .side-links { display:grid; gap:8px; }
+    .side-link { text-decoration:none; font-size:13px; font-weight:600; color:#334155; padding:10px 12px; border-radius:12px; background:#f8fbff; border:1px solid #d9e3f2; }
+    @media (min-width:980px) {
+      .cmp-card { width:min(100%, 960px); }
+      .cmp-card-3 { grid-template-columns:.95fr 1.25fr 1.25fr; }
+      .cmp-body-2 { grid-template-columns:1fr 1fr; }
+    }
+    @media (max-width:1100px) { .rq-block { padding: 14px 16px; } .rq-map, .rq-law { opacity:.1; } }
+    @media (max-width:900px) {
+      .shell { grid-template-columns:1fr; }
+      .sidebar { position:static; }
+      h1 { font-size:28px; }
+      .gov-review-head { display:grid; }
+      .gov-metrics { grid-template-columns:1fr; }
+      .gov-bar-row { grid-template-columns:94px 1fr 36px; }
+    }
+  </style>
+  <link rel="stylesheet" href="/w/DFGovernace/deepfake-policy/dashboard-shell.css?v=20260720-jurisdictions1" />
+
+  <!-- anonymous-english-only -->
+  <script>
+    (() => {
+      try { localStorage.setItem('deepfakePolicyLang', 'en'); } catch (_) {}
+      const url = new URL(window.location.href);
+      if (url.searchParams.get('lang') && url.searchParams.get('lang') !== 'en') {
+        url.searchParams.set('lang', 'en');
+        history.replaceState(null, '', url.pathname + url.search + url.hash);
+      }
+      const NativeURLSearchParams = window.URLSearchParams;
+      window.URLSearchParams = class EnglishOnlySearchParams extends NativeURLSearchParams {
+        get(name) { return name === 'lang' ? 'en' : super.get(name); }
+        has(name) { return name === 'lang' ? true : super.has(name); }
+      };
+    })();
+  </script>
+  <style>
+    #uiLang, #lang, #policyShellLang, #langLabel,
+    label[for="uiLang"], label[for="lang"], label[for="policyShellLang"],
+    .geo-lang, .language-switch, .language-select, .lang-switch {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="shell">
+        <aside class="sidebar">
+          <section class="sidebar-card">
+            <p class="sidebar-kicker">Research View</p>
+            <h1 id="title"></h1>
+            <p id="subtitle" class="muted"></p>
+          </section>
+          <section class="sidebar-card">
+            <div class="ctrl">
+              <label for="lang" id="langLabel"></label>
+              <select id="lang">
+                <option value="ko">koreax</option>
+                <option value="en" selected>English</option>
+              </select>
+            </div>
+          </section>
+          <nav class="sidebar-card global-tabs">
+            <a id="tabHome" class="g-tab" href="/w/DFGovernace/deepfake-policy/index.html"></a>
+            <a id="tabCountries" class="g-tab" href="/w/DFGovernace/deepfake-policy/countries/index.html"></a>
+            <a id="tabCompare" class="g-tab" href="/w/DFGovernace/deepfake-policy/status/index.html"></a>
+            <a id="tabPenalties" class="g-tab" href="/w/DFGovernace/deepfake-policy/penalties/index.html"></a>
+            <a id="tabRQ" class="g-tab active" href="/w/DFGovernace/deepfake-policy/rq/index.html"></a>
+          </nav>
+          <nav class="sidebar-card side-links">
+            <a class="side-link" href="#methodSection">Method</a>
+            <a class="side-link" href="#rqIntroSection">Questions</a>
+            <a class="side-link" href="#landscapeSection">Landscapes</a>
+            <a class="side-link" href="#governanceReviewSection">Governance Types</a>
+            <a class="side-link" href="#similaritySection">Similarity</a>
+            <a class="side-link" href="#differenceSection">Factors</a>
+            <a class="side-link" href="#gapMatrixSection">Gap Matrix</a>
+            <a class="side-link" href="#gapFlowSection">Gap Flow</a>
+            <a class="side-link" href="#peerSection">Peer Cases</a>
+            <a class="side-link" href="#workbookSection">Workbook</a>
+            <a class="side-link" href="#evidenceSection">Evidence</a>
+          </nav>
+        </aside>
+        <div class="content">
+      <section class="rq-block" id="rqIntroSection" aria-label="Research Questions">
+        <div class="rq-art rq-map" aria-hidden="true"></div>
+        <div class="rq-art rq-law" aria-hidden="true"></div>
+        <p class="rq-panel-title" id="rqPanelTitle"></p>
+        <ol id="rqHost" class="rq-panel-list rq-panel-list-merged"></ol>
+      </section>
+      <section class="method-wrap" id="methodSection">
+        <h2 id="methodTitle" class="section-title"></h2>
+        <ul id="methodPoints" class="method-points"></ul>
+      </section>
+      <section class="land-wrap" id="landscapeSection">
+        <h2 id="landTitle" class="section-title"></h2>
+        <div id="landHost" class="land-grid"></div>
+      </section>
+      <section class="cmp-wrap" id="governanceReviewSection">
+        <div class="gov-review-head">
+          <div>
+            <h2 id="govReviewTitle" class="section-title"></h2>
+            <p id="govReviewNote" class="gov-review-note"></p>
+          </div>
+        </div>
+        <div id="govReviewHost" class="gov-review-grid"></div>
+      </section>
+      <section class="cmp-wrap rq2-zone" id="similaritySection">
+        <article class="rq2-question-card">
+          <span class="rq2-question-chip" id="rq2QuestionChip"></span>
+          <h2 class="rq2-question-title" id="rq2QuestionTitle"></h2>
+          <details class="rq2-question-details">
+            <summary id="rq2QuestionSummary"></summary>
+            <p class="rq2-question-answer" id="rq2QuestionAnswer"></p>
+          </details>
+        </article>
+        <h2 id="simTitle" class="section-title"></h2>
+        <p id="simNote" class="sim-note"></p>
+        <div id="simClusterHost" class="sim-cluster-grid"></div>
+        <section class="dim-sim" id="dimensionSimilaritySection">
+          <div class="dim-sim-head">
+            <div>
+              <h3 id="dimSimTitle" class="dim-sim-title"></h3>
+              <p id="dimSimNote" class="dim-sim-note"></p>
+            </div>
+            <div class="dim-sim-control">
+              <label for="dimSimCountry" id="dimSimCountryLabel"></label>
+              <select id="dimSimCountry"></select>
+            </div>
+          </div>
+          <div>
+            <p id="dimSimOverallTitle" class="dim-sim-subtitle"></p>
+            <div id="dimSimOverallHost" class="dim-final-grid"></div>
+          </div>
+          <div>
+            <p id="dimSimHeatmapTitle" class="dim-sim-subtitle"></p>
+            <div id="dimSimHeatmapHost" class="dim-heatmap"></div>
+          </div>
+          <div>
+            <p id="dimSimAxisTitle" class="dim-sim-subtitle"></p>
+            <div id="dimSimAxisHost" class="dim-axis-grid"></div>
+          </div>
+        </section>
+        <section class="deep-sim" id="deepSimilaritySection">
+          <div class="deep-sim-head">
+            <h3 id="deepSimTitle" class="deep-sim-title"></h3>
+            <p id="deepSimNote" class="deep-sim-note"></p>
+          </div>
+          <div id="deepSimHost" class="deep-sim-grid"></div>
+        </section>
+        <div class="cmp-grid" id="simHost"></div>
+      </section>
+      <section class="cmp-wrap" id="differenceSection">
+        <h2 id="diffTitle" class="section-title"></h2>
+        <div class="cmp-grid" id="diffHost"></div>
+      </section>
+      <section class="gap-wrap" id="gapMatrixSection">
+        <h2 id="gapMatrixTitle" class="section-title"></h2>
+        <p id="gapMatrixNote" class="gap-note"></p>
+        <div class="gap-scroll">
+          <div id="gapMatrixHost"></div>
+        </div>
+      </section>
+      <section class="gap-wrap" id="gapFlowSection">
+        <h2 id="gapFlowTitle" class="section-title"></h2>
+        <p id="gapFlowNote" class="gap-note"></p>
+        <div id="gapFlowHost" class="flow-grid"></div>
+      </section>
+      <section class="gap-wrap" id="peerSection">
+        <h2 id="peerTitle" class="section-title"></h2>
+        <p id="peerNote" class="gap-note"></p>
+        <div id="peerHost" class="peer-grid"></div>
+      </section>
+      <section class="wb-wrap" id="workbookSection">
+        <div class="wb-head">
+          <div class="wb-copy">
+            <h2 id="wbTitle" class="wb-title"></h2>
+            <p id="wbNote" class="wb-note"></p>
+          </div>
+          <div class="wb-controls">
+            <label for="wbSheet" id="wbLabel"></label>
+            <select id="wbSheet"></select>
+          </div>
+        </div>
+        <div id="wbHost" class="wb-preview"></div>
+      </section>
+      <section class="ev-wrap" id="evidenceSection">
+        <div class="ev-head">
+          <h2 id="evTitle" class="ev-title"></h2>
+          <p id="evNote" class="ev-note"></p>
+        </div>
+        <div id="evHost" class="ev-grid"></div>
+      </section>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const T = {
+      ko: {
+        title: 'Research Topic (RQ)',
+        subtitle: 'RQ x x x x x.',
+        methodTitle: 'Method Framing',
+        methodP1: 'x x x x x x, x x x x x.',
+        methodP2: 'x x 5x x x: x, x x, x x x, x x, x x.',
+        methodP3: 'x, x, x, x x x x x x x x.',
+        methodP4: 'x RQ x x x x x x, x, x x x x.',
+        landTitle: 'x x',
+        land1h: 'x x x',
+        land1b: 'korea, germanyx x x, united-states x x x x x x x.',
+        land2h: 'x x x x',
+        land2b: 'EU, united-kingdom, francex x x, x x, x, x x x x x.',
+        land3h: 'x x x',
+        land3b: 'argentina, UAE x x, australia x x x x x x x x.',
+        globalWordcloudTitle: 'x Word Cloud',
+        globalWordcloudNote: 'x official law/actx clause-coding x segmentx x x. x x civic x(x·x·x)x x.',
+        globalWordcloudKor: 'koreax',
+        globalWordcloudSource: 'x/x',
+        globalWordcloudContext: 'Context layer',
+        globalWordcloudMeta: 'x {rows}x segment x',
+        globalWordcloudEmpty: 'x word cloud x x x.',
+        simTitle: 'x x',
+        simNote: 'RQ2x x x x x x x x, x x x x x x x x x x.',
+        rq2QuestionChip: 'RQ2',
+        rq2QuestionSummary: 'x x x',
+        deepSimTitle: 'x x x',
+        deepSimNote: 'x x x x x x x, x x x x x x x x. x x x x “x x”x “x x”x x x x x.',
+        deepSameType: 'x x x x',
+        deepCrossType: 'x x x x x',
+        deepBridge: 'x bridge pair',
+        deepCloseAxes: 'x x',
+        deepDivergeAxes: 'x x',
+        deepDistance: 'x',
+        deepNoData: 'x x x x x x x.',
+        dimSimTitle: 'x·dimensionx x',
+        dimSimNote: 'x x x x x x x x x, x policy dimensionx x x x x x x. x x dimensionx x x x x x x x.',
+        dimSimCountry: 'x x',
+        dimSimOverallTitle: 'x x x',
+        dimSimHeatmapTitle: 'x x x x x',
+        dimSimAxisTitle: 'Dimensionx x',
+        dimSimDistance: 'x x',
+        dimSimGap: 'x',
+        dimSimBaseScore: 'x x',
+        dimSimClosestOverall: 'x x x x',
+        dimSimClosestByDimension: 'dimensionx x x',
+        dimSimHeatmapGuide: 'x x x x x x. x x x x x.',
+        dimSimSpectrumHigh: 'x x',
+        dimSimSpectrumLow: 'x x',
+        dimSimNoData: 'dimensionx x x x x x x.',
+        simCluster1: 'x-x x',
+        simCluster1b: 'x, x, x x x x x x x x x.',
+        simCluster1c1: 'x x',
+        simCluster1c2: 'x x x',
+        simCluster1d1: 'EU, united-kingdom, france',
+        simCluster1d2: 'x, x x, x',
+        simCluster2: 'x x x',
+        simCluster2b: 'x x x x x x x x x x x x.',
+        simCluster2d1: 'korea, australia, united-states, singapore',
+        simCluster2d2: 'x x x, x, x',
+        simCluster3: 'x·x x',
+        simCluster3b: 'x x, x, x x x x x x x x x.',
+        simCluster3d1: 'china, EU x x',
+        simCluster3d2: 'x, x, x x',
+        simCluster4: 'x x x',
+        simCluster4b: 'x x x x, x x, x x x x.',
+        simCluster4d1: 'india, pakistan, UAE, saudi-arabia, argentina',
+        simCluster4d2: 'x x, x x x, x',
+        govReviewTitle: 'x x x x x',
+        govReviewNote: 'x x clause codingx x x x x x x x x x. 1_official-law-act x x x x, B1/B2 context x x x x x-x x x x x x.',
+        govEvidence: 'x x',
+        govContext: 'B1/B2',
+        govGuidance: 'Guidance',
+        govTopDims: 'x x',
+        govStatusOk: '1x x x',
+        govStatusContext: 'x x',
+        govStatusReview: 'x x x',
+        govEmpty: 'x x x x x.',
+        diffTitle: 'x x',
+        gapMatrixTitle: 'x x x',
+        gapMatrixNote: 'Q4 x A. x x x x x x, x, x, x x x.',
+        gapFlowTitle: 'x x x',
+        gapFlowNote: 'Q4 x B. x x x x x x x x.',
+        peerTitle: 'x x x x',
+        peerNote: 'x x x, RQ2x x x x x x x x x x x x x x.',
+        wbTitle: 'Summary Workbook',
+        wbNote: 'x x x x x x x x.',
+        wbLabel: 'x',
+        wbLoading: 'x x x x...',
+        wbEmpty: 'x x x x.',
+        wbError: 'x x x x.',
+        simHead1: 'x x',
+        simHead2: 'x x',
+        simHead3: 'x x',
+        simHead4: 'x x',
+        diffHead1: 'x x',
+        diffHead2: 'x x x',
+        diffHead3: 'x x',
+        gapCountry: 'x',
+        gapH1: 'x x x',
+        gapH2: 'x x',
+        gapH3: 'x x',
+        gapH4: 'x x',
+        gapH5: 'x x',
+        gapH6: 'x x x',
+        gapClear: 'x',
+        gapPartial: 'x',
+        gapWeak: 'x',
+        gapUnknown: 'x',
+        flowS1: 'x',
+        flowS1b: 'x x x x x x x x x x x x.',
+        flowS1c: 'france, UAE, argentina',
+        flowS2: 'x x',
+        flowS2b: 'x x x x x x x, x, x x x x.',
+        flowS2c: 'united-kingdom, saudi-arabia, argentina',
+        flowS3: 'x x',
+        flowS3b: 'x x x, x x, x x x x x x x x x.',
+        flowS3c: 'germany, france, UAE',
+        flowS4: 'x x',
+        flowS4b: 'x x x x x x x, x x, x x, x x x x.',
+        flowS4c: 'EU, united-kingdom, china',
+        flowS5: 'x',
+        flowS5b: 'x x x x x, x, x x x x x x.',
+        flowS5c: 'korea, united-states x x, singapore',
+        peerL1: 'x x x',
+        peerL1b: 'x x x x x x, x x x x x x x x x x x x.',
+        peerL1c1: 'x x',
+        peerL1c2: 'x x',
+        peerL1c3: 'x x',
+        peerL1d1: 'united-kingdom, france, germany, UAEx x x x x x',
+        peerL1d2: 'koreax singaporex x x x x x x x x x x. chinax x·x x x x x x x x.',
+        peerL1d3: 'korea, singapore, china',
+        peerL2: 'x x x',
+        peerL2b: 'x x x x x, x x x x x·x x x x x.',
+        peerL2d1: 'india, united-kingdom, france, saudi-arabia, UAE, pakistan',
+        peerL2d2: 'chinax x x x x x x, EUx x x x, koreax x x x x x x x x x.',
+        peerL2d3: 'china, EU, korea',
+        peerL3: 'x x x',
+        peerL3b: 'x x x x x x x, x, x x x x x x x x x x.',
+        peerL3d1: 'france, germany, UAE, argentina',
+        peerL3d2: 'EU·united-kingdomx x x x x x, chinax x x x x x x x x x x. koreax x x x x x x x x x.',
+        peerL3d3: 'EU, united-kingdom, china, korea',
+        peerL4: 'x x x x',
+        peerL4b: 'x x x x x, x x x x x x x x x x.',
+        peerL4d1: 'korea, china, UAE, saudi-arabia, india, pakistan',
+        peerL4d2: 'EUx x x x x x x, united-kingdom·francex x x x x x x x. x x x x x x x x x x.',
+        peerL4d3: 'EU, united-kingdom, france',
+        rowLabelDim: 'Labeling / transparency',
+        rowLabelCommon: 'x x x x x x x.',
+        rowLabelDiff: 'x x, x, x x x x x x x.',
+        rowLabelEx: 'EU, china, korea vs united-kingdom, UAE, argentina',
+        rowElectionDim: 'Election integrity',
+        rowElectionCommon: 'x x x x x x.',
+        rowElectionDiff: 'x x x x x x x x x x.',
+        rowElectionEx: 'korea, singapore, united-states x x vs france, germany, UAE',
+        rowNCIIDim: 'Non-consensual sexual deepfakes',
+        rowNCIICommon: 'x x x x x x x x.',
+        rowNCIIDiff: 'x x x, x x, x x x x.',
+        rowNCIIEx: 'united-kingdom, korea, united-states, germany x vs france, saudi-arabia, UAE',
+        rowPlatformDim: 'Platform accountability',
+        rowPlatformCommon: 'x x x x x x x.',
+        rowPlatformDiff: 'x x x, x x x x x x.',
+        rowPlatformEx: 'EU, united-kingdom, france vs saudi-arabia, UAE, argentina',
+        rowPenaltyDim: 'Penalty architecture',
+        rowPenaltyCommon: 'x x x x x.',
+        rowPenaltyDiff: 'x x x, x x x x x x x.',
+        rowPenaltyEx: 'korea, united-states x x vs saudi-arabia, UAE, france',
+        rowAct: 'Acts / laws',
+        rowActHow: 'x x x, x, x x.',
+        rowActEffect: 'x x x x x x.',
+        rowDecree: 'Decrees / subordinate rules',
+        rowDecreeHow: 'x x x x x x.',
+        rowDecreeEffect: 'x x, x x, x x x.',
+        rowGuide: 'Guidelines / reports',
+        rowGuideHow: 'x x x x x x x.',
+        rowGuideEffect: 'x x x x x x x x x.',
+        evTitle: 'x x x (x)',
+        evNote: 'x x: x x, x x x',
+        evLoading: 'x x x...',
+        evEmpty: 'x x x.',
+        evSpecial: 'x',
+        evLocator: 'x x',
+        lang: 'x',
+        navHome: 'Home', navCountries: 'Countries', navCompare: 'Compare', navPenalties: 'Penalties', navRQ: 'RQ',
+        q1: '1) x x x x AI x x x x?',
+        q2: '2) x x x x x x(x: x, x, x)?',
+        q3: '3) x x(x, x, x, x)x x x x x x x?',
+        q4: '4) x x x x x x x?',
+        a1: 'x x x x x x, (1) x x, (2) x x x, (3) x·x x x x x. x(EU/united-kingdom/germany/france)x x·x x·x x x x x x, x x x x(x: x x x)x x x x. x x x x x x x/x/x x x x x x. x “x x x”x, x x x x x x x x x x x.',
+        a1p1: 'x x·x·x x x x x',
+        a1p2: 'x x x x x x x x x',
+        a1p3: 'x x x x x x x',
+        a2: 'x x x x x(x)·x·x x x x x x x. x x x x x x. x, x x x x x x x x x. x, x x x x x x x x x x, x x·x x·x x x x. x, x x x x, x x x x x x x x. x x x x x “x x + x x + x x”x x x.',
+        a2p1: 'x x x x x x x',
+        a2p2: 'x x x x x x x x',
+        a2p3: 'x x x x x x x x',
+        a3: 'x x x x x x x x x x x. x x x x, x x x x x x, x x x x x x x x x x x. x x x x-x-x x, x x x-x-x x x x.',
+        a3p1: 'x x x x x, x x x x x.',
+        a3p2: 'x x x x, x, x x x x x.',
+        a3p3: 'x x x x x, x x, x x.',
+        a4: 'x·x x x x x. (1) x x x x x: x x x x x x x, x x x x x. (2) x x x x: x x x x x x x, x·x·x x x x x x x. (3) x·x x x: x x x, x x, x x x x x x x x x. (4) x/x x x: x x x x·x x x x x x x. x x x x “x x” x x x x x x x.',
+        a4p1: 'x x x x x x x x',
+        a4p2: 'x x·x·x x x x',
+        a4p3: 'x·x·x x x x x'
+      },
+      en: {
+        title: 'Research Topic (RQ)',
+        subtitle: 'RQ answers are now fixed as the first submitted draft.',
+        methodTitle: 'Method Framing',
+        methodP1: 'The comparison unit is not whether a country has a stand-alone deepfake law, but whether it has an enforceable regulatory pathway.',
+        methodP2: 'The five comparison dimensions are labeling, election integrity, non-consensual sexual deepfakes, platform accountability, and penalties.',
+        methodP3: 'Acts, subordinate rules, guidelines, and reports are separated so legal force and operational effect are not conflated.',
+        methodP4: 'This means the RQ reading tracks not only text on paper, but also enforcement protocol, evidence handling, and supervisory capacity.',
+        landTitle: 'Regulatory Landscapes',
+        land1h: 'Criminal-law-led control',
+        land1b: 'This model raises response intensity by criminalizing specific harms, as seen in Korea, the German criminal-law track, and some U.S. state approaches.',
+        land2h: 'Platform-duty-led control',
+        land2b: 'This model centers notice handling, risk mitigation, recordkeeping, and response duties, as seen most clearly in the EU, UK, and France.',
+        land3h: 'Guidance-led governance',
+        land3b: 'This model builds practice through administrative directives and governance guidance before strong deepfake-specific statutory detail appears, as in Argentina and parts of UAE and Australia.',
+        globalWordcloudTitle: 'Global Word Cloud',
+        globalWordcloudNote: 'Key terms extracted from all clause-coding segments in official laws/acts. The current color choice is a provisional civic palette: navy, teal, and amber.',
+        globalWordcloudKor: 'Korean',
+        globalWordcloudSource: 'Source/English',
+        globalWordcloudContext: 'Context layer',
+        globalWordcloudMeta: 'Based on {rows} segments',
+        globalWordcloudEmpty: 'No global word cloud data is available.',
+        simTitle: 'Similarities And Differences',
+        simNote: 'RQ2 first groups jurisdictions by similar policy profile, then reads what is shared and what diverges across those peer groups.',
+        rq2QuestionChip: 'RQ2',
+        rq2QuestionSummary: 'Show answer note',
+        deepSimTitle: 'Deep Similarity Reading',
+        deepSimNote: 'These cards separate why jurisdictions look similar from where they diverge: within-type splits, cross-type functional resemblance, and bridge pairs for interpretation.',
+        deepSameType: 'Within-type divergence',
+        deepCrossType: 'Cross-type functional similarity',
+        deepBridge: 'Interpretive bridge pair',
+        deepCloseAxes: 'Closest axes',
+        deepDivergeAxes: 'Divergent axes',
+        deepDistance: 'Distance',
+        deepNoData: 'No score data is available for deep similarity calculation.',
+        dimSimTitle: 'Country And Dimension-Level Similar Peers',
+        dimSimNote: 'Choose a country to see its closest overall peers and, separately, the closest peers for each policy dimension. When the overall peers differ from dimension-level peers, that difference is the interpretive point.',
+        dimSimCountry: 'Base country',
+        dimSimOverallTitle: 'Final overall similar countries',
+        dimSimHeatmapTitle: 'Similarity heatmap from selected country',
+        dimSimAxisTitle: 'Similar countries by dimension',
+        dimSimDistance: 'Overall distance',
+        dimSimGap: 'Gap',
+        dimSimBaseScore: 'Base score',
+        dimSimClosestOverall: 'Closest overall countries',
+        dimSimClosestByDimension: 'Closest country by dimension',
+        dimSimHeatmapGuide: 'Cell values are score gaps from the selected country. Darker purple means closer similarity.',
+        dimSimSpectrumHigh: 'More similar',
+        dimSimSpectrumLow: 'Less similar',
+        dimSimNoData: 'No score data is available for dimension-level similarity calculation.',
+        simCluster1: 'Platform-transparency family',
+        simCluster1b: 'These jurisdictions organize regulation around labeling, risk mitigation, and service-response duties.',
+        simCluster1c1: 'Representative peers',
+        simCluster1c2: 'Closest dimensions',
+        simCluster1d1: 'EU, UK, France',
+        simCluster1d2: 'Labeling, platform accountability, recordkeeping',
+        simCluster2: 'Criminal-enforcement family',
+        simCluster2b: 'These systems raise response intensity by directly criminalizing specific harms or foregrounding criminal sanctions.',
+        simCluster2d1: 'Korea, Australia, United States, Singapore',
+        simCluster2d2: 'NCII, election integrity, penalties',
+        simCluster3: 'Administrative-control and traceability family',
+        simCluster3b: 'These systems build enforceability through service control, disclosure, and traceability duties.',
+        simCluster3d1: 'China, EU-adjacent logic',
+        simCluster3d2: 'Labeling, traceability, service obligations',
+        simCluster4: 'Existing-law reliance family',
+        simCluster4b: 'These jurisdictions rely more heavily on cybercrime, intermediary, or general public-order rules than on stand-alone deepfake codification.',
+        simCluster4d1: 'India, Pakistan, UAE, Saudi Arabia, Argentina',
+        simCluster4d2: 'Intermediary duties, general offenses, administrative guidance',
+        govReviewTitle: 'Governance Type Review',
+        govReviewNote: 'This table shows the auto-generated governance type as a review layer, not as an unexamined conclusion. Official-law scores support the core legal classification; B1/B2 context scores are used only as auxiliary signals for guidance-led or hybrid legal-guidance patterns.',
+        govEvidence: 'Evidence',
+        govContext: 'B1/B2',
+        govGuidance: 'Guidance',
+        govTopDims: 'Top axes',
+        govStatusOk: 'Plausible auto type',
+        govStatusContext: 'Check context boundary',
+        govStatusReview: 'Manual review priority',
+        govEmpty: 'Governance score data could not be loaded.',
+        diffTitle: 'Governance Factors',
+        gapMatrixTitle: 'Gap Matrix',
+        gapMatrixNote: 'Q4 version A. This matrix compares where enforcement clarity is clear, partial, weak, or still unclear across operational checkpoints.',
+        gapFlowTitle: 'Enforcement Flow Breakdown',
+        gapFlowNote: 'Q4 version B. This view shows where the enforcement chain tends to break, from detection through sanction.',
+        peerTitle: 'How Similar Jurisdictions Fill the Gap',
+        peerNote: 'Where a gap remains, this section benchmarks the country against peers first identified through the RQ2 similarity map.',
+        wbTitle: 'Summary Workbook',
+        wbNote: 'Use this viewer to open each tab from the consolidated comparison workbook.',
+        wbLabel: 'Sheet',
+        wbLoading: 'Loading summary workbook...',
+        wbEmpty: 'No worksheet could be displayed.',
+        wbError: 'The summary workbook could not be loaded.',
+        simHead1: 'Dimension',
+        simHead2: 'Common pattern',
+        simHead3: 'Main differences',
+        simHead4: 'Illustrative countries',
+        diffHead1: 'Governance instrument',
+        diffHead2: 'How it shapes policy',
+        diffHead3: 'Observed effect',
+        gapCountry: 'Country',
+        gapH1: 'Election clarity',
+        gapH2: 'Labeling scope',
+        gapH3: 'Responsible actor',
+        gapH4: 'Evidence preservation',
+        gapH5: 'Takedown process',
+        gapH6: 'Cross-border cooperation',
+        gapClear: 'Clear',
+        gapPartial: 'Partial',
+        gapWeak: 'Weak',
+        gapUnknown: 'Unknown',
+        flowS1: 'Detection',
+        flowS1b: 'Harm is often identified late because monitoring standards and trigger thresholds vary across institutions and platforms.',
+        flowS1c: 'France, UAE, Argentina',
+        flowS2: 'Attribution',
+        flowS2b: 'Linking content to creator, uploader, or coordinated distributor remains difficult when actor allocation is not explicit in law.',
+        flowS2c: 'UK, Saudi Arabia, Argentina',
+        flowS3: 'Preservation',
+        flowS3b: 'Before-removal preservation, forensic handling, and chain-of-custody rules are frequently under-specified.',
+        flowS3c: 'Germany, France, UAE',
+        flowS4: 'Removal',
+        flowS4b: 'Notice-and-takedown pathways exist more often, but timelines, persistence rules, and re-upload handling are uneven.',
+        flowS4c: 'EU, UK, China',
+        flowS5: 'Sanction',
+        flowS5b: 'Sanctions may exist on paper while prosecution thresholds, venue, and supervisory execution remain inconsistent.',
+        flowS5c: 'Korea, U.S. states, Singapore',
+        peerL1: 'Election-gap peers',
+        peerL1b: 'Where election-specific clarity is weak, compare jurisdictions that created election-period rules or campaign-integrity controls.',
+        peerL1c1: 'Gap cluster',
+        peerL1c2: 'Peer response',
+        peerL1c3: 'Representative peers',
+        peerL1d1: 'UK, France, Germany, and UAE rely more heavily on general-law interpretation for election harms.',
+        peerL1d2: 'Korea and Singapore raise clarity through election-specific rules or online-advertising integrity controls. China also strengthens clarity indirectly through broader synthetic-content labeling duties.',
+        peerL1d3: 'Korea, Singapore, China',
+        peerL2: 'Labeling-scope peers',
+        peerL2b: 'Where labeling scope is partial or weak, compare systems that operationalize disclosure duties more explicitly.',
+        peerL2d1: 'India, UK, France, Saudi Arabia, UAE, Pakistan',
+        peerL2d2: 'China tightly couples synthetic-content labeling with service duties, the EU formalizes transparency obligations, and Korea specifies disclosure points through advertising and election rules.',
+        peerL2d3: 'China, EU, Korea',
+        peerL3: 'Evidence-preservation peers',
+        peerL3b: 'Where evidence handling is thin, compare systems that embed pre-removal preservation, recordkeeping, or forensic handling logic.',
+        peerL3d1: 'France, Germany, UAE, Argentina',
+        peerL3d2: 'The EU and UK strengthen platform recordkeeping and response protocol, while China builds some preservation logic into traceability and service-management duties. Korea remains useful as a criminal-enforcement comparator, but protocol standardization is still a live issue.',
+        peerL3d3: 'EU, UK, China, Korea',
+        peerL4: 'Cross-border-cooperation peers',
+        peerL4b: 'Where cross-border cooperation is weak, compare systems built around supranational platform control or stronger international enforcement channels.',
+        peerL4d1: 'Korea, China, UAE, Saudi Arabia, India, Pakistan',
+        peerL4d2: 'The EU offers the clearest cross-border platform enforcement logic, while the UK and France pair digital-service supervision with international coordination pathways. Purely domestic criminal models may punish strongly but coordinate less smoothly across borders.',
+        peerL4d3: 'EU, UK, France',
+        rowLabelDim: 'Labeling / transparency',
+        rowLabelCommon: 'Most systems now recognize some disclosure or transparency logic.',
+        rowLabelDiff: 'The main divide is between binding duties, guidance-only expectations, and platform self-governance.',
+        rowLabelEx: 'EU, China, Korea vs UK, UAE, Argentina',
+        rowElectionDim: 'Election integrity',
+        rowElectionCommon: 'Election-period synthetic media is widely treated as a governance risk.',
+        rowElectionDiff: 'Some systems have direct rules or bans, while many still rely on general misinformation or public-order pathways.',
+        rowElectionEx: 'Korea, Singapore, some U.S. states vs France, Germany, UAE',
+        rowNCIIDim: 'Non-consensual sexual deepfakes',
+        rowNCIICommon: 'Victim-protection logic is strengthening across most jurisdictions.',
+        rowNCIIDiff: 'The main variation is direct criminalization, offense precision, and speed of relief.',
+        rowNCIIEx: 'UK, Korea, U.S., German criminal track vs France, Saudi Arabia, UAE',
+        rowPlatformDim: 'Platform accountability',
+        rowPlatformCommon: 'There is broad convergence on the need for platform response duties.',
+        rowPlatformDiff: 'The difference is whether duties are specific legal obligations or looser cooperation expectations under general cybercrime structures.',
+        rowPlatformEx: 'EU, UK, France vs Saudi Arabia, UAE, Argentina',
+        rowPenaltyDim: 'Penalty architecture',
+        rowPenaltyCommon: 'A sanctions pathway usually exists somewhere in the system.',
+        rowPenaltyDiff: 'Predictability differs depending on whether the penalty is deepfake-specific or derived from broader offense categories.',
+        rowPenaltyEx: 'Korea, some U.S. states vs Saudi Arabia, UAE, France',
+        rowAct: 'Acts / laws',
+        rowActHow: 'They create binding duties, prohibitions, and sanctions.',
+        rowActEffect: 'They increase predictability about enforcement authority and penalty exposure.',
+        rowDecree: 'Decrees / subordinate rules',
+        rowDecreeHow: 'They convert abstract statutory obligations into operational procedures.',
+        rowDecreeEffect: 'They clarify labeling format, notice workflow, exceptions, and actor responsibility.',
+        rowGuide: 'Guidelines / reports',
+        rowGuideHow: 'They shape expected practice where legal text is incomplete or still evolving.',
+        rowGuideEffect: 'They are weaker legally, but often shape platform controls and governance vocabulary first.',
+        evTitle: 'Country Evidence Mapping (Draft)',
+        evNote: 'Pre-approval: locked answers, evidence index only',
+        evLoading: 'Loading evidence...',
+        evEmpty: 'No evidence could be loaded.',
+        evSpecial: 'Special point',
+        evLocator: 'Locator',
+        lang: 'Language',
+        navHome: 'Home', navCountries: 'Countries', navCompare: 'Compare', navPenalties: 'Penalties', navRQ: 'RQ',
+        q1: '1) How do regions regulate deepfakes and generative AI media?',
+        q2: '2) What are the key similarities and differences in policy approaches (for example, labeling, consent, and criminalisation)?',
+        q3: '3) How do governance factors such as acts, subordinate rules, guidelines, and reports shape these policies?',
+        q4: '4) What gaps remain in enforcement and compliance mechanisms?',
+        a1: 'Regional regulation does not follow a single model. The corpus shows three recurring patterns: (1) criminal-law-led control, (2) platform-duty-led control, and (3) guidance/administrative-control-led governance. Europe (EU/UK/Germany/France) generally combines transparency, platform risk duties, and systemic mitigation obligations, while some jurisdictions prioritize rapid criminal codification for specific harms (for example, non-consensual sexual deepfakes). Others rely more on existing cybercrime/privacy/reputation rules rather than a dedicated deepfake code. In practice, effective strength depends less on whether a “deepfake-only statute” exists and more on how enforceably deepfake harms are mapped into operative legal pathways.',
+        a1p1: 'Europe shows stronger coupling of transparency, risk mitigation, and platform duties.',
+        a1p2: 'Some systems prioritize criminal codification for non-consensual sexual deepfakes.',
+        a1p3: 'Enforceable mapping into existing law matters more than statute labeling.',
+        a2: 'The key similarity is that most jurisdictions now acknowledge at least one of the following: labeling/disclosure logic, victim-protection logic, or platform accountability logic. The key differences are structural. First, labeling diffuses quickly, but legal force varies widely: binding law in some systems, guidance-level expectations in others. Second, non-consensual deepfake treatment is increasingly linked to criminal frameworks, yet offense clarity, burden of proof, and speed of relief remain uneven. Third, election-related codification is still the least mature dimension, with many systems relying on general provisions. Therefore, policy comparability requires evaluating legal force, operational procedure, and evidentiary workflow together, not just headline legislation.',
+        a2p1: 'Labeling is widespread, but binding force differs significantly across systems.',
+        a2p2: 'Criminal linkage is growing for non-consensual harms, with uneven offense precision.',
+        a2p3: 'Election codification remains the weakest and most uneven dimension.',
+        a3: 'Policy divergence is shaped less by abstract culture alone than by which governance instruments are mobilized first. Acts lock in sanctions and duties, subordinate rules turn those duties into operational procedure, and guidelines or reports often shape expected practice before deepfake-specific statutory language is mature. As a result, one country may evolve through law-plus-decree enforcement, while another develops through guidance-plus-administrative control and later legal consolidation.',
+        a3p1: 'Some systems move first through binding law, while others accumulate guidance first.',
+        a3p2: 'Within one country, the mix of acts, decrees, and guidance changes policy strength.',
+        a3p3: 'The governance-tool mix shapes enforcement speed, role clarity, and compliance cost.',
+        a4: 'Four recurring enforcement and compliance gaps appear across countries. (1) Election-specific legal clarity is often weak, creating inconsistent interpretation under general law. (2) Labeling duty boundaries are frequently unclear: scope, visibility standard, persistence requirement, and responsible actor (creator/platform/distributor). (3) Evidence operations are under-specified in many systems: pre-takedown preservation, chain-of-custody, recirculation tracking, and inter-agency cooperation. (4) Proposal-to-enforcement lag remains substantial: policy intent is visible, but monitoring and sanction execution are not always institutionalized. The practical reform priority is therefore not only more laws, but auditable enforcement protocols and supervisory capacity.',
+        a4p1: 'Election-specific rules are often too weak for consistent interpretation.',
+        a4p2: 'Labeling boundaries and accountable actor allocation remain unclear.',
+        a4p3: 'Evidence-operation standards are the key bottleneck for enforceability.'
+      }
+    };
+
+    const LANG_STORAGE_KEY = 'deepfakePolicyLang';
+    const qs = new URLSearchParams(location.search);
+    const langSel = document.getElementById('lang');
+    langSel.value = qs.get('lang') === 'ko'
+      ? 'ko'
+      : (() => {
+          try { return !qs.has('lang') && localStorage.getItem(LANG_STORAGE_KEY) === 'ko' ? 'ko' : 'en'; }
+          catch (_) { return 'en'; }
+        })();
+    const methodPoints = document.getElementById('methodPoints');
+    const landHost = document.getElementById('landHost');
+    const globalWordcloudTerms = document.getElementById('globalWordcloudTerms');
+    const globalWordcloudSwitch = document.getElementById('globalWordcloudSwitch');
+    const simClusterHost = document.getElementById('simClusterHost');
+    const dimSimCountry = document.getElementById('dimSimCountry');
+    const dimSimOverallHost = document.getElementById('dimSimOverallHost');
+    const dimSimHeatmapHost = document.getElementById('dimSimHeatmapHost');
+    const dimSimAxisHost = document.getElementById('dimSimAxisHost');
+    const govReviewHost = document.getElementById('govReviewHost');
+    const deepSimHost = document.getElementById('deepSimHost');
+    const simHost = document.getElementById('simHost');
+    const diffHost = document.getElementById('diffHost');
+    const gapMatrixHost = document.getElementById('gapMatrixHost');
+    const gapFlowHost = document.getElementById('gapFlowHost');
+    const peerHost = document.getElementById('peerHost');
+    const wbSheet = document.getElementById('wbSheet');
+    const wbHost = document.getElementById('wbHost');
+    const rqHost = document.getElementById('rqHost');
+    const evHost = document.getElementById('evHost');
+    const esc = (s) => String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    const stripQuestionPrefix = (s) => String(s || '').replace(/^\s*\d+\)\s*/, '');
+    const lang = () => (langSel.value === 'en' ? 'en' : 'ko');
+    function saveLang() {
+      try { localStorage.setItem(LANG_STORAGE_KEY, lang()); }
+      catch (_) {}
+    }
+    function withLang(path) {
+      const url = new URL(path, location.origin);
+      url.searchParams.set('lang', lang());
+      return url.pathname + url.search + url.hash;
+    }
+    function refreshAppLinks() {
+      document.querySelectorAll('a[href^="/w/DFGovernace/deepfake-policy/index.html"]').forEach((a) => {
+        a.setAttribute('href', withLang(a.getAttribute('href')));
+      });
+    }
+    let dimSimSelection = 'South Korea';
+    let workbookSheetNames = [];
+    let workbookSelectedSheet = '';
+    let governanceScores = null;
+    let wordcloudPayload = null;
+    let globalWordcloudView = 'kor';
+    const countryLabelMap = {
+      "united-states": "US United States",
+      "mexico": "MX Mexico",
+      "brazil": "BR Brazil",
+      "argentina": "AR Argentina",
+      "united-kingdom": "UK United Kingdom",
+      "france": "FR France",
+      "germany": "DE Germany",
+      "EU": "EU European Union",
+      "eu": "EU European Union",
+      "saudi-arabia": "SA Saudi Arabia",
+      "saudi-arabia": "SA Saudi Arabia",
+      "united-arab-emirates": "UAE United Arab Emirates",
+      "united-arab-emirates": "UAE United Arab Emirates",
+      "india": "IN India",
+      "pakistan": "PK Pakistan",
+      "china": "CN China",
+      "japan": "JP Japan",
+      "korea": "KR Korea",
+      "singapore": "SG Singapore",
+      "singapore": "SG Singapore",
+      "malaysia": "MY Malaysia",
+      "australia": "AU Australia",
+      "canada": "CA Canada",
+      "italy": "IT Italy",
+      "russia": "RU Russia",
+      "egypt": "EG Egypt",
+      "south-africa": "ZA South Africa",
+      "tanzania": "TZ Tanzania",
+      "new-zealand": "NZ New Zealand",
+      "taiwan": "TW Taiwan",
+    };
+
+    function applyText() {
+      const t = T[lang()];
+      document.documentElement.lang = lang();
+      refreshAppLinks();
+      document.getElementById('title').textContent = t.title;
+      document.getElementById('subtitle').textContent = t.subtitle;
+      document.getElementById('methodTitle').textContent = t.methodTitle;
+      document.getElementById('landTitle').textContent = t.landTitle;
+      document.getElementById('govReviewTitle').textContent = t.govReviewTitle;
+      document.getElementById('govReviewNote').textContent = t.govReviewNote;
+      document.getElementById('rq2QuestionChip').textContent = t.rq2QuestionChip;
+      document.getElementById('rq2QuestionTitle').textContent = stripQuestionPrefix(t.q2);
+      document.getElementById('rq2QuestionSummary').textContent = t.rq2QuestionSummary;
+      document.getElementById('rq2QuestionAnswer').textContent = t.a2;
+      document.getElementById('simTitle').textContent = t.simTitle;
+      document.getElementById('simNote').textContent = t.simNote;
+      document.getElementById('deepSimTitle').textContent = t.deepSimTitle;
+      document.getElementById('deepSimNote').textContent = t.deepSimNote;
+      document.getElementById('dimSimTitle').textContent = t.dimSimTitle;
+      document.getElementById('dimSimNote').textContent = t.dimSimNote;
+      document.getElementById('dimSimCountryLabel').textContent = `${t.dimSimCountry}:`;
+      document.getElementById('dimSimOverallTitle').textContent = t.dimSimOverallTitle;
+      document.getElementById('dimSimHeatmapTitle').textContent = t.dimSimHeatmapTitle;
+      document.getElementById('dimSimAxisTitle').textContent = t.dimSimAxisTitle;
+      document.getElementById('diffTitle').textContent = t.diffTitle;
+      document.getElementById('gapMatrixTitle').textContent = t.gapMatrixTitle;
+      document.getElementById('gapMatrixNote').textContent = t.gapMatrixNote;
+      document.getElementById('gapFlowTitle').textContent = t.gapFlowTitle;
+      document.getElementById('gapFlowNote').textContent = t.gapFlowNote;
+      document.getElementById('peerTitle').textContent = t.peerTitle;
+      document.getElementById('peerNote').textContent = t.peerNote;
+      document.getElementById('wbTitle').textContent = t.wbTitle;
+      document.getElementById('wbNote').textContent = t.wbNote;
+      document.getElementById('wbLabel').textContent = t.wbLabel + ':';
+      document.getElementById('langLabel').textContent = t.lang + ':';
+      document.getElementById('rqPanelTitle').textContent = t.title;
+      document.getElementById('tabHome').textContent = t.navHome;
+      document.getElementById('tabCountries').textContent = t.navCountries;
+      document.getElementById('tabCompare').textContent = t.navCompare;
+      document.getElementById('tabPenalties').textContent = t.navPenalties;
+      document.getElementById('tabRQ').textContent = t.navRQ;
+      document.getElementById('evTitle').textContent = t.evTitle;
+      document.getElementById('evNote').textContent = t.evNote;
+    }
+
+    function governanceCountryLabel(country) {
+      const labels = {
+        ko: {
+          Australia: 'australia',
+          China: 'china',
+          EU: 'EU',
+          France: 'france',
+          India: 'india',
+          Pakistan: 'pakistan',
+          'Saudi Arabia': 'saudi-arabia',
+          'South Korea': 'korea',
+          UAE: 'united-arab-emirates',
+          UK: 'united-kingdom',
+          US: 'united-states',
+          'United States': 'united-states',
+        },
+        en: {
+          Australia: 'Australia',
+          China: 'China',
+          EU: 'EU',
+          France: 'France',
+          India: 'India',
+          Pakistan: 'Pakistan',
+          'Saudi Arabia': 'Saudi Arabia',
+          'South Korea': 'South Korea',
+          UAE: 'UAE',
+          UK: 'United Kingdom',
+          US: 'United States',
+          'United States': 'United States',
+        },
+      };
+      return (labels[lang()] && labels[lang()][country]) || country;
+    }
+
+    function globalWordcloudBucket() {
+      const global = wordcloudPayload && wordcloudPayload.global ? wordcloudPayload.global : {};
+      if (globalWordcloudView === 'source') return global.official_law_text || null;
+      if (globalWordcloudView === 'context') return global.context_layer_text_kor || null;
+      return global.official_law_text_kor || null;
+    }
+
+    function renderGlobalWordcloud() {
+      const t = T[lang()];
+      if (!globalWordcloudTerms) return;
+      Array.from(globalWordcloudSwitch.querySelectorAll('[data-wordcloud-view]')).forEach((btn) => {
+        btn.classList.toggle('active', btn.getAttribute('data-wordcloud-view') === globalWordcloudView);
+      });
+      let bucket = globalWordcloudBucket();
+      if ((!bucket || !bucket.length) && globalWordcloudView === 'kor') {
+        bucket = wordcloudPayload && wordcloudPayload.global ? wordcloudPayload.global.official_law_text : null;
+      }
+      const terms = Array.isArray(bucket) ? bucket.slice(0, 76) : [];
+      if (!terms.length) {
+        globalWordcloudTerms.className = 'wordcloud-empty';
+        globalWordcloudTerms.textContent = t.globalWordcloudEmpty;
+        return;
+      }
+      const scope = wordcloudPayload && wordcloudPayload.scope ? wordcloudPayload.scope : {};
+      const rows = Number(globalWordcloudView === 'context' ? scope.context_rows : scope.core_official_law_rows) || 0;
+      document.getElementById('globalWordcloudNote').textContent =
+        `${t.globalWordcloudNote} · ${t.globalWordcloudMeta.replace('{rows}', rows.toLocaleString(lang() === 'ko' ? 'ko-KR' : 'en-US'))}`;
+      const palette = ['#12355b', '#0b6e69', '#b7791f', '#7c2d12', '#334155', '#1d4ed8', '#0f766e'];
+      const max = Math.max(...terms.map((term) => Number(term.value) || 0), 1);
+      globalWordcloudTerms.className = 'wordcloud-terms';
+      globalWordcloudTerms.innerHTML = terms.map((term, index) => {
+        const value = Number(term.value) || 0;
+        const weight = Math.sqrt(value / max);
+        const size = 0.78 + weight * 2.35;
+        const color = palette[index % palette.length];
+        const tilt = index % 8 === 0 ? -2 : (index % 7 === 0 ? 2 : 0);
+        const title = `${term.text || ''}: ${value}`;
+        return `<span class="wordcloud-term" title="${esc(title)}" style="--term-size:${size.toFixed(2)}rem;--term-color:${color};--term-tilt:${tilt}deg;">${esc(term.text || '')}</span>`;
+      }).join('');
+    }
+
+    async function loadWordclouds() {
+      try {
+        const resp = await fetch('/w/DFGovernace/api-static/analysis-wordclouds.json');
+        if (!resp.ok) throw new Error('wordcloud fetch failed');
+        wordcloudPayload = await resp.json();
+      } catch (_) {
+        wordcloudPayload = null;
+      }
+      renderGlobalWordcloud();
+    }
+
+    function dimensionShortLabel(value) {
+      const labels = {
+        ko: {
+          'scope/coverage': 'x',
+          'disclosure/labeling': 'x',
+          'remedies/consent': 'x/x',
+          elections: 'x',
+          'criminalize/penalty': 'x',
+          'platform duties': 'x',
+        },
+        en: {
+          'scope/coverage': 'Scope',
+          'disclosure/labeling': 'Labeling',
+          'remedies/consent': 'Remedies',
+          elections: 'Elections',
+          'criminalize/penalty': 'Penalty',
+          'platform duties': 'Platform',
+        },
+      };
+      return (labels[lang()] && labels[lang()][value]) || value;
+    }
+
+    const SCORE_AXES = [
+      ['scope_coverage', 'scope/coverage'],
+      ['disclosure_labeling', 'disclosure/labeling'],
+      ['remedies_consent', 'remedies/consent'],
+      ['elections', 'elections'],
+      ['criminalize_penalty', 'criminalize/penalty'],
+      ['platform_duties', 'platform duties'],
+    ];
+
+    function scoreVector(item) {
+      return SCORE_AXES.map(([key]) => Number((item.governance_scores || {})[key] || 0));
+    }
+
+    function pairDistance(a, b) {
+      const av = scoreVector(a);
+      const bv = scoreVector(b);
+      return Math.sqrt(av.reduce((sum, cur, i) => sum + ((cur - bv[i]) ** 2), 0));
+    }
+
+    function pairAxes(a, b) {
+      const av = scoreVector(a);
+      const bv = scoreVector(b);
+      return SCORE_AXES.map(([, label], i) => ({
+        label,
+        delta: Math.abs(av[i] - bv[i]),
+        mean: (av[i] + bv[i]) / 2,
+      }));
+    }
+
+    function deepCard(title, pair, mode) {
+      const t = T[lang()];
+      if (!pair) return '';
+      const axes = pairAxes(pair.a, pair.b).sort((x, y) => mode === 'close' ? x.delta - y.delta : y.delta - x.delta).slice(0, 3);
+      const axisTitle = mode === 'close' ? t.deepCloseAxes : t.deepDivergeAxes;
+      return `
+        <article class="deep-card">
+          <h4>${esc(title)}</h4>
+          <div class="deep-pair">
+            <span class="deep-country">${esc(governanceCountryLabel(pair.a.country))}</span>
+            <span class="deep-arrow">↔</span>
+            <span class="deep-country">${esc(governanceCountryLabel(pair.b.country))}</span>
+          </div>
+          <p class="deep-copy">${esc(pair.note)} ${esc(t.deepDistance)} ${pair.distance.toFixed(1)}.</p>
+          <div class="deep-axis-list" aria-label="${esc(axisTitle)}">
+            ${axes.map((axis) => `
+              <div class="deep-axis-row">
+                <span class="deep-axis-name">${esc(dimensionShortLabel(axis.label))}</span>
+                <span class="deep-axis-track"><span class="deep-axis-fill" style="width:${Math.max(4, Math.min(100, mode === 'close' ? axis.mean : axis.delta))}%"></span></span>
+                <span class="deep-axis-value">${(mode === 'close' ? axis.mean : axis.delta).toFixed(1)}</span>
+              </div>
+            `).join('')}
+          </div>
+        </article>
+      `;
+    }
+
+    function renderDeepSimilarity() {
+      const t = T[lang()];
+      const rows = Object.values((governanceScores && governanceScores.countries) || {}).filter((row) => row && row.country);
+      if (rows.length < 2) {
+        deepSimHost.innerHTML = `<p class="deep-empty">${esc(t.deepNoData)}</p>`;
+        return;
+      }
+      const pairs = [];
+      for (let i = 0; i < rows.length; i += 1) {
+        for (let j = i + 1; j < rows.length; j += 1) {
+          const a = rows[i];
+          const b = rows[j];
+          const distance = pairDistance(a, b);
+          pairs.push({
+            a,
+            b,
+            distance,
+            sameType: a.governance_type === b.governance_type,
+            bothStrong: !String(a.evidence_strength || '').includes('thin') && !String(b.evidence_strength || '').includes('thin'),
+          });
+        }
+      }
+      const sameTypeDivergence = pairs
+        .filter((pair) => pair.sameType)
+        .sort((a, b) => b.distance - a.distance)[0];
+      const crossTypeSimilarity = pairs
+        .filter((pair) => !pair.sameType)
+        .sort((a, b) => a.distance - b.distance)[0];
+      const bridgePair = pairs
+        .filter((pair) => !pair.sameType && pair.bothStrong)
+        .sort((a, b) => {
+          const ag = Math.max(Number((a.a.governance_scores || {}).voluntary_guidance || 0), Number((a.b.governance_scores || {}).voluntary_guidance || 0));
+          const bg = Math.max(Number((b.a.governance_scores || {}).voluntary_guidance || 0), Number((b.b.governance_scores || {}).voluntary_guidance || 0));
+          return (bg - ag) || (a.distance - b.distance);
+        })[0] || crossTypeSimilarity;
+      if (sameTypeDivergence) sameTypeDivergence.note = lang() === 'ko'
+        ? 'x x x x x x x x x x.'
+        : 'They share a governance type, but the score profile splits on these axes.';
+      if (crossTypeSimilarity) crossTypeSimilarity.note = lang() === 'ko'
+        ? 'x x x x x x x.'
+        : 'They sit in different governance types but move closely on functional axes.';
+      if (bridgePair) bridgePair.note = lang() === 'ko'
+        ? 'x x x guidance/context x x x x x x x.'
+        : 'This pair is useful for reading across legal-force and guidance/context pathways.';
+      deepSimHost.innerHTML = [
+        deepCard(t.deepSameType, sameTypeDivergence, 'diverge'),
+        deepCard(t.deepCrossType, crossTypeSimilarity, 'close'),
+        deepCard(t.deepBridge, bridgePair, 'close'),
+      ].filter(Boolean).join('') || `<p class="deep-empty">${esc(t.deepNoData)}</p>`;
+    }
+
+    function renderDimensionSimilarity() {
+      const t = T[lang()];
+      const rows = Object.values((governanceScores && governanceScores.countries) || {})
+        .filter((row) => row && row.country && row.governance_scores)
+        .sort((a, b) => governanceCountryLabel(a.country).localeCompare(governanceCountryLabel(b.country), lang() === 'ko' ? 'ko' : 'en'));
+      if (rows.length < 2) {
+        dimSimCountry.innerHTML = '';
+        dimSimOverallHost.innerHTML = `<p class="dim-empty">${esc(t.dimSimNoData)}</p>`;
+        dimSimHeatmapHost.innerHTML = `<p class="dim-empty">${esc(t.dimSimNoData)}</p>`;
+        dimSimAxisHost.innerHTML = `<p class="dim-empty">${esc(t.dimSimNoData)}</p>`;
+        return;
+      }
+      if (!rows.some((row) => row.country === dimSimSelection)) dimSimSelection = rows[0].country;
+      dimSimCountry.innerHTML = rows.map((row) => {
+        const selected = row.country === dimSimSelection ? ' selected' : '';
+        return `<option value="${esc(row.country)}"${selected}>${esc(governanceCountryLabel(row.country))}</option>`;
+      }).join('');
+
+      const base = rows.find((row) => row.country === dimSimSelection) || rows[0];
+      const otherRows = rows.filter((row) => row.country !== base.country);
+      const heatColor = (gap, minGap, maxGap) => {
+        const normalizedGap = (gap - minGap) / Math.max(0.001, maxGap - minGap);
+        const closeness = 1 - Math.max(0, Math.min(1, normalizedGap));
+        const boosted = Math.pow(closeness, 1.9);
+        return {
+          bg: `hsl(263 ${(30 + (boosted * 58)).toFixed(1)}% ${(98 - (boosted * 70)).toFixed(1)}%)`,
+          text: boosted >= 0.48 ? '#fff' : '#312e81',
+        };
+      };
+      const overallPeers = otherRows
+        .map((row) => ({ row, distance: pairDistance(base, row) }))
+        .sort((a, b) => a.distance - b.distance);
+      const topOverallPeers = overallPeers.slice(0, 3);
+      const maxOverall = Math.max(...topOverallPeers.map((peer) => peer.distance), 1);
+      dimSimOverallHost.innerHTML = topOverallPeers.map((peer, index) => {
+        const closeness = 100 - ((peer.distance / maxOverall) * 72);
+        return `
+          <article class="dim-peer-card">
+            <div class="dim-peer-head">
+              <h4 class="dim-peer-title">${index + 1}. ${esc(governanceCountryLabel(peer.row.country))}</h4>
+              <span class="dim-peer-score">${esc(peer.row.governance_type || '-')}</span>
+            </div>
+            <div class="dim-peer-row">
+              <span class="dim-peer-name">${esc(t.dimSimDistance)}</span>
+              <span class="dim-peer-track"><span class="dim-peer-fill" style="width:${Math.max(4, Math.min(100, closeness))}%"></span></span>
+              <span class="dim-peer-gap">${peer.distance.toFixed(1)}</span>
+            </div>
+          </article>
+        `;
+      }).join('');
+
+      const heatRows = overallPeers.slice(0, 8);
+      const heatGaps = heatRows.flatMap((peer) => {
+        const baseVector = scoreVector(base);
+        const peerVector = scoreVector(peer.row);
+        return SCORE_AXES.map(([,], i) => Math.abs(baseVector[i] - peerVector[i]));
+      });
+      const minHeatGap = Math.min(...heatGaps, 0);
+      const maxHeatGap = Math.max(...heatGaps, 1);
+      const closestOverallText = topOverallPeers
+        .map((peer) => `${governanceCountryLabel(peer.row.country)} (${peer.distance.toFixed(1)})`)
+        .join(', ');
+      const closestByDimension = SCORE_AXES.map(([key, label]) => {
+        const baseScore = Number((base.governance_scores || {})[key] || 0);
+        const nearest = otherRows
+          .map((row) => ({
+            row,
+            gap: Math.abs(baseScore - Number((row.governance_scores || {})[key] || 0)),
+          }))
+          .sort((a, b) => a.gap - b.gap)[0];
+        return `${dimensionShortLabel(label)}=${governanceCountryLabel(nearest.row.country)} (${nearest.gap.toFixed(1)})`;
+      }).join('; ');
+      dimSimHeatmapHost.innerHTML = `
+        <div class="dim-heat-table">
+          <div class="dim-heat-row dim-heat-head">
+            <span>${esc(t.dimSimCountry)}</span>
+            ${SCORE_AXES.map(([, label]) => `<span>${esc(dimensionShortLabel(label))}</span>`).join('')}
+            <span>${esc(t.dimSimDistance)}</span>
+          </div>
+          ${heatRows.map((peer) => {
+            const baseVector = scoreVector(base);
+            const peerVector = scoreVector(peer.row);
+            return `
+              <div class="dim-heat-row">
+                <span class="dim-heat-country">${esc(governanceCountryLabel(peer.row.country))}</span>
+                ${SCORE_AXES.map(([, label], i) => {
+                  const gap = Math.abs(baseVector[i] - peerVector[i]);
+                  const color = heatColor(gap, minHeatGap, maxHeatGap);
+                  return `<span class="dim-heat-cell" title="${esc(dimensionShortLabel(label))}: ${gap.toFixed(1)}" style="background:${color.bg}; color:${color.text}">${gap.toFixed(1)}</span>`;
+                }).join('')}
+                <span class="dim-heat-distance">${peer.distance.toFixed(1)}</span>
+              </div>
+            `;
+          }).join('')}
+          <div class="dim-heat-row">
+            <div class="dim-heat-summary">
+              <strong>${esc(t.dimSimHeatmapGuide)}</strong><br>
+              ${esc(t.dimSimClosestOverall)}: ${esc(closestOverallText)}<br>
+              ${esc(t.dimSimClosestByDimension)}: ${esc(closestByDimension)}
+            </div>
+          </div>
+        </div>
+        <div class="dim-spectrum" aria-label="${esc(t.dimSimHeatmapGuide)}">
+          <p class="dim-spectrum-label">${esc(t.dimSimSpectrumHigh)}<span class="dim-spectrum-gap">${esc(t.dimSimGap)} ${minHeatGap.toFixed(1)}</span></p>
+          <div class="dim-spectrum-bar" style="background:linear-gradient(180deg, ${heatColor(minHeatGap, minHeatGap, maxHeatGap).bg} 0%, ${heatColor((minHeatGap + maxHeatGap) / 2, minHeatGap, maxHeatGap).bg} 48%, ${heatColor(maxHeatGap, minHeatGap, maxHeatGap).bg} 100%)"></div>
+          <p class="dim-spectrum-label">${esc(t.dimSimSpectrumLow)}<span class="dim-spectrum-gap">${esc(t.dimSimGap)} ${maxHeatGap.toFixed(1)}</span></p>
+        </div>
+      `;
+
+      dimSimAxisHost.innerHTML = SCORE_AXES.map(([key, label]) => {
+        const baseScore = Number((base.governance_scores || {})[key] || 0);
+        const peers = otherRows
+          .map((row) => {
+            const score = Number((row.governance_scores || {})[key] || 0);
+            return { row, score, gap: Math.abs(baseScore - score) };
+          })
+          .sort((a, b) => a.gap - b.gap)
+          .slice(0, 3);
+        const maxGap = Math.max(...peers.map((peer) => peer.gap), 1);
+        return `
+          <article class="dim-peer-card">
+            <div class="dim-peer-head">
+              <h4 class="dim-peer-title">${esc(dimensionShortLabel(label))}</h4>
+              <span class="dim-peer-score">${esc(t.dimSimBaseScore)} ${baseScore.toFixed(1)}</span>
+            </div>
+            <div class="dim-peer-list">
+              ${peers.map((peer) => {
+                const closeness = 100 - ((peer.gap / maxGap) * 72);
+                return `
+                  <div class="dim-peer-row">
+                    <span class="dim-peer-name">${esc(governanceCountryLabel(peer.row.country))}</span>
+                    <span class="dim-peer-track"><span class="dim-peer-fill" style="width:${Math.max(4, Math.min(100, closeness))}%"></span></span>
+                    <span class="dim-peer-gap">${esc(t.dimSimGap)} ${peer.gap.toFixed(1)}</span>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function governanceReviewStatus(item) {
+      const t = T[lang()];
+      const strength = String(item.evidence_strength || '');
+      if (strength.includes('thin') || strength.includes('review')) {
+        return { label: t.govStatusReview, cls: 'review' };
+      }
+      if (Number(item.context_guidance_score || 0) > 0 || Number(item.context_rows || 0) > 0) {
+        return { label: t.govStatusContext, cls: 'context' };
+      }
+      return { label: t.govStatusOk, cls: '' };
+    }
+
+    function renderGovernanceReview() {
+      const t = T[lang()];
+      const countries = governanceScores && governanceScores.countries ? governanceScores.countries : {};
+      const rows = Object.values(countries)
+        .filter((row) => row && row.country)
+        .sort((a, b) => governanceCountryLabel(a.country).localeCompare(governanceCountryLabel(b.country), lang() === 'ko' ? 'ko' : 'en'));
+      if (!rows.length) {
+        govReviewHost.innerHTML = `<p class="gov-empty">${esc(t.govEmpty)}</p>`;
+        return;
+      }
+      govReviewHost.innerHTML = rows.map((item) => {
+        const status = governanceReviewStatus(item);
+        const topDims = Object.values(item.dimension_scores || {})
+          .sort((a, b) => Number(b.score || 0) - Number(a.score || 0))
+          .slice(0, 3);
+        return `
+          <article class="gov-card">
+            <div class="gov-card-head">
+              <div>
+                <h3 class="gov-country">${esc(governanceCountryLabel(item.country))}</h3>
+                <span class="gov-status ${esc(status.cls)}">${esc(status.label)}</span>
+              </div>
+              <span class="gov-type">${esc(item.governance_type || '-')}</span>
+            </div>
+            <div class="gov-metrics">
+              <div class="gov-metric">
+                <p class="gov-label">${esc(t.govEvidence)}</p>
+                <p class="gov-value">${esc(item.evidence_strength || '-')}</p>
+              </div>
+              <div class="gov-metric">
+                <p class="gov-label">${esc(t.govContext)}</p>
+                <p class="gov-value">${Number(item.context_rows || 0)}</p>
+              </div>
+              <div class="gov-metric">
+                <p class="gov-label">${esc(t.govGuidance)}</p>
+                <p class="gov-value">${Number(item.context_guidance_score || 0).toFixed(1)}</p>
+              </div>
+            </div>
+            <div class="gov-top" aria-label="${esc(t.govTopDims)}">
+              ${topDims.map((dim) => {
+                const score = Number(dim.score || 0);
+                return `
+                  <div class="gov-bar-row">
+                    <span class="gov-bar-label">${esc(dimensionShortLabel(dim.dimension))}</span>
+                    <span class="gov-bar-track"><span class="gov-bar-fill" style="width:${Math.max(0, Math.min(100, score))}%"></span></span>
+                    <span class="gov-bar-score">${score.toFixed(1)}</span>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    async function loadGovernanceScores() {
+      try {
+        const resp = await fetch('/w/DFGovernace/api-static/analysis-dimension-scores.json');
+        if (!resp.ok) throw new Error('governance score fetch failed');
+        governanceScores = await resp.json();
+      } catch (e) {
+        governanceScores = null;
+      }
+      renderGovernanceReview();
+      renderDeepSimilarity();
+      renderDimensionSimilarity();
+    }
+
+    function renderFrames() {
+      const t = T[lang()];
+      methodPoints.innerHTML = [t.methodP1, t.methodP2, t.methodP3, t.methodP4]
+        .map((x) => `<li>${esc(x)}</li>`).join('');
+      landHost.innerHTML = [
+        [t.land1h, t.land1b],
+        [t.land2h, t.land2b],
+        [t.land3h, t.land3b],
+      ].map(([h, b]) => `<article class="land-card"><h3>${esc(h)}</h3><p>${esc(b)}</p></article>`).join('');
+      renderGovernanceReview();
+      renderDeepSimilarity();
+      renderDimensionSimilarity();
+      const simRows = [
+        [t.rowLabelDim, t.rowLabelCommon, t.rowLabelDiff, t.rowLabelEx],
+        [t.rowElectionDim, t.rowElectionCommon, t.rowElectionDiff, t.rowElectionEx],
+        [t.rowNCIIDim, t.rowNCIICommon, t.rowNCIIDiff, t.rowNCIIEx],
+        [t.rowPlatformDim, t.rowPlatformCommon, t.rowPlatformDiff, t.rowPlatformEx],
+        [t.rowPenaltyDim, t.rowPenaltyCommon, t.rowPenaltyDiff, t.rowPenaltyEx],
+      ];
+      const simClusters = [
+        [t.simCluster1, t.simCluster1b, t.simCluster1d1, t.simCluster1d2],
+        [t.simCluster2, t.simCluster2b, t.simCluster2d1, t.simCluster2d2],
+        [t.simCluster3, t.simCluster3b, t.simCluster3d1, t.simCluster3d2],
+        [t.simCluster4, t.simCluster4b, t.simCluster4d1, t.simCluster4d2],
+      ];
+      simClusterHost.innerHTML = simClusters.map(([title, body, peers, dims]) => `
+        <article class="sim-cluster-card">
+          <h3>${esc(title)}</h3>
+          <p class="sim-cluster-copy">${esc(body)}</p>
+          <div class="sim-mini">
+            <p class="sim-mini-label">${esc(t.simCluster1c1)}</p>
+            <div class="cmp-tags">
+              ${String(peers).split(/\s*,\s*/).filter(Boolean).map((tag) => `<span class="cmp-tag">${esc(tag)}</span>`).join('')}
+            </div>
+          </div>
+          <div class="sim-mini">
+            <p class="sim-mini-label">${esc(t.simCluster1c2)}</p>
+            <p class="sim-cluster-copy">${esc(dims)}</p>
+          </div>
+        </article>
+      `).join('');
+      simHost.innerHTML = simRows.map(([a, b, c, d]) => `
+        <article class="cmp-card cmp-card-sim">
+          <div class="cmp-field">
+            <h3 class="cmp-dimension">${esc(a)}</h3>
+          </div>
+          <div class="cmp-body-2">
+            <div class="cmp-field cmp-field-common">
+              <p class="cmp-label">${esc(t.simHead2)}</p>
+              <p class="cmp-value">${esc(b)}</p>
+            </div>
+            <div class="cmp-field">
+              <p class="cmp-label">${esc(t.simHead3)}</p>
+              <p class="cmp-value">${esc(c)}</p>
+            </div>
+          </div>
+          <div class="cmp-field">
+            <p class="cmp-label">${esc(t.simHead4)}</p>
+            <div class="cmp-tags">
+              ${String(d).split(/\s+vs\s+|,\s*/).filter(Boolean).map((tag) => `<span class="cmp-tag">${esc(tag.trim())}</span>`).join('')}
+            </div>
+          </div>
+        </article>
+      `).join('');
+      const diffRows = [
+        [t.rowAct, t.rowActHow, t.rowActEffect],
+        [t.rowDecree, t.rowDecreeHow, t.rowDecreeEffect],
+        [t.rowGuide, t.rowGuideHow, t.rowGuideEffect],
+      ];
+      diffHost.innerHTML = diffRows.map(([a, b, c]) => `
+        <article class="cmp-card cmp-card-3">
+          <div class="cmp-field"><p class="cmp-label">${esc(t.diffHead1)}</p><p class="cmp-value">${esc(a)}</p></div>
+          <div class="cmp-field"><p class="cmp-label">${esc(t.diffHead2)}</p><p class="cmp-value">${esc(b)}</p></div>
+          <div class="cmp-field"><p class="cmp-label">${esc(t.diffHead3)}</p><p class="cmp-value">${esc(c)}</p></div>
+        </article>
+      `).join('');
+
+      const countryLabel = (key) => ({
+        ko: { EU: 'EU', Korea: 'korea', China: 'china', UK: 'united-kingdom', France: 'france', Germany: 'germany', UAE: 'united-arab-emirates', Australia: 'australia', US: 'united-states', Saudi: 'saudi-arabia', Singapore: 'singapore', India: 'india', Pakistan: 'pakistan', Argentina: 'argentina' },
+        en: { EU: 'EU', Korea: 'Korea', China: 'China', UK: 'UK', France: 'France', Germany: 'Germany', UAE: 'UAE', Australia: 'Australia', US: 'United States', Saudi: 'Saudi Arabia', Singapore: 'Singapore', India: 'India', Pakistan: 'Pakistan', Argentina: 'Argentina' },
+      }[lang()] || {})[key] || key;
+      const gapRows = [
+        ['EU', 'partial', 'clear', 'partial', 'partial', 'clear', 'clear'],
+        ['Korea', 'clear', 'partial', 'partial', 'partial', 'partial', 'weak'],
+        ['China', 'partial', 'clear', 'clear', 'partial', 'clear', 'weak'],
+        ['UK', 'weak', 'partial', 'partial', 'partial', 'clear', 'partial'],
+        ['France', 'weak', 'partial', 'partial', 'weak', 'partial', 'partial'],
+        ['Germany', 'weak', 'partial', 'partial', 'weak', 'partial', 'partial'],
+        ['UAE', 'weak', 'partial', 'weak', 'weak', 'partial', 'weak'],
+        ['Australia', 'weak', 'partial', 'partial', 'partial', 'partial', 'partial'],
+        ['US', 'partial', 'partial', 'partial', 'partial', 'partial', 'weak'],
+        ['Saudi', 'weak', 'weak', 'weak', 'weak', 'partial', 'weak'],
+        ['Singapore', 'clear', 'weak', 'partial', 'partial', 'partial', 'weak'],
+        ['India', 'weak', 'partial', 'weak', 'weak', 'partial', 'weak'],
+        ['Pakistan', 'weak', 'weak', 'weak', 'weak', 'partial', 'weak'],
+        ['Argentina', 'weak', 'weak', 'weak', 'weak', 'weak', 'weak'],
+      ];
+      const gapLabel = (key) => ({
+        clear: t.gapClear,
+        partial: t.gapPartial,
+        weak: t.gapWeak,
+        unknown: t.gapUnknown,
+      }[key] || t.gapUnknown);
+      gapMatrixHost.innerHTML = `
+        <table class="gap-table">
+          <thead>
+            <tr>
+              <th>${esc(t.gapCountry)}</th>
+              <th>${esc(t.gapH1)}</th>
+              <th>${esc(t.gapH2)}</th>
+              <th>${esc(t.gapH3)}</th>
+              <th>${esc(t.gapH4)}</th>
+              <th>${esc(t.gapH5)}</th>
+              <th>${esc(t.gapH6)}</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${gapRows.map(([country, ...vals]) => `
+              <tr>
+                <td class="gap-country">${esc(countryLabel(country))}</td>
+                ${vals.map((v) => `<td><span class="gap-status gap-status-${esc(v)}">${esc(gapLabel(v))}</span></td>`).join('')}
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      `;
+
+      const flowRows = [
+        [t.flowS1, t.flowS1b, t.flowS1c],
+        [t.flowS2, t.flowS2b, t.flowS2c],
+        [t.flowS3, t.flowS3b, t.flowS3c],
+        [t.flowS4, t.flowS4b, t.flowS4c],
+        [t.flowS5, t.flowS5b, t.flowS5c],
+      ];
+      gapFlowHost.innerHTML = flowRows.map(([step, body, countries], i) => `
+        <article class="flow-card">
+          <span class="flow-step">Step ${i + 1}</span>
+          <h3>${esc(step)}</h3>
+          <p>${esc(body)}</p>
+          <div class="flow-countries">
+            ${String(countries).split(/\s*,\s*/).filter(Boolean).map((tag) => `<span class="flow-tag">${esc(tag)}</span>`).join('')}
+          </div>
+        </article>
+      `).join('');
+
+      const peerRows = [
+        [t.peerL1, t.peerL1b, t.peerL1d1, t.peerL1d2, t.peerL1d3],
+        [t.peerL2, t.peerL2b, t.peerL2d1, t.peerL2d2, t.peerL2d3],
+        [t.peerL3, t.peerL3b, t.peerL3d1, t.peerL3d2, t.peerL3d3],
+        [t.peerL4, t.peerL4b, t.peerL4d1, t.peerL4d2, t.peerL4d3],
+      ];
+      peerHost.innerHTML = peerRows.map(([title, intro, gap, response, peers]) => `
+        <article class="peer-card">
+          <h3 class="peer-title">${esc(title)}</h3>
+          <p class="peer-copy">${esc(intro)}</p>
+          <div class="peer-block">
+            <p class="peer-label">${esc(t.peerL1c1)}</p>
+            <p class="peer-copy">${esc(gap)}</p>
+          </div>
+          <div class="peer-block">
+            <p class="peer-label">${esc(t.peerL1c2)}</p>
+            <p class="peer-copy">${esc(response)}</p>
+          </div>
+          <div class="peer-block">
+            <p class="peer-label">${esc(t.peerL1c3)}</p>
+            <div class="peer-tags">
+              ${String(peers).split(/\s*,\s*/).filter(Boolean).map((tag) => `<span class="flow-tag">${esc(tag)}</span>`).join('')}
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function render() {
+      const t = T[lang()];
+      const sectionLinks = ['#landscapeSection', '#similaritySection', '#differenceSection', '#gapMatrixSection'];
+      rqHost.innerHTML = `
+        <li class="rq-panel-item rq-panel-item-merged" id="answer1">
+          <a class="rq-badge-link" href="${sectionLinks[0]}"><span class="rq-badge">1</span></a>
+          <div class="rq-panel-main">
+          <a class="rq-panel-link rq-panel-link-merged" href="${sectionLinks[0]}">${esc(stripQuestionPrefix(t.q1))}</a>
+          <p class="rq-panel-answer">${esc(t.a1)}</p>
+          <ul class="rq-panel-points">
+            <li>${esc(t.a1p1)}</li>
+            <li>${esc(t.a1p2)}</li>
+            <li>${esc(t.a1p3)}</li>
+          </ul>
+          </div>
+        </li>
+        <li class="rq-panel-item rq-panel-item-merged" id="answer2">
+          <a class="rq-badge-link" href="${sectionLinks[1]}"><span class="rq-badge">2</span></a>
+          <div class="rq-panel-main">
+          <a class="rq-panel-link rq-panel-link-merged" href="${sectionLinks[1]}">${esc(stripQuestionPrefix(t.q2))}</a>
+          <p class="rq-panel-answer">${esc(t.a2)}</p>
+          <ul class="rq-panel-points">
+            <li>${esc(t.a2p1)}</li>
+            <li>${esc(t.a2p2)}</li>
+            <li>${esc(t.a2p3)}</li>
+          </ul>
+          </div>
+        </li>
+        <li class="rq-panel-item rq-panel-item-merged" id="answer3">
+          <a class="rq-badge-link" href="${sectionLinks[2]}"><span class="rq-badge">3</span></a>
+          <div class="rq-panel-main">
+          <a class="rq-panel-link rq-panel-link-merged" href="${sectionLinks[2]}">${esc(stripQuestionPrefix(t.q3))}</a>
+          <p class="rq-panel-answer">${esc(t.a3)}</p>
+          <ul class="rq-panel-points">
+            <li>${esc(t.a3p1)}</li>
+            <li>${esc(t.a3p2)}</li>
+            <li>${esc(t.a3p3)}</li>
+          </ul>
+          </div>
+        </li>
+        <li class="rq-panel-item rq-panel-item-merged" id="answer4">
+          <a class="rq-badge-link" href="${sectionLinks[3]}"><span class="rq-badge">4</span></a>
+          <div class="rq-panel-main">
+          <a class="rq-panel-link rq-panel-link-merged" href="${sectionLinks[3]}">${esc(stripQuestionPrefix(t.q4))}</a>
+          <p class="rq-panel-answer">${esc(t.a4)}</p>
+          <ul class="rq-panel-points">
+            <li>${esc(t.a4p1)}</li>
+            <li>${esc(t.a4p2)}</li>
+            <li>${esc(t.a4p3)}</li>
+          </ul>
+          </div>
+        </li>
+      `;
+    }
+
+    function renderWorkbookOptions() {
+      wbSheet.innerHTML = workbookSheetNames.map((name) => {
+        const selected = name === workbookSelectedSheet ? ' selected' : '';
+        return `<option value="${esc(name)}"${selected}>${esc(name)}</option>`;
+      }).join('');
+    }
+
+    async function loadWorkbook(sheetName) {
+      const t = T[lang()];
+      wbHost.innerHTML = `<p class="wb-empty">${esc(t.wbLoading)}</p>`;
+      try {
+        const resp = await fetch('/w/DFGovernace/api-static/summary-workbook.json');
+        if (!resp.ok) throw new Error('workbook fetch failed');
+        const json = await resp.json();
+        workbookSheetNames = Array.isArray(json.sheets) ? json.sheets : [];
+        workbookSelectedSheet = json.selectedSheet || workbookSheetNames[0] || '';
+        renderWorkbookOptions();
+        wbHost.innerHTML = json.html || `<p class="wb-empty">${esc(t.wbEmpty)}</p>`;
+      } catch (e) {
+        wbHost.innerHTML = `<p class="wb-empty">${esc(t.wbError)}</p>`;
+      }
+    }
+
+    function pickLine(md, labels) {
+      const lines = String(md || '').split('\n');
+      for (const raw of lines) {
+        const line = raw.trim();
+        if (!line.startsWith('-')) continue;
+        for (const label of labels) {
+          if (line.includes('`' + label + '`')) return line.replace(/^\-\s*/, '');
+        }
+      }
+      return '';
+    }
+
+    function pickRefs(md) {
+      const lines = String(md || '').split('\n');
+      const out = [];
+      for (const raw of lines) {
+        const line = raw.trim();
+        if (/^Ref\d+:/i.test(line)) out.push(line);
+      }
+      return out.slice(0, 3);
+    }
+
+    function shortName(p) {
+      const s = String(p || '');
+      if (!s) return '';
+      const i = Math.max(s.lastIndexOf('/'), s.lastIndexOf('\\'));
+      return i >= 0 ? s.slice(i + 1) : s;
+    }
+
+    async function renderEvidence() {
+      const t = T[lang()];
+      evHost.innerHTML = `<p class="ev-empty">${esc(t.evLoading)}</p>`;
+      try {
+        const countriesResp = await fetch('/w/DFGovernace/api-static/countries.json');
+        const countriesJson = await countriesResp.json();
+        const countries = Array.isArray(countriesJson.countries) ? countriesJson.countries : [];
+        const cards = [];
+        for (const country of countries) {
+          const [resp, evResp] = await Promise.all([
+            fetch(`/w/DFGovernace/api-static/summary/${encodeURIComponent(country)}.${lang()}.md`),
+            fetch(`/w/DFGovernace/api-static/evidence-map/${encodeURIComponent(country)}.json`),
+          ]);
+          if (!resp.ok) continue;
+          const md = await resp.text();
+          const evJson = evResp.ok ? await evResp.json() : { refs: [] };
+          const evRefs = Array.isArray(evJson.refs) ? evJson.refs : [];
+          const labeling = pickLine(md, ['Labeling status', 'x(x) x x']);
+          const consent = pickLine(md, ['Non-consensual deepfake status', 'x x x x x']);
+          const penalty = pickLine(md, ['Penalty/sanctions codification status', 'x x x']);
+          const refs = pickRefs(md);
+          const firstUse = evRefs.find((r) => Array.isArray(r.uses) && r.uses.length)?.uses?.[0] || '';
+          const locators = evRefs
+            .slice(0, 2)
+            .map((r) => `${r.ref}: ${shortName(r.source)}`)
+            .filter(Boolean);
+          const countryLabel = lang() === 'en' ? (countryLabelMap[country] || country) : country;
+          cards.push(`
+            <article class="ev-card">
+              <h3 class="ev-country">${esc(countryLabel)}</h3>
+              ${labeling ? `<p class="ev-dim">${esc(labeling)}</p>` : ''}
+              ${consent ? `<p class="ev-dim">${esc(consent)}</p>` : ''}
+              ${penalty ? `<p class="ev-dim">${esc(penalty)}</p>` : ''}
+              ${firstUse ? `<p class="ev-special"><strong>${esc(t.evSpecial)}:</strong> ${esc(firstUse)}</p>` : ''}
+              ${locators.map((l) => `<p class="ev-loc"><strong>${esc(t.evLocator)}:</strong> ${esc(l)}</p>`).join('')}
+              ${(refs || []).map((r) => `<p class="ev-ref">${esc(r)}</p>`).join('')}
+            </article>
+          `);
+        }
+        evHost.innerHTML = cards.length ? cards.join('') : `<p class="ev-empty">${esc(t.evEmpty)}</p>`;
+      } catch (e) {
+        evHost.innerHTML = `<p class="ev-empty">${esc(t.evEmpty)}</p>`;
+      }
+    }
+
+    async function load() {
+      applyText();
+      renderFrames();
+      render();
+      renderWorkbookOptions();
+      await loadGovernanceScores();
+      await loadWorkbook(workbookSelectedSheet);
+      await renderEvidence();
+    }
+    wbSheet.addEventListener('change', () => {
+      workbookSelectedSheet = wbSheet.value;
+      loadWorkbook(workbookSelectedSheet);
+    });
+    dimSimCountry.addEventListener('change', () => {
+      dimSimSelection = dimSimCountry.value;
+      renderDimensionSimilarity();
+    });
+    if (globalWordcloudSwitch) globalWordcloudSwitch.addEventListener('click', (ev) => {
+      const btn = ev.target.closest('button[data-wordcloud-view]');
+      if (!btn) return;
+      globalWordcloudView = btn.getAttribute('data-wordcloud-view') || 'kor';
+      renderGlobalWordcloud();
+    });
+    langSel.addEventListener('change', () => {
+      saveLang();
+      load();
+    });
+    saveLang();
+    load();
+  </script>
+  <script src="/w/DFGovernace/deepfake-policy/dashboard-shell.js?v=20260720-jurisdictions1"></script>
+</body>
+</html>

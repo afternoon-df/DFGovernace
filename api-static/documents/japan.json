@@ -1,0 +1,47 @@
+{
+  "country": "japan",
+  "documents": [
+    {
+      "resource_dir": "japan",
+      "name": "japan-2025-ai-technology-act-no-53.txt",
+      "relative_path": "1_official-law-act/japan-2025-ai-technology-act-no-53.txt",
+      "legacy_relative_path": "japan-2025-ai-technology-act-no-53.txt",
+      "extension": ".txt",
+      "classification_code": 1,
+      "classification_folder": "1_official-law-act",
+      "classification_label": "Official Law / Act",
+      "context_layer": "core_legal",
+      "legal_force": "binding_in_force",
+      "core_evidence_allowed": true,
+      "document_type": "official_law_act",
+      "law_stage": "in_force",
+      "url": "/resource/japan/1_official-law-act/japan-2025-ai-technology-act-no-53.txt",
+      "event_date": "2025-01-01",
+      "event_year": 2025,
+      "event_stage": "in_force",
+      "timeline_source": "metadata",
+      "law_unit_key": "japan-2025-ai-technology-act-no-53"
+    },
+    {
+      "resource_dir": "japan",
+      "name": "japan-2026-act-on-the-protection-of-personal-information-appi-amended-april-2026.txt",
+      "relative_path": "1_official-law-act/japan-2026-act-on-the-protection-of-personal-information-appi-amended-april-2026.txt",
+      "legacy_relative_path": "japan-2026-act-on-the-protection-of-personal-information-appi-amended-april-2026.txt",
+      "extension": ".txt",
+      "classification_code": 1,
+      "classification_folder": "1_official-law-act",
+      "classification_label": "Official Law / Act",
+      "context_layer": "core_legal",
+      "legal_force": "binding_in_force",
+      "core_evidence_allowed": true,
+      "document_type": "official_law_act",
+      "law_stage": "in_force",
+      "url": "/resource/japan/1_official-law-act/japan-2026-act-on-the-protection-of-personal-information-appi-amended-april-2026.txt",
+      "event_date": "2026-04-01",
+      "event_year": 2026,
+      "event_stage": "in_force",
+      "timeline_source": "metadata",
+      "law_unit_key": "japan-2026-act-on-the-protection-of-personal-information-appi-amended-april-2026"
+    }
+  ]
+}

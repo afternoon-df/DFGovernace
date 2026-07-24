@@ -1,0 +1,2 @@
+country,law_id,offense_id,offense_label,deepfake_scope,sanction_channel,effective_status,fine_range,prison_range_months,aggravation,aggravated_penalty,refs,last_verified_at
+new-zealand,NZ_BILL_213_1_2025,nz_synthetic_intimate_depiction_proposed,Proposed synthetic intimate-depiction coverage,non_consensual_intimate,criminal,proposed,,,Not specified in the reviewed amendment text.,Numeric range pending cross-reference; proposal-stage only.,Ref1,2026-07-20

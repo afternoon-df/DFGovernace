@@ -1,0 +1,26 @@
+{
+  "country": "canada",
+  "documents": [
+    {
+      "resource_dir": "canada",
+      "name": "canada-2025-bill-c-16-protecting-victims-act-en-fr.pdf",
+      "relative_path": "2_draft/canada-2025-bill-c-16-protecting-victims-act-en-fr.pdf",
+      "legacy_relative_path": "canada-2025-bill-c-16-protecting-victims-act-en-fr.pdf",
+      "extension": ".pdf",
+      "classification_code": 2,
+      "classification_folder": "2_draft",
+      "classification_label": "Draft",
+      "context_layer": "context_a",
+      "legal_force": "draft_not_in_force",
+      "core_evidence_allowed": false,
+      "document_type": "draft",
+      "law_stage": "proposed",
+      "url": "/resource/canada/2_draft/canada-2025-bill-c-16-protecting-victims-act-en-fr.pdf",
+      "event_date": "2025-12-09",
+      "event_year": 2025,
+      "event_stage": "proposed",
+      "timeline_source": "metadata",
+      "law_unit_key": "canada-2025-bill-c-16-protecting-victims-act-en-fr"
+    }
+  ]
+}

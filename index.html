@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Deepfake Policy</title>
+  <script>
+    const target = new URL('./deepfake-policy/index.html', window.location.href);
+    target.search = window.location.search;
+    target.hash = window.location.hash;
+    window.location.replace(target.href);
+  </script>
+
+  <!-- anonymous-english-only -->
+  <script>
+    (() => {
+      try { localStorage.setItem('deepfakePolicyLang', 'en'); } catch (_) {}
+      const url = new URL(window.location.href);
+      if (url.searchParams.get('lang') && url.searchParams.get('lang') !== 'en') {
+        url.searchParams.set('lang', 'en');
+        history.replaceState(null, '', url.pathname + url.search + url.hash);
+      }
+      const NativeURLSearchParams = window.URLSearchParams;
+      window.URLSearchParams = class EnglishOnlySearchParams extends NativeURLSearchParams {
+        get(name) { return name === 'lang' ? 'en' : super.get(name); }
+        has(name) { return name === 'lang' ? true : super.has(name); }
+      };
+    })();
+  </script>
+  <style>
+    #uiLang, #lang, #policyShellLang, #langLabel,
+    label[for="uiLang"], label[for="lang"], label[for="policyShellLang"],
+    .geo-lang, .language-switch, .language-select, .lang-switch {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <a href="./deepfake-policy/index.html">Open Deepfake Policy</a>
+</body>
+</html>

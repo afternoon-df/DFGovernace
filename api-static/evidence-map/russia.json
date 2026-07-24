@@ -1,0 +1,26 @@
+{
+  "country": "russia",
+  "refs": [
+    {
+      "ref": "Ref1",
+      "source": "sources/official/russia/1_official-law-act/russia-2026-civil-code-russian-federation-parts-one-four-en.pdf",
+      "type": "Act/Law",
+      "uses": [
+        "adjacent civil-rights protection for depiction, reputation, dignity, and private-life information",
+        "civil deletion, cessation, loss, and moral-harm remedies",
+        "negative evidence that this source does not create a dedicated synthetic-media label, election rule, platform system, or deepfake offense",
+        "PDF p. 1: title and enactment identifiers for Parts One to Four; the 21 April 2026 date belongs to the consolidation, not a newly enacted deepfake act.",
+        "Article 12, PDF p. 4, normalized lines 143-158: restoration, suppression, losses, moral-harm compensation, and other civil remedies.",
+        "Article 15, PDF p. 4, normalized lines 165-170: full recovery of losses, including compensatory damage and lost profit.",
+        "Article 150, PDF p. 65, normalized lines 2201-2207: dignity, honour, reputation, privacy, and other non-material values; courts may stop or prohibit infringing actions.",
+        "Article 151, PDF p. 65, normalized lines 2208-2210: monetary compensation for moral harm and factors governing its amount.",
+        "Article 152(1), (4)-(5), (9)-(10), PDF pp. 65-66, normalized lines 2211-2235: refutation, deletion, stopping dissemination, losses, and moral-harm compensation for false or defamatory information.",
+        "Article 152.1(1), PDF p. 66, normalized lines 2236-2242: consent for publication and further use of a citizen's depiction, with stated exceptions.",
+        "Article 152.1(2)-(3), PDF p. 66, normalized lines 2243-2246: withdrawal/destruction of infringing media and Internet deletion or cessation of further dissemination.",
+        "Article 152.2(1), (3)-(4), PDF p. 66, normalized lines 2247-2256: consent rule for private-life information, wrongful dissemination, deletion, and stopping further dissemination."
+      ],
+      "verification": "Official in-force civil-law consolidation; deepfake relevance is adjacent and requires fact-specific interpretation",
+      "url": "/resource/russia/1_official-law-act/russia-2026-civil-code-russian-federation-parts-one-four-en.pdf"
+    }
+  ]
+}

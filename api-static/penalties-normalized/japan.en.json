@@ -1,0 +1,22 @@
+{
+  "country": "Japan",
+  "penalties": [
+    {
+      "country": "Japan",
+      "law_id": "JP_APPI_2026",
+      "offense_id": "jp_appi_personal_information_misuse_adjacent",
+      "offense_label": "Adjacent personal-information misuse and order-violation penalties",
+      "deepfake_scope": "privacy_data_adjacent",
+      "sanction_channel": "mixed",
+      "effective_status": "in_force",
+      "fine_range": "<=100000000 JPY",
+      "prison_range_months": "<=24 months",
+      "aggravation": "Corporate fine up to 100 million yen applies to Article 178/179 violation categories under Article 184.",
+      "aggravated_penalty": "Individuals: up to 2 years imprisonment or 1 million yen for selected violations; corporations: up to 100 million yen for Article 178/179 categories.",
+      "refs": [
+        "Ref2"
+      ],
+      "last_verified_at": "2026-07-20"
+    }
+  ]
+}

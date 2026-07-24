@@ -1,0 +1,16 @@
+{
+  "country": "tanzania",
+  "refs": [
+    {
+      "ref": "Ref1",
+      "source": "sources/official/tanzania/1_official-law-act/tanzania-2015-cybercrimes-act-no-14-revised-2023-en.pdf",
+      "type": "Act/Law`; effective 1 September 2015, official revised edition.",
+      "uses": [
+        "p. 12, s. 15: computer-system impersonation; minimum fine of TZS 5 million or three times the undue advantage, or imprisonment for at least seven years, or both.",
+        "p. 12, s. 16: knowingly publishing false/deceptive/misleading computer information with listed harmful intent; minimum fine of TZS 5 million or imprisonment for at least three years, or both."
+      ],
+      "verification": "Adjacent impersonation/false-information framework; no express deepfake or synthetic-media term identified.",
+      "url": "/resource/tanzania/1_official-law-act/tanzania-2015-cybercrimes-act-no-14-revised-2023-en.pdf"
+    }
+  ]
+}

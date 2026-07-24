@@ -1,0 +1,22 @@
+{
+  "country": "Canada",
+  "penalties": [
+    {
+      "country": "Canada",
+      "law_id": "CA_BILL_C16_2025",
+      "offense_id": "ca_synthetic_intimate_image_proposed",
+      "offense_label": "Proposed synthetic intimate-image publication and threat offences",
+      "deepfake_scope": "non_consensual_intimate",
+      "sanction_channel": "criminal",
+      "effective_status": "proposed",
+      "fine_range": "",
+      "prison_range_months": "<=120 months",
+      "aggravation": "No separate aggravated range verified in the reviewed clause.",
+      "aggravated_penalty": "None separately verified; proposal-stage only.",
+      "refs": [
+        "Ref1"
+      ],
+      "last_verified_at": "2026-07-20"
+    }
+  ]
+}
