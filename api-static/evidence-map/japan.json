@@ -6,14 +6,11 @@
       "source": "sources/official/japan/1_official-law-act/japan-2025-ai-technology-act-no-53.txt",
       "type": "Act/Law",
       "uses": [
-        "AI governance framework and institutional responsibilities",
-        "transparency/appropriateness pathway for AI development and utilization",
-        "service/operator cooperation as adjacent governance, not deepfake-specific platform liability",
-        "Article 3(4), normalized line 14 area: misuse may facilitate crimes, personal-information leaks, copyright infringement, and harms to citizens' rights/interests; transparency and other necessary measures are required.",
-        "Article 7, normalized line 29 area: utilization business operators must cooperate with national/local government measures.",
-        "Article 13, normalized line 42 area: national government must establish guidelines and necessary measures to ensure appropriate implementation of AI R&D and utilization."
+        "Article 3(4), normalized line 14 area.",
+        "Article 7, normalized line 29 area.",
+        "Article 13, normalized line 42 area."
       ],
-      "verification": "Primary AI-governance statutory anchor; not a dedicated deepfake statute",
+      "verification": "In force; not a dedicated deepfake statute",
       "url": "/resource/japan/1_official-law-act/japan-2025-ai-technology-act-no-53.txt"
     },
     {
@@ -21,18 +18,36 @@
       "source": "sources/official/japan/1_official-law-act/japan-2026-act-on-the-protection-of-personal-information-appi-amended-april-2026.txt",
       "type": "Act/Law",
       "uses": [
-        "personal-information/privacy adjacent-law pathway",
-        "consent/third-party provision, disclosure/correction, and PPC enforcement framework",
-        "penalty and corporate fine context for personal-information misuse, not deepfake-specific punishment",
-        "Article 3, normalized line 73 area: personal information must be handled prudently with respect for individual autonomy.",
-        "Article 28, normalized line 207 area: third-country provision requires identifiable-person consent and information provision.",
-        "Articles 29-31, normalized lines 211-221 area: record/confirmation obligations for third-party provision and information related to personal information.",
-        "Articles 32-35, normalized lines 227-244 area: accessibility, disclosure, correction/deletion, and use-suspension request pathway.",
-        "Article 148, normalized lines 834-836 area: PPC recommendation/order powers where rights and interests need protection.",
-        "Articles 176-184, normalized lines 932-944 area: imprisonment/fines for specified personal-information violations and corporate fines up to 100 million yen for Articles 178/179 violations."
+        "Articles 28-35, normalized lines 207-244 area.",
+        "Article 148, normalized lines 834-836 area.",
+        "Articles 176-184, normalized lines 932-944 area."
       ],
-      "verification": "Primary adjacent privacy/data-protection statutory anchor",
+      "verification": "In force; adjacent privacy/data-protection anchor",
       "url": "/resource/japan/1_official-law-act/japan-2026-act-on-the-protection-of-personal-information-appi-amended-april-2026.txt"
+    },
+    {
+      "ref": "Ref3",
+      "source": "sources/official/japan/4_official-report-assessment/japan-2026-public-offices-election-and-platform-response-amendment-official-overview.pdf",
+      "type": "Official legislative overview",
+      "uses": [
+        "election-specific disclosure for AI-created or AI-altered images and video;",
+        "election-fairness responsibility for internet users;",
+        "election-integrity mitigation and annual disclosure duties for large information-distribution platforms;",
+        "enactment, promulgation, commencement, and application timing.",
+        "PDF locators:",
+        "PDF p. 1, upper section 2: AI-created/altered image and video disclosure duty.",
+        "PDF p. 1, upper section 3: responsibility not to harm election fairness through false or distorted candidate information.",
+        "PDF p. 1, middle section 1-2: large-provider mitigation measures, ministerial guidelines, and annual implementation disclosure.",
+        "PDF p. 1, supplementary section 1-2: commencement on 1 March 2027 and election application rule.",
+        "Official web cross-checks:",
+        "House bill outline, Part 1 item 2: new Public Offices Election Act Article 142-5.",
+        "House bill outline, Part 1 item 3: new Article 142-7(1).",
+        "House bill outline, Part 2 items 1-2: new Information Distribution Platform Response Act Article 27-2 and amended Article 28 item 5.",
+        "Supplementary Articles 1-2: effective 1 March 2027; applies to elections announced or notified from that date.",
+        "Diet progress record: passed House on 26 June 2026, passed House of Councillors on 13 July 2026, promulgated 17 July 2026 as Act No. 58."
+      ],
+      "verification": "Enacted and promulgated; not yet in force; final enacted-law PDF not yet available online",
+      "url": "/resource/japan/4_official-report-assessment/japan-2026-public-offices-election-and-platform-response-amendment-official-overview.pdf"
     }
   ]
 }

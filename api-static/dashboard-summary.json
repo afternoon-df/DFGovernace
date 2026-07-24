@@ -4,6 +4,7 @@
       "stats": {
         "total": 2,
         "in_force": 2,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 0,
         "review": 0
@@ -11,12 +12,14 @@
       "timeline": {
         "2022": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
         },
         "2025": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
@@ -27,6 +30,7 @@
       "stats": {
         "total": 6,
         "in_force": 2,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 4,
         "review": 0
@@ -34,12 +38,14 @@
       "timeline": {
         "2023": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
         },
         "2025": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 4,
           "unknown": 0
@@ -50,6 +56,7 @@
       "stats": {
         "total": 1,
         "in_force": 1,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 0,
         "review": 0
@@ -57,6 +64,7 @@
       "timeline": {
         "2024": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
@@ -67,6 +75,7 @@
       "stats": {
         "total": 2,
         "in_force": 0,
+        "enacted": 0,
         "proposed": 2,
         "guidelines": 0,
         "review": 0
@@ -74,6 +83,7 @@
       "timeline": {
         "2024": {
           "in_force": 0,
+          "enacted": 0,
           "proposed": 2,
           "guidelines": 0,
           "unknown": 0
@@ -84,6 +94,7 @@
       "stats": {
         "total": 1,
         "in_force": 1,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 0,
         "review": 0
@@ -91,6 +102,7 @@
       "timeline": {
         "2025": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
@@ -101,6 +113,7 @@
       "stats": {
         "total": 1,
         "in_force": 1,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 0,
         "review": 0
@@ -108,6 +121,7 @@
       "timeline": {
         "2026": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
@@ -118,6 +132,7 @@
       "stats": {
         "total": 13,
         "in_force": 6,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 7,
         "review": 0
@@ -125,18 +140,21 @@
       "timeline": {
         "2024": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
         },
         "2025": {
           "in_force": 3,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 4,
           "unknown": 0
         },
         "2026": {
           "in_force": 3,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 3,
           "unknown": 0
@@ -147,6 +165,7 @@
       "stats": {
         "total": 4,
         "in_force": 3,
+        "enacted": 0,
         "proposed": 1,
         "guidelines": 0,
         "review": 0
@@ -154,18 +173,21 @@
       "timeline": {
         "2022": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
         },
         "2023": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
         },
         "2025": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 1,
           "guidelines": 0,
           "unknown": 0
@@ -174,8 +196,9 @@
     },
     "japan": {
       "stats": {
-        "total": 2,
+        "total": 3,
         "in_force": 2,
+        "enacted": 1,
         "proposed": 0,
         "guidelines": 0,
         "review": 0
@@ -183,12 +206,14 @@
       "timeline": {
         "2025": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
         },
         "2026": {
           "in_force": 1,
+          "enacted": 1,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
@@ -199,6 +224,7 @@
       "stats": {
         "total": 3,
         "in_force": 1,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 2,
         "review": 0
@@ -206,12 +232,14 @@
       "timeline": {
         "2024": {
           "in_force": 0,
+          "enacted": 0,
           "proposed": 1,
           "guidelines": 2,
           "unknown": 0
         },
         "2025": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
@@ -222,6 +250,7 @@
       "stats": {
         "total": 3,
         "in_force": 1,
+        "enacted": 0,
         "proposed": 1,
         "guidelines": 1,
         "review": 0
@@ -229,12 +258,14 @@
       "timeline": {
         "2025": {
           "in_force": 0,
+          "enacted": 0,
           "proposed": 1,
           "guidelines": 1,
           "unknown": 0
         },
         "2026": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
@@ -245,6 +276,7 @@
       "stats": {
         "total": 4,
         "in_force": 2,
+        "enacted": 0,
         "proposed": 2,
         "guidelines": 0,
         "review": 0
@@ -252,12 +284,14 @@
       "timeline": {
         "2016": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
         },
         "2025": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 2,
           "guidelines": 0,
           "unknown": 0
@@ -268,6 +302,7 @@
       "stats": {
         "total": 1,
         "in_force": 0,
+        "enacted": 0,
         "proposed": 1,
         "guidelines": 0,
         "review": 0
@@ -275,6 +310,7 @@
       "timeline": {
         "2026": {
           "in_force": 0,
+          "enacted": 0,
           "proposed": 1,
           "guidelines": 0,
           "unknown": 0
@@ -285,6 +321,7 @@
       "stats": {
         "total": 2,
         "in_force": 2,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 0,
         "review": 0
@@ -292,12 +329,14 @@
       "timeline": {
         "2023": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
         },
         "2025": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
@@ -308,6 +347,7 @@
       "stats": {
         "total": 7,
         "in_force": 5,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 2,
         "review": 0
@@ -315,18 +355,21 @@
       "timeline": {
         "2024": {
           "in_force": 4,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
         },
         "2025": {
           "in_force": 0,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 2,
           "unknown": 0
         },
         "2026": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
@@ -337,6 +380,7 @@
       "stats": {
         "total": 1,
         "in_force": 0,
+        "enacted": 0,
         "proposed": 1,
         "guidelines": 0,
         "review": 0
@@ -344,6 +388,7 @@
       "timeline": {
         "2025": {
           "in_force": 0,
+          "enacted": 0,
           "proposed": 1,
           "guidelines": 0,
           "unknown": 0
@@ -354,6 +399,7 @@
       "stats": {
         "total": 19,
         "in_force": 15,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 4,
         "review": 0
@@ -361,18 +407,21 @@
       "timeline": {
         "2024": {
           "in_force": 3,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 1,
           "unknown": 0
         },
         "2025": {
           "in_force": 11,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 2,
           "unknown": 0
         },
         "2026": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 1,
           "unknown": 0
@@ -383,6 +432,7 @@
       "stats": {
         "total": 3,
         "in_force": 0,
+        "enacted": 0,
         "proposed": 3,
         "guidelines": 0,
         "review": 0
@@ -390,12 +440,14 @@
       "timeline": {
         "2023": {
           "in_force": 0,
+          "enacted": 0,
           "proposed": 2,
           "guidelines": 0,
           "unknown": 0
         },
         "2025": {
           "in_force": 0,
+          "enacted": 0,
           "proposed": 1,
           "guidelines": 0,
           "unknown": 0
@@ -406,6 +458,7 @@
       "stats": {
         "total": 2,
         "in_force": 0,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 2,
         "review": 0
@@ -413,6 +466,7 @@
       "timeline": {
         "2025": {
           "in_force": 0,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 2,
           "unknown": 0
@@ -423,6 +477,7 @@
       "stats": {
         "total": 3,
         "in_force": 1,
+        "enacted": 0,
         "proposed": 2,
         "guidelines": 0,
         "review": 0
@@ -430,6 +485,7 @@
       "timeline": {
         "2026": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 2,
           "guidelines": 0,
           "unknown": 0
@@ -440,6 +496,7 @@
       "stats": {
         "total": 1,
         "in_force": 0,
+        "enacted": 0,
         "proposed": 1,
         "guidelines": 0,
         "review": 0
@@ -447,6 +504,7 @@
       "timeline": {
         "2025": {
           "in_force": 0,
+          "enacted": 0,
           "proposed": 1,
           "guidelines": 0,
           "unknown": 0
@@ -457,6 +515,7 @@
       "stats": {
         "total": 6,
         "in_force": 1,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 5,
         "review": 0
@@ -464,24 +523,28 @@
       "timeline": {
         "2019": {
           "in_force": 0,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 1,
           "unknown": 0
         },
         "2021": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 1,
           "unknown": 0
         },
         "2022": {
           "in_force": 0,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 2,
           "unknown": 0
         },
         "2023": {
           "in_force": 0,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 1,
           "unknown": 0
@@ -492,6 +555,7 @@
       "stats": {
         "total": 2,
         "in_force": 1,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 1,
         "review": 0
@@ -499,12 +563,14 @@
       "timeline": {
         "2007": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
         },
         "2021": {
           "in_force": 0,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 1,
           "unknown": 0
@@ -515,6 +581,7 @@
       "stats": {
         "total": 1,
         "in_force": 1,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 0,
         "review": 0
@@ -522,6 +589,7 @@
       "timeline": {
         "2018": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
@@ -532,6 +600,7 @@
       "stats": {
         "total": 1,
         "in_force": 1,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 0,
         "review": 0
@@ -539,6 +608,7 @@
       "timeline": {
         "2021": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0
@@ -549,6 +619,7 @@
       "stats": {
         "total": 1,
         "in_force": 1,
+        "enacted": 0,
         "proposed": 0,
         "guidelines": 0,
         "review": 0
@@ -556,6 +627,7 @@
       "timeline": {
         "2015": {
           "in_force": 1,
+          "enacted": 0,
           "proposed": 0,
           "guidelines": 0,
           "unknown": 0

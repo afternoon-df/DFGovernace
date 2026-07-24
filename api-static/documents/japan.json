@@ -42,6 +42,32 @@
       "event_stage": "in_force",
       "timeline_source": "metadata",
       "law_unit_key": "japan-2026-act-on-the-protection-of-personal-information-appi-amended-april-2026"
+    },
+    {
+      "resource_dir": "japan",
+      "name": "japan-2026-public-offices-election-and-platform-response-amendment-official-overview.pdf",
+      "relative_path": "4_official-report-assessment/japan-2026-public-offices-election-and-platform-response-amendment-official-overview.pdf",
+      "legacy_relative_path": "japan-2026-public-offices-election-and-platform-response-amendment-official-overview.pdf",
+      "extension": ".pdf",
+      "classification_code": 4,
+      "classification_folder": "4_official-report-assessment",
+      "classification_label": "Official Report / Assessment",
+      "context_layer": "context_b2",
+      "legal_force": "nonbinding_official_report",
+      "core_evidence_allowed": false,
+      "document_type": "official_report_assessment",
+      "law_stage": "enacted_not_in_force",
+      "url": "/resource/japan/4_official-report-assessment/japan-2026-public-offices-election-and-platform-response-amendment-official-overview.pdf",
+      "event_date": "2026-07-17",
+      "event_year": 2026,
+      "event_stage": "enacted",
+      "timeline_source": "metadata",
+      "effective_date": "2027-03-01",
+      "effective_scope_en": "Applies to elections announced or notified on or after 1 March 2027.",
+      "effective_scope_ko": "2027x 3x 1x x x x x x x x.",
+      "availability_note_en": "The final enacted-law PDF is not yet available from the official online source; this file is the official legislative overview.",
+      "availability_note_ko": "x x x PDFx x x x x x x, x x x x x.",
+      "law_unit_key": "japan/japan-2026-public-offices-election-and-platform-response-amendment-act-no-58"
     }
   ]
 }
