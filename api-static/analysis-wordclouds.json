@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-23T09:08:50.316Z",
+  "generated_at": "2026-07-24T12:42:24.590Z",
   "input": "app/data/flat_clause_coding_table.json",
   "scope": {
-    "active_clause_rows": 26578,
-    "core_official_law_rows": 24768,
-    "context_rows": 1810
+    "active_clause_rows": 26616,
+    "core_official_law_rows": 24792,
+    "context_rows": 1824
   },
   "global": {
     "official_law_text_kor": [
       {
         "text": "x",
-        "value": 1043
+        "value": 1046
       },
       {
         "text": "x",
@@ -22,11 +22,11 @@
       },
       {
         "text": "x",
-        "value": 427
+        "value": 430
       },
       {
         "text": "x",
-        "value": 403
+        "value": 405
       },
       {
         "text": "x",
@@ -38,7 +38,7 @@
       },
       {
         "text": "x",
-        "value": 334
+        "value": 335
       },
       {
         "text": "x",
@@ -46,7 +46,7 @@
       },
       {
         "text": "x",
-        "value": 300
+        "value": 303
       },
       {
         "text": "x",
@@ -54,11 +54,11 @@
       },
       {
         "text": "x",
-        "value": 274
+        "value": 275
       },
       {
         "text": "x",
-        "value": 265
+        "value": 267
       },
       {
         "text": "x",
@@ -74,15 +74,15 @@
       },
       {
         "text": "x",
-        "value": 239
+        "value": 240
+      },
+      {
+        "text": "x",
+        "value": 237
       },
       {
         "text": "x",
         "value": 236
-      },
-      {
-        "text": "x",
-        "value": 234
       },
       {
         "text": "x",
@@ -102,7 +102,7 @@
       },
       {
         "text": "x",
-        "value": 221
+        "value": 222
       },
       {
         "text": "x",
@@ -118,6 +118,10 @@
       },
       {
         "text": "x",
+        "value": 202
+      },
+      {
+        "text": "x",
         "value": 201
       },
       {
@@ -130,7 +134,7 @@
       },
       {
         "text": "x",
-        "value": 199
+        "value": 197
       },
       {
         "text": "x",
@@ -138,15 +142,11 @@
       },
       {
         "text": "x",
-        "value": 196
-      },
-      {
-        "text": "x",
         "value": 194
       },
       {
         "text": "x",
-        "value": 190
+        "value": 191
       },
       {
         "text": "x",
@@ -154,7 +154,7 @@
       },
       {
         "text": "x",
-        "value": 189
+        "value": 190
       },
       {
         "text": "x",
@@ -186,11 +186,15 @@
       },
       {
         "text": "x",
-        "value": 174
+        "value": 175
       },
       {
         "text": "x",
-        "value": 173
+        "value": 175
+      },
+      {
+        "text": "x",
+        "value": 172
       },
       {
         "text": "x",
@@ -198,15 +202,11 @@
       },
       {
         "text": "x",
-        "value": 170
+        "value": 168
       },
       {
         "text": "x",
-        "value": 166
-      },
-      {
-        "text": "x",
-        "value": 164
+        "value": 165
       },
       {
         "text": "x",
@@ -214,19 +214,19 @@
       },
       {
         "text": "x",
-        "value": 162
+        "value": 163
       },
       {
         "text": "x",
-        "value": 160
+        "value": 161
+      },
+      {
+        "text": "x",
+        "value": 158
       },
       {
         "text": "x",
         "value": 157
-      },
-      {
-        "text": "x",
-        "value": 156
       },
       {
         "text": "x",
@@ -246,7 +246,7 @@
       },
       {
         "text": "x",
-        "value": 148
+        "value": 149
       },
       {
         "text": "x",
@@ -258,7 +258,7 @@
       },
       {
         "text": "x",
-        "value": 144
+        "value": 145
       },
       {
         "text": "x",
@@ -266,7 +266,7 @@
       },
       {
         "text": "x",
-        "value": 143
+        "value": 144
       },
       {
         "text": "x",
@@ -302,7 +302,7 @@
       },
       {
         "text": "x",
-        "value": 137
+        "value": 138
       },
       {
         "text": "x",
@@ -318,15 +318,15 @@
       },
       {
         "text": "x",
-        "value": 131
+        "value": 132
+      },
+      {
+        "text": "x",
+        "value": 132
       },
       {
         "text": "x",
         "value": 131
-      },
-      {
-        "text": "x",
-        "value": 130
       },
       {
         "text": "x",
@@ -354,7 +354,7 @@
       },
       {
         "text": "x",
-        "value": 126
+        "value": 127
       },
       {
         "text": "x",
@@ -378,7 +378,7 @@
       },
       {
         "text": "x",
-        "value": 121
+        "value": 122
       },
       {
         "text": "x",
@@ -422,7 +422,7 @@
       },
       {
         "text": "x",
-        "value": 113
+        "value": 115
       },
       {
         "text": "x",
@@ -446,15 +446,15 @@
       },
       {
         "text": "x",
-        "value": 105
+        "value": 106
+      },
+      {
+        "text": "x",
+        "value": 106
       },
       {
         "text": "x",
         "value": 105
-      },
-      {
-        "text": "x",
-        "value": 104
       },
       {
         "text": "x",
@@ -486,6 +486,10 @@
       },
       {
         "text": "x",
+        "value": 98
+      },
+      {
+        "text": "x",
         "value": 97
       },
       {
@@ -502,7 +506,7 @@
       },
       {
         "text": "x",
-        "value": 95
+        "value": 96
       },
       {
         "text": "x",
@@ -514,7 +518,7 @@
       },
       {
         "text": "x",
-        "value": 95
+        "value": 94
       },
       {
         "text": "x",
@@ -543,10 +547,6 @@
       {
         "text": "x",
         "value": 92
-      },
-      {
-        "text": "x",
-        "value": 91
       },
       {
         "text": "x",
@@ -574,7 +574,7 @@
       },
       {
         "text": "x",
-        "value": 88
+        "value": 89
       },
       {
         "text": "x",
@@ -594,7 +594,7 @@
       },
       {
         "text": "x",
-        "value": 87
+        "value": 88
       },
       {
         "text": "x",
@@ -620,7 +620,7 @@
       },
       {
         "text": "information",
-        "value": 7107
+        "value": 7125
       },
       {
         "text": "imprisonment",
@@ -668,11 +668,11 @@
       },
       {
         "text": "apply",
-        "value": 2951
+        "value": 2953
       },
       {
         "text": "state",
-        "value": 2855
+        "value": 2859
       },
       {
         "text": "does",
@@ -696,7 +696,7 @@
       },
       {
         "text": "public",
-        "value": 2497
+        "value": 2505
       },
       {
         "text": "content",
@@ -724,7 +724,7 @@
       },
       {
         "text": "use",
-        "value": 2198
+        "value": 2210
       },
       {
         "text": "foreign",
@@ -756,7 +756,7 @@
       },
       {
         "text": "court",
-        "value": 1833
+        "value": 1837
       },
       {
         "text": "intelligence",
@@ -772,7 +772,7 @@
       },
       {
         "text": "was",
-        "value": 1761
+        "value": 1763
       },
       {
         "text": "authorised",
@@ -791,12 +791,12 @@
         "value": 1696
       },
       {
-        "text": "los",
-        "value": 1690
+        "text": "after",
+        "value": 1691
       },
       {
-        "text": "after",
-        "value": 1689
+        "text": "los",
+        "value": 1690
       },
       {
         "text": "perpetrator",
@@ -816,7 +816,7 @@
       },
       {
         "text": "consent",
-        "value": 1630
+        "value": 1640
       },
       {
         "text": "notice",
@@ -828,7 +828,7 @@
       },
       {
         "text": "material",
-        "value": 1605
+        "value": 1613
       },
       {
         "text": "controlled",
@@ -899,12 +899,12 @@
         "value": 1426
       },
       {
-        "text": "first",
-        "value": 1413
+        "text": "place",
+        "value": 1414
       },
       {
-        "text": "place",
-        "value": 1412
+        "text": "first",
+        "value": 1413
       },
       {
         "text": "c2026c00068",
@@ -912,7 +912,7 @@
       },
       {
         "text": "used",
-        "value": 1386
+        "value": 1394
       },
       {
         "text": "guilty",
@@ -920,7 +920,7 @@
       },
       {
         "text": "art",
-        "value": 1364
+        "value": 1366
       },
       {
         "text": "risk",
@@ -968,7 +968,7 @@
       },
       {
         "text": "fine",
-        "value": 1221
+        "value": 1223
       },
       {
         "text": "para",
@@ -1071,12 +1071,12 @@
         "value": 1043
       },
       {
-        "text": "access",
-        "value": 1037
+        "text": "when",
+        "value": 1041
       },
       {
-        "text": "when",
-        "value": 1031
+        "text": "access",
+        "value": 1037
       },
       {
         "text": "country",
@@ -1112,7 +1112,7 @@
       },
       {
         "text": "subject",
-        "value": 997
+        "value": 999
       },
       {
         "text": "large",
@@ -1156,7 +1156,7 @@
       },
       {
         "text": "about",
-        "value": 958
+        "value": 962
       },
       {
         "text": "commit",
@@ -1207,8 +1207,8 @@
         "value": 924
       },
       {
-        "text": "requirements",
-        "value": 918
+        "text": "decision",
+        "value": 919
       }
     ],
     "context_layer_text_kor": [
@@ -2622,6 +2622,411 @@
         {
           "text": "x",
           "value": 4
+        }
+      ]
+    },
+    "Egypt": {
+      "rows": 18,
+      "terms": [
+        {
+          "text": "x",
+          "value": 4
+        },
+        {
+          "text": "x",
+          "value": 3
+        },
+        {
+          "text": "x",
+          "value": 3
+        },
+        {
+          "text": "x",
+          "value": 3
+        },
+        {
+          "text": "x",
+          "value": 3
+        },
+        {
+          "text": "x",
+          "value": 3
+        },
+        {
+          "text": "x",
+          "value": 3
+        },
+        {
+          "text": "x",
+          "value": 3
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
         }
       ]
     },
@@ -5457,6 +5862,411 @@
         {
           "text": "x",
           "value": 2
+        }
+      ]
+    },
+    "Russia": {
+      "rows": 6,
+      "terms": [
+        {
+          "text": "x",
+          "value": 8
+        },
+        {
+          "text": "x",
+          "value": 4
+        },
+        {
+          "text": "x",
+          "value": 3
+        },
+        {
+          "text": "x",
+          "value": 3
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 2
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
+        },
+        {
+          "text": "x",
+          "value": 1
         }
       ]
     },
@@ -9917,6 +10727,15 @@
         }
       ]
     },
+    "Egypt": {
+      "rows": 18,
+      "terms": [
+        {
+          "text": "page",
+          "value": 24
+        }
+      ]
+    },
     "EU": {
       "rows": 1410,
       "terms": [
@@ -12749,6 +13568,411 @@
         {
           "text": "grant",
           "value": 8
+        }
+      ]
+    },
+    "Russia": {
+      "rows": 6,
+      "terms": [
+        {
+          "text": "citizen",
+          "value": 24
+        },
+        {
+          "text": "his",
+          "value": 18
+        },
+        {
+          "text": "information",
+          "value": 18
+        },
+        {
+          "text": "depiction",
+          "value": 12
+        },
+        {
+          "text": "life",
+          "value": 12
+        },
+        {
+          "text": "private",
+          "value": 12
+        },
+        {
+          "text": "use",
+          "value": 12
+        },
+        {
+          "text": "breach",
+          "value": 10
+        },
+        {
+          "text": "consent",
+          "value": 10
+        },
+        {
+          "text": "dissemination",
+          "value": 10
+        },
+        {
+          "text": "when",
+          "value": 10
+        },
+        {
+          "text": "also",
+          "value": 8
+        },
+        {
+          "text": "cases",
+          "value": 8
+        },
+        {
+          "text": "circulation",
+          "value": 8
+        },
+        {
+          "text": "material",
+          "value": 8
+        },
+        {
+          "text": "media",
+          "value": 8
+        },
+        {
+          "text": "public",
+          "value": 8
+        },
+        {
+          "text": "used",
+          "value": 8
+        },
+        {
+          "text": "citizen's",
+          "value": 6
+        },
+        {
+          "text": "copies",
+          "value": 6
+        },
+        {
+          "text": "deletion",
+          "value": 6
+        },
+        {
+          "text": "further",
+          "value": 6
+        },
+        {
+          "text": "image",
+          "value": 6
+        },
+        {
+          "text": "interests",
+          "value": 6
+        },
+        {
+          "text": "obtained",
+          "value": 6
+        },
+        {
+          "text": "about",
+          "value": 4
+        },
+        {
+          "text": "civil",
+          "value": 4
+        },
+        {
+          "text": "compensation",
+          "value": 4
+        },
+        {
+          "text": "concerning",
+          "value": 4
+        },
+        {
+          "text": "court",
+          "value": 4
+        },
+        {
+          "text": "demand",
+          "value": 4
+        },
+        {
+          "text": "destruction",
+          "value": 4
+        },
+        {
+          "text": "disclosed",
+          "value": 4
+        },
+        {
+          "text": "entitled",
+          "value": 4
+        },
+        {
+          "text": "events",
+          "value": 4
+        },
+        {
+          "text": "gathering",
+          "value": 4
+        },
+        {
+          "text": "instance",
+          "value": 4
+        },
+        {
+          "text": "manufactured",
+          "value": 4
+        },
+        {
+          "text": "only",
+          "value": 4
+        },
+        {
+          "text": "received",
+          "value": 4
+        },
+        {
+          "text": "records",
+          "value": 4
+        },
+        {
+          "text": "social",
+          "value": 4
+        },
+        {
+          "text": "state",
+          "value": 4
+        },
+        {
+          "text": "stopping",
+          "value": 4
+        },
+        {
+          "text": "storage",
+          "value": 4
+        },
+        {
+          "text": "thereof",
+          "value": 4
+        },
+        {
+          "text": "whatsoever",
+          "value": 4
+        },
+        {
+          "text": "works",
+          "value": 4
+        },
+        {
+          "text": "absent",
+          "value": 2
+        },
+        {
+          "text": "admissible",
+          "value": 2
+        },
+        {
+          "text": "after",
+          "value": 2
+        },
+        {
+          "text": "apply",
+          "value": 2
+        },
+        {
+          "text": "art",
+          "value": 2
+        },
+        {
+          "text": "arts",
+          "value": 2
+        },
+        {
+          "text": "audio",
+          "value": 2
+        },
+        {
+          "text": "children",
+          "value": 2
+        },
+        {
+          "text": "competitions",
+          "value": 2
+        },
+        {
+          "text": "concerts",
+          "value": 2
+        },
+        {
+          "text": "conferences",
+          "value": 2
+        },
+        {
+          "text": "congresses",
+          "value": 2
+        },
+        {
+          "text": "contain",
+          "value": 2
+        },
+        {
+          "text": "contained",
+          "value": 2
+        },
+        {
+          "text": "containing",
+          "value": 2
+        },
+        {
+          "text": "creation",
+          "value": 2
+        },
+        {
+          "text": "death",
+          "value": 2
+        },
+        {
+          "text": "decision",
+          "value": 2
+        },
+        {
+          "text": "deemed",
+          "value": 2
+        },
+        {
+          "text": "depicted",
+          "value": 2
+        },
+        {
+          "text": "destroying",
+          "value": 2
+        },
+        {
+          "text": "discretion",
+          "value": 2
+        },
+        {
+          "text": "disseminated",
+          "value": 2
+        },
+        {
+          "text": "documents",
+          "value": 2
+        },
+        {
+          "text": "done",
+          "value": 2
+        },
+        {
+          "text": "during",
+          "value": 2
+        },
+        {
+          "text": "earlier",
+          "value": 2
+        },
+        {
+          "text": "envisaged",
+          "value": 2
+        },
+        {
+          "text": "established",
+          "value": 2
+        },
+        {
+          "text": "except",
+          "value": 2
+        },
+        {
+          "text": "exception",
+          "value": 2
+        },
+        {
+          "text": "expressly",
+          "value": 2
+        },
+        {
+          "text": "family",
+          "value": 2
+        },
+        {
+          "text": "film",
+          "value": 2
+        },
+        {
+          "text": "fine",
+          "value": 2
+        },
+        {
+          "text": "freely",
+          "value": 2
+        },
+        {
+          "text": "general",
+          "value": 2
+        },
+        {
+          "text": "hereby",
+          "value": 2
+        },
+        {
+          "text": "infringes",
+          "value": 2
+        },
+        {
+          "text": "internet",
+          "value": 2
+        },
+        {
+          "text": "like",
+          "value": 2
+        },
+        {
+          "text": "literature",
+          "value": 2
+        },
+        {
+          "text": "live",
+          "value": 2
+        },
+        {
+          "text": "meetings",
+          "value": 2
+        },
+        {
+          "text": "object",
+          "value": 2
+        },
+        {
+          "text": "origin",
+          "value": 2
+        },
+        {
+          "text": "otherwise",
+          "value": 2
+        },
+        {
+          "text": "parents",
+          "value": 2
+        },
+        {
+          "text": "payment",
+          "value": 2
+        },
+        {
+          "text": "performances",
+          "value": 2
+        },
+        {
+          "text": "photographs",
+          "value": 2
+        },
+        {
+          "text": "place",
+          "value": 2
         }
       ]
     },
@@ -16400,7 +17624,7 @@
   },
   "by_dimension_text_kor": {
     "scope/coverage": {
-      "rows": 10308,
+      "rows": 10309,
       "terms": [
         {
           "text": "x",
@@ -16440,7 +17664,7 @@
         },
         {
           "text": "x",
-          "value": 148
+          "value": 149
         },
         {
           "text": "x",
@@ -16624,7 +17848,7 @@
         },
         {
           "text": "x",
-          "value": 86
+          "value": 87
         },
         {
           "text": "x",
@@ -16805,7 +18029,7 @@
       ]
     },
     "remedies/consent": {
-      "rows": 2073,
+      "rows": 2082,
       "terms": [
         {
           "text": "x",
@@ -16821,7 +18045,7 @@
         },
         {
           "text": "x",
-          "value": 55
+          "value": 56
         },
         {
           "text": "x",
@@ -16841,7 +18065,7 @@
         },
         {
           "text": "x",
-          "value": 49
+          "value": 51
         },
         {
           "text": "x",
@@ -16857,7 +18081,7 @@
         },
         {
           "text": "x",
-          "value": 40
+          "value": 42
         },
         {
           "text": "x",
@@ -16881,7 +18105,7 @@
         },
         {
           "text": "x",
-          "value": 33
+          "value": 34
         },
         {
           "text": "x",
@@ -16893,11 +18117,19 @@
         },
         {
           "text": "x",
-          "value": 32
+          "value": 33
         },
         {
           "text": "x",
           "value": 31
+        },
+        {
+          "text": "x",
+          "value": 31
+        },
+        {
+          "text": "x",
+          "value": 30
         },
         {
           "text": "x",
@@ -16937,14 +18169,6 @@
         },
         {
           "text": "x",
-          "value": 28
-        },
-        {
-          "text": "x",
-          "value": 27
-        },
-        {
-          "text": "x",
           "value": 27
         },
         {
@@ -16954,6 +18178,10 @@
         {
           "text": "x",
           "value": 26
+        },
+        {
+          "text": "x",
+          "value": 25
         },
         {
           "text": "x",
@@ -16997,10 +18225,6 @@
         },
         {
           "text": "x",
-          "value": 23
-        },
-        {
-          "text": "x",
           "value": 22
         },
         {
@@ -17029,7 +18253,7 @@
         },
         {
           "text": "x",
-          "value": 21
+          "value": 22
         },
         {
           "text": "x",
@@ -17141,7 +18365,7 @@
         },
         {
           "text": "x",
-          "value": 17
+          "value": 18
         },
         {
           "text": "x",
@@ -17177,7 +18401,7 @@
         },
         {
           "text": "x",
-          "value": 16
+          "value": 17
         },
         {
           "text": "x",
@@ -17210,11 +18434,11 @@
       ]
     },
     "criminalize/penalty": {
-      "rows": 12454,
+      "rows": 12469,
       "terms": [
         {
           "text": "x",
-          "value": 403
+          "value": 405
         },
         {
           "text": "x",
@@ -17222,7 +18446,7 @@
         },
         {
           "text": "x",
-          "value": 239
+          "value": 240
         },
         {
           "text": "x",
@@ -17230,7 +18454,7 @@
         },
         {
           "text": "x",
-          "value": 200
+          "value": 201
         },
         {
           "text": "x",
@@ -17238,7 +18462,7 @@
         },
         {
           "text": "x",
-          "value": 175
+          "value": 176
         },
         {
           "text": "x",
@@ -17262,11 +18486,11 @@
         },
         {
           "text": "x",
-          "value": 112
+          "value": 113
         },
         {
           "text": "x",
-          "value": 95
+          "value": 96
         },
         {
           "text": "x",
@@ -17274,7 +18498,7 @@
         },
         {
           "text": "x",
-          "value": 91
+          "value": 93
         },
         {
           "text": "x",
@@ -17382,7 +18606,7 @@
         },
         {
           "text": "x",
-          "value": 62
+          "value": 63
         },
         {
           "text": "x",
@@ -17414,7 +18638,11 @@
         },
         {
           "text": "x",
-          "value": 57
+          "value": 58
+        },
+        {
+          "text": "x",
+          "value": 58
         },
         {
           "text": "x",
@@ -17423,10 +18651,6 @@
         {
           "text": "x",
           "value": 57
-        },
-        {
-          "text": "x",
-          "value": 56
         },
         {
           "text": "x",
@@ -17486,7 +18710,7 @@
         },
         {
           "text": "x",
-          "value": 46
+          "value": 47
         },
         {
           "text": "x",
@@ -17615,11 +18839,11 @@
       ]
     },
     "platform duties": {
-      "rows": 5538,
+      "rows": 5547,
       "terms": [
         {
           "text": "x",
-          "value": 947
+          "value": 950
         },
         {
           "text": "x",
@@ -17643,7 +18867,7 @@
         },
         {
           "text": "x",
-          "value": 274
+          "value": 275
         },
         {
           "text": "x",
@@ -17651,7 +18875,7 @@
         },
         {
           "text": "x",
-          "value": 245
+          "value": 248
         },
         {
           "text": "x",
@@ -17659,11 +18883,11 @@
         },
         {
           "text": "x",
-          "value": 233
+          "value": 234
         },
         {
           "text": "x",
-          "value": 200
+          "value": 201
         },
         {
           "text": "x",
@@ -17671,7 +18895,7 @@
         },
         {
           "text": "x",
-          "value": 157
+          "value": 158
         },
         {
           "text": "x",
@@ -17679,7 +18903,7 @@
         },
         {
           "text": "x",
-          "value": 155
+          "value": 156
         },
         {
           "text": "x",
@@ -17691,11 +18915,11 @@
         },
         {
           "text": "x",
-          "value": 148
+          "value": 149
         },
         {
           "text": "x",
-          "value": 142
+          "value": 143
         },
         {
           "text": "x",
@@ -17719,7 +18943,7 @@
         },
         {
           "text": "x",
-          "value": 121
+          "value": 122
         },
         {
           "text": "x",
@@ -17735,15 +18959,15 @@
         },
         {
           "text": "x",
-          "value": 115
+          "value": 116
+        },
+        {
+          "text": "x",
+          "value": 116
         },
         {
           "text": "x",
           "value": 115
-        },
-        {
-          "text": "x",
-          "value": 114
         },
         {
           "text": "x",
@@ -17751,7 +18975,7 @@
         },
         {
           "text": "x",
-          "value": 111
+          "value": 112
         },
         {
           "text": "x",
@@ -17760,6 +18984,14 @@
         {
           "text": "x",
           "value": 108
+        },
+        {
+          "text": "x",
+          "value": 106
+        },
+        {
+          "text": "x",
+          "value": 106
         },
         {
           "text": "x",
@@ -17775,14 +19007,6 @@
         },
         {
           "text": "x",
-          "value": 104
-        },
-        {
-          "text": "x",
-          "value": 103
-        },
-        {
-          "text": "x",
           "value": 100
         },
         {
@@ -17795,7 +19019,7 @@
         },
         {
           "text": "x",
-          "value": 96
+          "value": 97
         },
         {
           "text": "x",
@@ -17839,19 +19063,19 @@
         },
         {
           "text": "x",
+          "value": 89
+        },
+        {
+          "text": "x",
           "value": 88
         },
         {
           "text": "x",
-          "value": 87
+          "value": 88
         },
         {
           "text": "x",
-          "value": 87
-        },
-        {
-          "text": "x",
-          "value": 87
+          "value": 88
         },
         {
           "text": "x",
@@ -17899,7 +19123,7 @@
         },
         {
           "text": "x",
-          "value": 78
+          "value": 79
         },
         {
           "text": "x",
@@ -17939,7 +19163,7 @@
         },
         {
           "text": "x",
-          "value": 70
+          "value": 72
         },
         {
           "text": "x",
@@ -17955,7 +19179,7 @@
         },
         {
           "text": "x",
-          "value": 68
+          "value": 69
         },
         {
           "text": "x",
@@ -17964,6 +19188,10 @@
         {
           "text": "x",
           "value": 67
+        },
+        {
+          "text": "x",
+          "value": 66
         },
         {
           "text": "x",
@@ -17984,10 +19212,6 @@
         {
           "text": "x",
           "value": 65
-        },
-        {
-          "text": "x",
-          "value": 64
         },
         {
           "text": "x",

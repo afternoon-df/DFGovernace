@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T13:39:58.106Z",
+  "generated_at": "2026-07-24T12:46:37.984Z",
   "laws": {
     "Australia": {
       "australia-2024-c2024a00078": {
@@ -7301,6 +7301,85 @@
             "count": 1
           }
         ]
+      },
+      "japan-2026-public-offices-election-and-platform-response-amendment-official-overview": {
+        "coded_rows": 8,
+        "primary_policy_dimensions": [
+          {
+            "label": "elections",
+            "count": 6
+          },
+          {
+            "label": "disclosure/labeling",
+            "count": 1
+          },
+          {
+            "label": "platform duties",
+            "count": 1
+          }
+        ],
+        "policy_dimension_tags": [
+          {
+            "label": "elections",
+            "count": 6
+          },
+          {
+            "label": "platform duties",
+            "count": 5
+          },
+          {
+            "label": "disclosure/labeling",
+            "count": 1
+          }
+        ],
+        "risk_tags": [
+          {
+            "label": "Political manipulation",
+            "count": 6
+          },
+          {
+            "label": "Information disorder",
+            "count": 2
+          }
+        ],
+        "life_cycle_tags": [
+          {
+            "label": "Circulation",
+            "count": 8
+          },
+          {
+            "label": "Response",
+            "count": 7
+          },
+          {
+            "label": "Production",
+            "count": 1
+          }
+        ],
+        "defense_layers": [
+          {
+            "label": "Legal and policy remedies",
+            "count": 6
+          },
+          {
+            "label": "Platform accountability",
+            "count": 5
+          },
+          {
+            "label": "Content provenance",
+            "count": 1
+          }
+        ],
+        "defense_subcodes": [
+          {
+            "label": "election rules",
+            "count": 6
+          },
+          {
+            "label": "assess the coverage",
+            "count": 2
+          }
+        ]
       }
     },
     "Taiwan": {
@@ -8855,6 +8934,442 @@
           {
             "label": "notice-and-removal",
             "count": 1
+          }
+        ]
+      }
+    },
+    "Egypt": {
+      "egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar": {
+        "coded_rows": 18,
+        "primary_policy_dimensions": [
+          {
+            "label": "platform duties",
+            "count": 9
+          },
+          {
+            "label": "criminalize/penalty",
+            "count": 6
+          },
+          {
+            "label": "remedies/consent",
+            "count": 2
+          },
+          {
+            "label": "scope/coverage",
+            "count": 1
+          }
+        ],
+        "policy_dimension_tags": [
+          {
+            "label": "criminalize/penalty",
+            "count": 15
+          },
+          {
+            "label": "platform duties",
+            "count": 9
+          },
+          {
+            "label": "remedies/consent",
+            "count": 3
+          },
+          {
+            "label": "scope/coverage",
+            "count": 1
+          }
+        ],
+        "risk_tags": [
+          {
+            "label": "Information disorder",
+            "count": 14
+          },
+          {
+            "label": "Synthetic sexual harm",
+            "count": 3
+          },
+          {
+            "label": "Fraud and impersonation",
+            "count": 2
+          }
+        ],
+        "life_cycle_tags": [
+          {
+            "label": "Response",
+            "count": 17
+          },
+          {
+            "label": "Circulation",
+            "count": 6
+          },
+          {
+            "label": "Harm",
+            "count": 4
+          },
+          {
+            "label": "Production",
+            "count": 3
+          }
+        ],
+        "defense_layers": [
+          {
+            "label": "Legal and policy remedies",
+            "count": 16
+          },
+          {
+            "label": "Platform accountability",
+            "count": 9
+          },
+          {
+            "label": "Track harm and assess scope",
+            "count": 1
+          }
+        ],
+        "defense_subcodes": [
+          {
+            "label": "criminal liability",
+            "count": 6
+          },
+          {
+            "label": "license revocation",
+            "count": 2
+          },
+          {
+            "label": "administrator security duty",
+            "count": 1
+          },
+          {
+            "label": "aggravated penalty",
+            "count": 1
+          },
+          {
+            "label": "aggravating circumstances",
+            "count": 1
+          },
+          {
+            "label": "attempt liability",
+            "count": 1
+          },
+          {
+            "label": "blocking-order enforcement",
+            "count": 1
+          },
+          {
+            "label": "broad electronic-data and content definitions",
+            "count": 1
+          },
+          {
+            "label": "closure",
+            "count": 1
+          },
+          {
+            "label": "confidentiality enforcement",
+            "count": 1
+          },
+          {
+            "label": "confiscation",
+            "count": 1
+          },
+          {
+            "label": "court-ordered blocking",
+            "count": 1
+          },
+          {
+            "label": "data security",
+            "count": 1
+          },
+          {
+            "label": "dignity and reputation",
+            "count": 1
+          },
+          {
+            "label": "failure to report",
+            "count": 1
+          },
+          {
+            "label": "false account impersonation",
+            "count": 1
+          },
+          {
+            "label": "investigative data-production order",
+            "count": 1
+          },
+          {
+            "label": "legal-person liability",
+            "count": 1
+          },
+          {
+            "label": "license suspension or cancellation",
+            "count": 1
+          },
+          {
+            "label": "logging",
+            "count": 1
+          },
+          {
+            "label": "management liability",
+            "count": 1
+          },
+          {
+            "label": "per-victim fine multiplication",
+            "count": 1
+          },
+          {
+            "label": "personal-data manipulation",
+            "count": 1
+          },
+          {
+            "label": "privacy and consent",
+            "count": 1
+          },
+          {
+            "label": "provider identification",
+            "count": 1
+          },
+          {
+            "label": "provider-duty fines",
+            "count": 1
+          },
+          {
+            "label": "reconciliation",
+            "count": 1
+          },
+          {
+            "label": "repeat-offense enhancement",
+            "count": 1
+          },
+          {
+            "label": "urgent temporary blocking",
+            "count": 1
+          },
+          {
+            "label": "victim civil claim preserved",
+            "count": 1
+          },
+          {
+            "label": "website facilitating an offense",
+            "count": 1
+          }
+        ]
+      },
+      "egypt-2026-national-ai-governance-framework-guide": {
+        "coded_rows": 3,
+        "primary_policy_dimensions": [
+          {
+            "label": "disclosure/labeling",
+            "count": 2
+          },
+          {
+            "label": "scope/coverage",
+            "count": 1
+          }
+        ],
+        "policy_dimension_tags": [
+          {
+            "label": "scope/coverage",
+            "count": 3
+          },
+          {
+            "label": "disclosure/labeling",
+            "count": 2
+          }
+        ],
+        "risk_tags": [
+          {
+            "label": "Information disorder",
+            "count": 3
+          }
+        ],
+        "life_cycle_tags": [
+          {
+            "label": "Harm",
+            "count": 3
+          },
+          {
+            "label": "Circulation",
+            "count": 2
+          },
+          {
+            "label": "Production",
+            "count": 2
+          },
+          {
+            "label": "Response",
+            "count": 1
+          }
+        ],
+        "defense_layers": [
+          {
+            "label": "Track harm and assess scope",
+            "count": 3
+          },
+          {
+            "label": "Content provenance",
+            "count": 2
+          }
+        ],
+        "defense_subcodes": [
+          {
+            "label": "disclosure",
+            "count": 2
+          },
+          {
+            "label": "labeling",
+            "count": 2
+          },
+          {
+            "label": "annual framework review",
+            "count": 1
+          },
+          {
+            "label": "data provenance",
+            "count": 1
+          },
+          {
+            "label": "deepfake horizon scanning",
+            "count": 1
+          },
+          {
+            "label": "deepfake risk classification",
+            "count": 1
+          },
+          {
+            "label": "GPAI transparency",
+            "count": 1
+          },
+          {
+            "label": "watermarking",
+            "count": 1
+          }
+        ]
+      },
+      "egypt-2026-national-guidelines-trustworthy-responsible-ai": {
+        "coded_rows": 3,
+        "primary_policy_dimensions": [
+          {
+            "label": "disclosure/labeling",
+            "count": 3
+          }
+        ],
+        "policy_dimension_tags": [
+          {
+            "label": "disclosure/labeling",
+            "count": 3
+          }
+        ],
+        "risk_tags": [
+          {
+            "label": "Information disorder",
+            "count": 3
+          }
+        ],
+        "life_cycle_tags": [
+          {
+            "label": "Circulation",
+            "count": 3
+          },
+          {
+            "label": "Production",
+            "count": 2
+          },
+          {
+            "label": "Response",
+            "count": 1
+          }
+        ],
+        "defense_layers": [
+          {
+            "label": "Content provenance",
+            "count": 3
+          },
+          {
+            "label": "Legal and policy remedies",
+            "count": 1
+          }
+        ],
+        "defense_subcodes": [
+          {
+            "label": "AI-generated content labeling",
+            "count": 1
+          },
+          {
+            "label": "AI-interaction disclosure",
+            "count": 1
+          },
+          {
+            "label": "capability and limitation disclosure",
+            "count": 1
+          },
+          {
+            "label": "disclaimer",
+            "count": 1
+          },
+          {
+            "label": "disclosure",
+            "count": 1
+          },
+          {
+            "label": "explainability",
+            "count": 1
+          },
+          {
+            "label": "incident response",
+            "count": 1
+          },
+          {
+            "label": "labeling",
+            "count": 1
+          },
+          {
+            "label": "watermarking",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "Russia": {
+      "russia-2026-civil-code-russian-federation-parts-one-four": {
+        "coded_rows": 6,
+        "primary_policy_dimensions": [
+          {
+            "label": "remedies/consent",
+            "count": 6
+          }
+        ],
+        "policy_dimension_tags": [
+          {
+            "label": "remedies/consent",
+            "count": 6
+          }
+        ],
+        "risk_tags": [
+          {
+            "label": "Information disorder",
+            "count": 5
+          },
+          {
+            "label": "Synthetic sexual harm",
+            "count": 2
+          }
+        ],
+        "life_cycle_tags": [
+          {
+            "label": "Response",
+            "count": 6
+          },
+          {
+            "label": "Circulation",
+            "count": 5
+          }
+        ],
+        "defense_layers": [
+          {
+            "label": "Legal and policy remedies",
+            "count": 6
+          }
+        ],
+        "defense_subcodes": [
+          {
+            "label": "consent / victim remedy",
+            "count": 6
           }
         ]
       }
