@@ -17,12 +17,24 @@ context_country,Brazil,,,Voluntary Guidance-led,very-thin-review-required,71.8,r
 context_country,Brazil,,,Voluntary Guidance-led,very-thin-review-required,71.8,elections,0,none,0,1,0,0,1,0,0
 context_country,Brazil,,,Voluntary Guidance-led,very-thin-review-required,71.8,criminalize/penalty,0,none,0,1,0,0,1,0,0
 context_country,Brazil,,,Voluntary Guidance-led,very-thin-review-required,71.8,platform duties,100,high,1,1,1,1,1,1,1
+context_country,Egypt,,,Hybrid Legal-Guidance-led,very-thin-review-required,66.6,scope/coverage,57.5,medium,3,6,0.5,1,2,0.5,1
+context_country,Egypt,,,Hybrid Legal-Guidance-led,very-thin-review-required,66.6,disclosure/labeling,89.2,high,5,6,0.8333,2,2,1,1
+context_country,Egypt,,,Hybrid Legal-Guidance-led,very-thin-review-required,66.6,remedies/consent,0,none,0,6,0,0,2,0,0
+context_country,Egypt,,,Hybrid Legal-Guidance-led,very-thin-review-required,66.6,elections,0,none,0,6,0,0,2,0,0
+context_country,Egypt,,,Hybrid Legal-Guidance-led,very-thin-review-required,66.6,criminalize/penalty,0,none,0,6,0,0,2,0,0
+context_country,Egypt,,,Hybrid Legal-Guidance-led,very-thin-review-required,66.6,platform duties,0,none,0,6,0,0,2,0,0
 context_country,EU,,,Hybrid Legal-Guidance-led,very-thin-review-required,75.2,scope/coverage,100,high,1,1,1,1,1,1,1
 context_country,EU,,,Hybrid Legal-Guidance-led,very-thin-review-required,75.2,disclosure/labeling,0,none,0,1,0,0,1,0,0
 context_country,EU,,,Hybrid Legal-Guidance-led,very-thin-review-required,75.2,remedies/consent,100,high,1,1,1,1,1,1,1
 context_country,EU,,,Hybrid Legal-Guidance-led,very-thin-review-required,75.2,elections,0,none,0,1,0,0,1,0,0
 context_country,EU,,,Hybrid Legal-Guidance-led,very-thin-review-required,75.2,criminalize/penalty,0,none,0,1,0,0,1,0,0
 context_country,EU,,,Hybrid Legal-Guidance-led,very-thin-review-required,75.2,platform duties,100,high,1,1,1,1,1,1,1
+context_country,Japan,,,Hybrid Legal-Guidance-led,very-thin-review-required,62.7,scope/coverage,0,none,0,8,0,0,1,0,0
+context_country,Japan,,,Hybrid Legal-Guidance-led,very-thin-review-required,62.7,disclosure/labeling,34.9,medium,1,8,0.125,1,1,1,0.45
+context_country,Japan,,,Hybrid Legal-Guidance-led,very-thin-review-required,62.7,remedies/consent,0,none,0,8,0,0,1,0,0
+context_country,Japan,,,Hybrid Legal-Guidance-led,very-thin-review-required,62.7,elections,75.5,high,6,8,0.75,1,1,1,0.45
+context_country,Japan,,,Hybrid Legal-Guidance-led,very-thin-review-required,62.7,criminalize/penalty,0,none,0,8,0,0,1,0,0
+context_country,Japan,,,Hybrid Legal-Guidance-led,very-thin-review-required,62.7,platform duties,67.4,high,5,8,0.625,1,1,1,0.45
 context_country,Saudi Arabia,,,Hybrid Legal-Guidance-led,thin,75.6,scope/coverage,97.6,high,13,13,1,1,1,1,0.842
 context_country,Saudi Arabia,,,Hybrid Legal-Guidance-led,thin,75.6,disclosure/labeling,0,none,0,13,0,0,1,0,0
 context_country,Saudi Arabia,,,Hybrid Legal-Guidance-led,thin,75.6,remedies/consent,0,none,0,13,0,0,1,0,0
@@ -83,6 +95,12 @@ country,China,,,Platform-duty-led,strong,0,remedies/consent,33.3,medium,10,127,0
 country,China,,,Platform-duty-led,strong,0,elections,26.7,low,6,127,0.0472,3,5,0.6,0.775
 country,China,,,Platform-duty-led,strong,0,criminalize/penalty,40.7,medium,13,127,0.1024,5,5,1,0.938
 country,China,,,Platform-duty-led,strong,0,platform duties,78.2,high,92,127,0.7244,5,5,1,0.743
+country,Egypt,,,Hybrid Legal-Guidance-led,thin,66.6,scope/coverage,34.9,medium,1,18,0.0556,1,1,1,0.75
+country,Egypt,,,Hybrid Legal-Guidance-led,thin,66.6,disclosure/labeling,0,none,0,18,0,0,1,0,0
+country,Egypt,,,Hybrid Legal-Guidance-led,thin,66.6,remedies/consent,44.6,medium,3,18,0.1667,1,1,1,0.917
+country,Egypt,,,Hybrid Legal-Guidance-led,thin,66.6,elections,0,none,0,18,0,0,1,0,0
+country,Egypt,,,Hybrid Legal-Guidance-led,thin,66.6,criminalize/penalty,88.2,high,15,18,0.8333,1,1,1,0.933
+country,Egypt,,,Hybrid Legal-Guidance-led,thin,66.6,platform duties,66.3,high,9,18,0.5,1,1,1,0.917
 country,EU,,,Hybrid Legal-Guidance-led,strong,75.2,scope/coverage,70.7,high,836,1410,0.5929,2,2,1,0.808
 country,EU,,,Hybrid Legal-Guidance-led,strong,75.2,disclosure/labeling,40.7,medium,159,1410,0.1128,2,2,1,0.895
 country,EU,,,Hybrid Legal-Guidance-led,strong,75.2,remedies/consent,35.7,medium,52,1410,0.0369,2,2,1,0.889
@@ -107,12 +125,12 @@ country,Italy,,,Strict Criminal-led,moderate,0,remedies/consent,35.3,medium,3,48
 country,Italy,,,Strict Criminal-led,moderate,0,elections,35.3,medium,5,48,0.1042,1,1,1,0.57
 country,Italy,,,Strict Criminal-led,moderate,0,criminalize/penalty,57,medium,19,48,0.3958,1,1,1,0.75
 country,Italy,,,Strict Criminal-led,moderate,0,platform duties,38,medium,5,48,0.1042,1,1,1,0.75
-country,Japan,,,Platform-duty-led,strong,0,scope/coverage,71.1,high,179,291,0.6151,2,2,1,0.74
-country,Japan,,,Platform-duty-led,strong,0,disclosure/labeling,54.6,medium,145,291,0.4983,1,2,0.5,0.816
-country,Japan,,,Platform-duty-led,strong,0,remedies/consent,34.4,medium,11,291,0.0378,2,2,1,0.795
-country,Japan,,,Platform-duty-led,strong,0,elections,24.4,low,7,291,0.0241,1,2,0.5,0.857
-country,Japan,,,Platform-duty-led,strong,0,criminalize/penalty,37.8,medium,27,291,0.0928,2,2,1,0.787
-country,Japan,,,Platform-duty-led,strong,0,platform duties,46.7,medium,59,291,0.2027,2,2,1,0.903
+country,Japan,,,Hybrid Legal-Guidance-led,strong,62.7,scope/coverage,71.1,high,179,291,0.6151,2,2,1,0.74
+country,Japan,,,Hybrid Legal-Guidance-led,strong,62.7,disclosure/labeling,54.6,medium,145,291,0.4983,1,2,0.5,0.816
+country,Japan,,,Hybrid Legal-Guidance-led,strong,62.7,remedies/consent,34.4,medium,11,291,0.0378,2,2,1,0.795
+country,Japan,,,Hybrid Legal-Guidance-led,strong,62.7,elections,24.4,low,7,291,0.0241,1,2,0.5,0.857
+country,Japan,,,Hybrid Legal-Guidance-led,strong,62.7,criminalize/penalty,37.8,medium,27,291,0.0928,2,2,1,0.787
+country,Japan,,,Hybrid Legal-Guidance-led,strong,62.7,platform duties,46.7,medium,59,291,0.2027,2,2,1,0.903
 country,Mexico,,,Hybrid Criminal-Platform-led,thin,0,scope/coverage,43.6,medium,4,21,0.1905,2,2,1,0.75
 country,Mexico,,,Hybrid Criminal-Platform-led,thin,0,disclosure/labeling,35.8,medium,5,21,0.2381,1,2,0.5,0.69
 country,Mexico,,,Hybrid Criminal-Platform-led,thin,0,remedies/consent,48.3,medium,6,21,0.2857,2,2,1,0.65
@@ -125,6 +143,12 @@ country,Pakistan,,,Hybrid Criminal-Platform-led,moderate,0,remedies/consent,0,no
 country,Pakistan,,,Hybrid Criminal-Platform-led,moderate,0,elections,0,none,0,77,0,0,1,0,0
 country,Pakistan,,,Hybrid Criminal-Platform-led,moderate,0,criminalize/penalty,50.6,medium,21,77,0.2727,1,1,1,0.857
 country,Pakistan,,,Hybrid Criminal-Platform-led,moderate,0,platform duties,69.7,high,45,77,0.5844,1,1,1,0.78
+country,Russia,,,Rights/Remedies-led,very-thin-review-required,0,scope/coverage,0,none,0,6,0,0,1,0,0
+country,Russia,,,Rights/Remedies-led,very-thin-review-required,0,disclosure/labeling,0,none,0,6,0,0,1,0,0
+country,Russia,,,Rights/Remedies-led,very-thin-review-required,0,remedies/consent,100,high,6,6,1,1,1,1,1
+country,Russia,,,Rights/Remedies-led,very-thin-review-required,0,elections,0,none,0,6,0,0,1,0,0
+country,Russia,,,Rights/Remedies-led,very-thin-review-required,0,criminalize/penalty,0,none,0,6,0,0,1,0,0
+country,Russia,,,Rights/Remedies-led,very-thin-review-required,0,platform duties,0,none,0,6,0,0,1,0,0
 country,Saudi Arabia,,,Hybrid Legal-Guidance-led,thin,75.6,scope/coverage,60.4,high,9,20,0.45,1,1,1,0.744
 country,Saudi Arabia,,,Hybrid Legal-Guidance-led,thin,75.6,disclosure/labeling,39.6,medium,2,20,0.1,1,1,1,0.875
 country,Saudi Arabia,,,Hybrid Legal-Guidance-led,thin,75.6,remedies/consent,0,none,0,20,0,0,1,0,0
@@ -263,6 +287,12 @@ law,China / 生成式人工智能服务管理暂行办法,China,china-2023-gener
 law,China / 生成式人工智能服务管理暂行办法,China,china-2023-generative-ai-measures-official-cn.pdf,Platform-duty-led,thin,,elections,0,none,0,16,0,0,1,0,0
 law,China / 生成式人工智能服务管理暂行办法,China,china-2023-generative-ai-measures-official-cn.pdf,Platform-duty-led,thin,,criminalize/penalty,35.3,medium,1,16,0.0625,1,1,1,0.75
 law,China / 生成式人工智能服务管理暂行办法,China,china-2023-generative-ai-measures-official-cn.pdf,Platform-duty-led,thin,,platform duties,85.5,high,14,16,0.875,1,1,1,0.575
+law,Egypt / anti cyber information technology crimes law no 175 ar,Egypt,egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar.pdf,Hybrid Criminal-Platform-led,thin,,scope/coverage,34.9,medium,1,18,0.0556,1,1,1,0.75
+law,Egypt / anti cyber information technology crimes law no 175 ar,Egypt,egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar.pdf,Hybrid Criminal-Platform-led,thin,,disclosure/labeling,0,none,0,18,0,0,1,0,0
+law,Egypt / anti cyber information technology crimes law no 175 ar,Egypt,egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar.pdf,Hybrid Criminal-Platform-led,thin,,remedies/consent,44.6,medium,3,18,0.1667,1,1,1,0.917
+law,Egypt / anti cyber information technology crimes law no 175 ar,Egypt,egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar.pdf,Hybrid Criminal-Platform-led,thin,,elections,0,none,0,18,0,0,1,0,0
+law,Egypt / anti cyber information technology crimes law no 175 ar,Egypt,egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar.pdf,Hybrid Criminal-Platform-led,thin,,criminalize/penalty,88.2,high,15,18,0.8333,1,1,1,0.933
+law,Egypt / anti cyber information technology crimes law no 175 ar,Egypt,egypt-2018-anti-cyber-information-technology-crimes-law-no-175-ar.pdf,Hybrid Criminal-Platform-led,thin,,platform duties,66.3,high,9,18,0.5,1,1,1,0.917
 law,EU / REGULATION (EU) 2022/2065 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL,EU,eu-2022-dsa.pdf,Platform-duty-led,moderate,,scope/coverage,62.6,high,287,621,0.4622,1,1,1,0.838
 law,EU / REGULATION (EU) 2022/2065 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL,EU,eu-2022-dsa.pdf,Platform-duty-led,moderate,,disclosure/labeling,41.5,medium,79,621,0.1272,1,1,1,0.88
 law,EU / REGULATION (EU) 2022/2065 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL,EU,eu-2022-dsa.pdf,Platform-duty-led,moderate,,remedies/consent,35.8,medium,22,621,0.0354,1,1,1,0.898
@@ -323,6 +353,12 @@ law,"Pakistan / 2. Amendment of section 2, Act XL of 2016.—In the Prevention o
 law,"Pakistan / 2. Amendment of section 2, Act XL of 2016.—In the Prevention of",Pakistan,"pakistan-2025-II. The Prevention of Electronic Crimes (Amendment) Act, 2025.pdf",Hybrid Criminal-Platform-led,moderate,,elections,0,none,0,77,0,0,1,0,0
 law,"Pakistan / 2. Amendment of section 2, Act XL of 2016.—In the Prevention of",Pakistan,"pakistan-2025-II. The Prevention of Electronic Crimes (Amendment) Act, 2025.pdf",Hybrid Criminal-Platform-led,moderate,,criminalize/penalty,50.6,medium,21,77,0.2727,1,1,1,0.857
 law,"Pakistan / 2. Amendment of section 2, Act XL of 2016.—In the Prevention of",Pakistan,"pakistan-2025-II. The Prevention of Electronic Crimes (Amendment) Act, 2025.pdf",Hybrid Criminal-Platform-led,moderate,,platform duties,69.7,high,45,77,0.5844,1,1,1,0.78
+law,Russia / Recognition as Invalid of an Act of a State Body or Local Government Body,Russia,russia-2026-civil-code-russian-federation-parts-one-four-en.pdf,Rights/Remedies-led,very-thin-review-required,,scope/coverage,0,none,0,6,0,0,1,0,0
+law,Russia / Recognition as Invalid of an Act of a State Body or Local Government Body,Russia,russia-2026-civil-code-russian-federation-parts-one-four-en.pdf,Rights/Remedies-led,very-thin-review-required,,disclosure/labeling,0,none,0,6,0,0,1,0,0
+law,Russia / Recognition as Invalid of an Act of a State Body or Local Government Body,Russia,russia-2026-civil-code-russian-federation-parts-one-four-en.pdf,Rights/Remedies-led,very-thin-review-required,,remedies/consent,100,high,6,6,1,1,1,1,1
+law,Russia / Recognition as Invalid of an Act of a State Body or Local Government Body,Russia,russia-2026-civil-code-russian-federation-parts-one-four-en.pdf,Rights/Remedies-led,very-thin-review-required,,elections,0,none,0,6,0,0,1,0,0
+law,Russia / Recognition as Invalid of an Act of a State Body or Local Government Body,Russia,russia-2026-civil-code-russian-federation-parts-one-four-en.pdf,Rights/Remedies-led,very-thin-review-required,,criminalize/penalty,0,none,0,6,0,0,1,0,0
+law,Russia / Recognition as Invalid of an Act of a State Body or Local Government Body,Russia,russia-2026-civil-code-russian-federation-parts-one-four-en.pdf,Rights/Remedies-led,very-thin-review-required,,platform duties,0,none,0,6,0,0,1,0,0
 law,Saudi Arabia / Anti-Cyber Crime Law,Saudi Arabia,saudi-2007-Anti-Cyber-Crime-Law-M17-EN.pdf,Strict Criminal-led,thin,,scope/coverage,60.4,high,9,20,0.45,1,1,1,0.744
 law,Saudi Arabia / Anti-Cyber Crime Law,Saudi Arabia,saudi-2007-Anti-Cyber-Crime-Law-M17-EN.pdf,Strict Criminal-led,thin,,disclosure/labeling,39.6,medium,2,20,0.1,1,1,1,0.875
 law,Saudi Arabia / Anti-Cyber Crime Law,Saudi Arabia,saudi-2007-Anti-Cyber-Crime-Law-M17-EN.pdf,Strict Criminal-led,thin,,remedies/consent,0,none,0,20,0,0,1,0,0
