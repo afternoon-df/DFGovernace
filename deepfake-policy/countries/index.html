@@ -114,6 +114,7 @@
     .tl-node { font-size:10px; line-height:1; padding:3px 5px; border-radius:999px; border:1px solid transparent; white-space:nowrap; display:inline-flex; align-items:center; gap:4px; }
     .tl-count { font-size:9px; font-weight:700; opacity:.9; }
     .tl-in_force { background:#eaf7ee; color:#166534; border-color:#b7e1c2; }
+    .tl-enacted { background:#fff4d6; color:#7a5200; border-color:#e8c66c; }
     .tl-proposed { background:#fff6df; color:#8a5a00; border-color:#efd9a0; }
     .tl-guidelines { background:#e8f1ff; color:#1e3a8a; border-color:#b9d1ff; }
     .tl-unknown { background:#e6edf7; color:#243b53; border-color:#b7c6db; }
@@ -138,6 +139,7 @@
     .legend-item { display:inline-flex; align-items:center; gap:4px; }
     .legend-dot { width:8px; height:8px; border-radius:999px; display:inline-block; }
     .dot-force { background:#16a34a; }
+    .dot-enacted { background:#d99a18; }
     .dot-proposed { background:#f59e0b; }
     .dot-guide { background:#60a5fa; }
     .dot-review { background:#9ca3af; }
@@ -420,6 +422,7 @@
               <div class="doc-activity-shared">
                 <div class="stats-legend">
                   <span class="legend-item"><i class="legend-dot dot-force"></i><span id="legendForce"></span></span>
+                  <span class="legend-item"><i class="legend-dot dot-enacted"></i><span id="legendEnacted"></span></span>
                   <span class="legend-item"><i class="legend-dot dot-proposed"></i><span id="legendProposed"></span></span>
                   <span class="legend-item"><i class="legend-dot dot-guide"></i><span id="legendGuide"></span></span>
                   <span class="legend-item"><i class="legend-dot dot-review"></i><span id="legendReview"></span></span>
@@ -482,6 +485,7 @@
         statsTitle: 'x x',
         docsTotal: 'x',
         inForce: 'x',
+        enacted: 'x·x x',
         proposed: 'x',
         guidelines: 'x',
         review: 'x',
@@ -532,6 +536,7 @@
         statsTitle: 'Country Stats',
         docsTotal: 'Docs',
         inForce: 'In Force',
+        enacted: 'Enacted',
         proposed: 'Proposed',
         guidelines: 'Guidelines',
         review: 'Review',
@@ -576,6 +581,7 @@
     const insightsTitleEl = document.getElementById('insightsTitle');
     const statsTitleEl = document.getElementById('statsTitle');
     const legendForceEl = document.getElementById('legendForce');
+    const legendEnactedEl = document.getElementById('legendEnacted');
     const legendProposedEl = document.getElementById('legendProposed');
     const legendGuideEl = document.getElementById('legendGuide');
     const legendReviewEl = document.getElementById('legendReview');
@@ -687,13 +693,14 @@
       window.location.href = `/DFGovernace/deepfake-policy/country/${slug}/index.html?${q}`;
     }
 
-    function emptyStats() { return { total: 0, in_force: 0, proposed: 0, guidelines: 0, review: 0 }; }
+    function emptyStats() { return { total: 0, in_force: 0, enacted: 0, proposed: 0, guidelines: 0, review: 0 }; }
     function buildDocStats(documents) {
       const out = emptyStats();
       for (const doc of documents || []) {
         out.total += 1;
         const stage = String(doc.law_stage || '').toLowerCase();
-        if (stage.includes('in_force')) out.in_force += 1;
+        if (stage.includes('enacted')) out.enacted += 1;
+        else if (stage.includes('in_force')) out.in_force += 1;
         else if (stage.includes('proposed')) out.proposed += 1;
         else if (stage.includes('guidelines')) out.guidelines += 1;
         else out.review += 1;
@@ -702,11 +709,12 @@
     }
     function totalTimelineEvents(row) {
       if (!row) return 0;
-      return Number(row.in_force || 0) + Number(row.proposed || 0) + Number(row.guidelines || 0) + Number(row.unknown || 0);
+      return Number(row.in_force || 0) + Number(row.enacted || 0) + Number(row.proposed || 0) + Number(row.guidelines || 0) + Number(row.unknown || 0);
     }
     function dominantStage(row) {
       const ranked = [
         ['in_force', Number(row.in_force || 0)],
+        ['enacted', Number(row.enacted || 0)],
         ['proposed', Number(row.proposed || 0)],
         ['guidelines', Number(row.guidelines || 0)],
         ['unknown', Number(row.unknown || 0)],
@@ -716,6 +724,7 @@
     function timelineTitle(year, row) {
       const parts = [];
       if (row.in_force) parts.push(`in_force ${row.in_force}`);
+      if (row.enacted) parts.push(`enacted ${row.enacted}`);
       if (row.proposed) parts.push(`proposed ${row.proposed}`);
       if (row.guidelines) parts.push(`guidelines ${row.guidelines}`);
       if (row.unknown) parts.push(`review ${row.unknown}`);
@@ -742,7 +751,7 @@
           const timeline = docTimeline.get(c) || {};
           const years = Object.keys(timeline).map((y) => Number(y)).filter((y) => Number.isFinite(y) && y <= TIMELINE_END_YEAR).sort((a, b) => a - b);
           const nodes = years.map((y) => {
-            const r = timeline[y] || { in_force: 0, proposed: 0, guidelines: 0, unknown: 0 };
+            const r = timeline[y] || { in_force: 0, enacted: 0, proposed: 0, guidelines: 0, unknown: 0 };
             const total = totalTimelineEvents(r);
             const st = dominantStage(r);
             const isEnd = y === TIMELINE_END_YEAR;
@@ -780,17 +789,19 @@
         const s = docStats.get(c) || emptyStats();
         const total = Math.max(s.total, 1);
         const wForce = (s.in_force / total) * 100;
+        const wEnacted = (s.enacted / total) * 100;
         const wProposed = (s.proposed / total) * 100;
         const wGuide = (s.guidelines / total) * 100;
         const wReview = (s.review / total) * 100;
         const d1 = (wForce / 100) * 360;
-        const d2 = d1 + (wProposed / 100) * 360;
-        const d3 = d2 + (wGuide / 100) * 360;
-        const pieStyle = `background:conic-gradient(#16a34a 0deg ${d1.toFixed(2)}deg,#f59e0b ${d1.toFixed(2)}deg ${d2.toFixed(2)}deg,#60a5fa ${d2.toFixed(2)}deg ${d3.toFixed(2)}deg,#9ca3af ${d3.toFixed(2)}deg 360deg)`;
+        const d2 = d1 + (wEnacted / 100) * 360;
+        const d3 = d2 + (wProposed / 100) * 360;
+        const d4 = d3 + (wGuide / 100) * 360;
+        const pieStyle = `background:conic-gradient(#16a34a 0deg ${d1.toFixed(2)}deg,#d99a18 ${d1.toFixed(2)}deg ${d2.toFixed(2)}deg,#f59e0b ${d2.toFixed(2)}deg ${d3.toFixed(2)}deg,#60a5fa ${d3.toFixed(2)}deg ${d4.toFixed(2)}deg,#9ca3af ${d4.toFixed(2)}deg 360deg)`;
         return `<article class="stat-card">
           <div class="stat-head"><div class="stat-name">${escapeHtml(countryLabel(c))}</div><div class="stat-total">${escapeHtml(t.docsTotal)} ${s.total}</div></div>
           <div class="stat-body">
-            <div class="stat-meta"><span><i>${escapeHtml(t.inForce)}</i><b>${s.in_force}</b></span><span><i>${escapeHtml(t.proposed)}</i><b>${s.proposed}</b></span><span><i>${escapeHtml(t.guidelines)}</i><b>${s.guidelines}</b></span><span><i>${escapeHtml(t.review)}</i><b>${s.review}</b></span></div>
+            <div class="stat-meta"><span><i>${escapeHtml(t.inForce)}</i><b>${s.in_force}</b></span><span><i>${escapeHtml(t.enacted)}</i><b>${s.enacted}</b></span><span><i>${escapeHtml(t.proposed)}</i><b>${s.proposed}</b></span><span><i>${escapeHtml(t.guidelines)}</i><b>${s.guidelines}</b></span><span><i>${escapeHtml(t.review)}</i><b>${s.review}</b></span></div>
             <div class="pie-wrap"><span class="pie" style="${pieStyle}"></span></div>
           </div>
         </article>`;
@@ -883,6 +894,7 @@
       langLabelEl.textContent = t.lang + ':';
       statsTitleEl.textContent = t.statsTitle;
       legendForceEl.textContent = t.inForce;
+      legendEnactedEl.textContent = t.enacted;
       legendProposedEl.textContent = t.proposed;
       legendGuideEl.textContent = t.guidelines;
       legendReviewEl.textContent = t.review;

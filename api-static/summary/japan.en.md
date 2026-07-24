@@ -1,31 +1,34 @@
 # Japan Deepfake Law Summary
 
 ## Core Legal Framework
-- Japan is represented by two in-force statutory anchors in this corpus: the 2025 AI Technology Act and the APPI text amended at April 2026. (Ref1, Ref2)
-- The legal profile is not a dedicated deepfake regime. It is an adjacent-law model built from AI governance, transparency/appropriateness duties, personal-information handling, Personal Information Protection Commission enforcement, and APPI penalties. (Ref1, Ref2)
+- Japan's current corpus combines the 2025 AI Technology Act, the APPI text amended at April 2026, and Act No. 58 of 2026 amending the Public Offices Election Act and the Information Distribution Platform Response Act. (Ref1, Ref2, Ref3)
+- Act No. 58 was promulgated on 17 July 2026 but its core election provisions are not yet in force. They take effect on 1 March 2027 and apply to elections announced or notified on or after that date. (Ref3)
 
 ## Summary
-- Japan's AI Technology Act recognizes that inappropriate AI use may facilitate crimes, personal-information leaks, copyright infringement, and other harms to citizens' rights and interests, then routes the response through guidelines and necessary measures rather than direct deepfake offenses. (Ref1)
-- APPI supplies the stronger operational layer: consent and information duties around personal data, disclosure/correction/use-suspension pathways, PPC recommendation/order powers, and penalties for specified personal-information violations. (Ref2)
-- For deepfake analysis, Japan should be coded as a governance/privacy-adjacent jurisdiction: useful for synthetic-media cases involving personal data, identity, or harmful AI use, but not yet confirmed as a jurisdiction with a standalone deepfake labeling, election, NCII, or platform-duty statute in the current corpus. (Ref1, Ref2)
+- The AI Technology Act remains the broad governance pillar: it recognizes risks from inappropriate AI use and relies on guidelines and necessary measures rather than creating a general deepfake offense. (Ref1)
+- APPI remains the privacy and personal-information layer, supplying consent and information duties, data-subject remedies, Personal Information Protection Commission powers, and penalties for specified personal-information violations. (Ref2)
+- Act No. 58 adds Japan's first explicit election-focused synthetic-media rule in this corpus. Online election materials containing AI-created or AI-altered images or video must display that fact, subject to exceptions for socially trivial edits and material unlikely to be mistaken for real capture. (Ref3)
+- The same Act requires large information-distribution platforms to take necessary measures against illegal, false, distorted, or otherwise election-harming information and to disclose implementation status annually. These duties are enacted but not yet effective. (Ref3)
+- The official enacted-law PDF is not yet available online. The local PDF is the official House Legislative Bureau overview; passage, promulgation, statutory locators, and commencement are cross-checked against official Diet web records. (Ref3)
 
 ## Policy Dimensions
-- `Labeling status`: no dedicated law in the current corpus. Article 13 of the AI Technology Act supports future guidelines for appropriate AI implementation, but it does not itself create a general synthetic-media disclosure or watermarking mandate. (Ref1) Relevant text: AI Technology Act Article 13; normalized line 42 area.
-- `Election-related status`: no dedicated law in the current corpus. The current Japan files do not establish election-specific synthetic-media rules. (Ref1, Ref2) Relevant text: no election-specific article identified in the reviewed files.
-- `Non-consensual deepfake status`: weak/adjacent. APPI can matter where a synthetic-media incident involves personal information, third-party provision, disclosure/correction, or use-suspension rights, but the current corpus does not establish a dedicated NCII deepfake offense. (Ref2) Relevant text: APPI Articles 28-35; normalized lines 207-244 area.
-- `Service-provider/platform liability status`: weak/adjacent. The AI Technology Act imposes cooperation expectations on utilization business operators and APPI creates duties for businesses handling personal or related information, but neither file confirms a deepfake-specific platform-duty regime. (Ref1, Ref2) Relevant text: AI Technology Act Article 7; APPI Articles 29-31 and 148.
-- `Penalty/sanctions codification status`: weak/adjacent. APPI includes imprisonment/fines and corporate fines for specified personal-information violations, but these are not standalone deepfake penalties. (Ref2) Relevant text: APPI Articles 176-184; normalized lines 932-944 area.
+- `Labeling status`: strong but not yet in force. New Public Offices Election Act Article 142-5 creates an express on-screen disclosure duty for online election materials containing AI-created or AI-altered images or video. It begins on 1 March 2027 for elections announced or notified from that date. (Ref3) Relevant text: official overview PDF p. 1, upper section 2; official bill outline, Part 1 item 2, new Article 142-5; Supplementary Articles 1-2.
+- `Election-related status`: strong but not yet in force. Act No. 58 directly regulates AI-generated or altered election media and adds a responsibility not to publicize false or distorted candidate information in a way that harms election fairness. (Ref3) Relevant text: official overview PDF p. 1, upper section 2-3; new Articles 142-5 and 142-7(1); Supplementary Articles 1-2.
+- `Non-consensual deepfake status`: weak/adjacent. APPI can matter where synthetic media involves personal information, third-party provision, disclosure/correction, or use-suspension rights, but the current corpus does not establish a dedicated NCII deepfake offense. (Ref2) Relevant text: APPI Articles 28-35; normalized lines 207-244 area.
+- `Service-provider/platform liability status`: strong but not yet in force for the election context. New Information Distribution Platform Response Act Article 27-2 requires large providers to mitigate election-integrity harms, while amended Article 28 item 5 adds annual implementation disclosure. (Ref3) Relevant text: official overview PDF p. 1, middle section 1-2; new Article 27-2 and amended Article 28 item 5; Supplementary Article 1.
+- `Penalty/sanctions codification status`: weak/adjacent in the verified corpus. APPI contains penalties for specified personal-information violations, and the election amendment overview mentions transitional arrangements concerning penalties, but it does not provide enough final-text detail to claim a new deepfake-specific penalty. (Ref2, Ref3) Relevant text: APPI Articles 176-184; official overview PDF p. 1, supplementary section 3.
 
 Ref1: `sources/official/japan/1_official-law-act/japan-2025-ai-technology-act-no-53.txt`
 Ref2: `sources/official/japan/1_official-law-act/japan-2026-act-on-the-protection-of-personal-information-appi-amended-april-2026.txt`
+Ref3: `sources/official/japan/4_official-report-assessment/japan-2026-public-offices-election-and-platform-response-amendment-official-overview.pdf`
 
 ## Practice Notes (by Dimension)
-- `Labeling`: treat Japan as a guideline/appropriateness monitoring case unless a later official disclosure rule is added.
-- `Election`: do not infer election-deepfake regulation from the AI Technology Act or APPI alone.
-- `Non-consensual deepfakes`: analyze whether the material uses personal information or personal data; APPI may support privacy/data remedies, not a dedicated intimate-deepfake offense.
-- `Service-provider/platform liability`: separate general AI operator cooperation and personal-data handler duties from platform-specific takedown obligations.
-- `Penalty`: cite APPI penalty articles only for personal-information violations; tag deepfake-specific penalty claims as not confirmed.
+- `Labeling`: treat the duty as enacted, not proposed, but do not describe it as currently operative before 1 March 2027.
+- `Election`: the amended rules apply only to elections announced or notified on or after the commencement date; earlier-called elections remain under the prior rules.
+- `Non-consensual deepfakes`: use APPI only where the material engages legally relevant personal-information processing; it is not a dedicated intimate-deepfake offense.
+- `Service-provider/platform liability`: distinguish the new binding election-integrity duty for large providers from the broader AI Technology Act cooperation framework.
+- `Penalty`: do not infer a deepfake-specific fine or prison term from the one-page overview; verify the final enacted text when the official law PDF becomes available.
 
 ## Verify Before Use
-- Add any official Japanese election, platform, NCII, or synthetic-media labeling sources if found.
-- For RQ analysis, describe Japan as a governance/privacy-adjacent model rather than a criminalization-first model.
+- Replace or supplement Ref3 with the official enacted-law PDF when it is published online.
+- Recheck commencement and any penalty cross-references before the first election announced or notified on or after 1 March 2027.

@@ -106,15 +106,15 @@
     },
     {
       "country": "japan",
-      "labeling": "no dedicated law in the current corpus. Article 13 of the AI Technology Act supports future guidelines for appropriate AI implementation, but it does not itself create a general synthetic-media disclosure or watermarking mandate. (Ref1) Relevant text: AI Technology Act Article 13; normalized line 42 area.",
-      "election": "no dedicated law in the current corpus. The current Japan files do not establish election-specific synthetic-media rules. (Ref1, Ref2) Relevant text: no election-specific article identified in the reviewed files.",
-      "non_consensual": "weak/adjacent. APPI can matter where a synthetic-media incident involves personal information, third-party provision, disclosure/correction, or use-suspension rights, but the current corpus does not establish a dedicated NCII deepfake offense. (Ref2) Relevant text: APPI Articles 28-35; normalized lines 207-244 area.",
-      "provider_liability": "weak/adjacent. The AI Technology Act imposes cooperation expectations on utilization business operators and APPI creates duties for businesses handling personal or related information, but neither file confirms a deepfake-specific platform-duty regime. (Ref1, Ref2) Relevant text: AI Technology Act Article 7; APPI Articles 29-31 and 148.",
-      "penalty": "weak/adjacent. APPI includes imprisonment/fines and corporate fines for specified personal-information violations, but these are not standalone deepfake penalties. (Ref2) Relevant text: APPI Articles 176-184; normalized lines 932-944 area.",
-      "labeling_level": "nolaw",
-      "election_level": "nolaw",
+      "labeling": "strong but not yet in force. New Public Offices Election Act Article 142-5 creates an express on-screen disclosure duty for online election materials containing AI-created or AI-altered images or video. It begins on 1 March 2027 for elections announced or notified from that date. (Ref3) Relevant text: official overview PDF p. 1, upper section 2; official bill outline, Part 1 item 2, new Article 142-5; Supplementary Articles 1-2.",
+      "election": "strong but not yet in force. Act No. 58 directly regulates AI-generated or altered election media and adds a responsibility not to publicize false or distorted candidate information in a way that harms election fairness. (Ref3) Relevant text: official overview PDF p. 1, upper section 2-3; new Articles 142-5 and 142-7(1); Supplementary Articles 1-2.",
+      "non_consensual": "weak/adjacent. APPI can matter where synthetic media involves personal information, third-party provision, disclosure/correction, or use-suspension rights, but the current corpus does not establish a dedicated NCII deepfake offense. (Ref2) Relevant text: APPI Articles 28-35; normalized lines 207-244 area.",
+      "provider_liability": "strong but not yet in force for the election context. New Information Distribution Platform Response Act Article 27-2 requires large providers to mitigate election-integrity harms, while amended Article 28 item 5 adds annual implementation disclosure. (Ref3) Relevant text: official overview PDF p. 1, middle section 1-2; new Article 27-2 and amended Article 28 item 5; Supplementary Article 1.",
+      "penalty": "weak/adjacent in the verified corpus. APPI contains penalties for specified personal-information violations, and the election amendment overview mentions transitional arrangements concerning penalties, but it does not provide enough final-text detail to claim a new deepfake-specific penalty. (Ref2, Ref3) Relevant text: APPI Articles 176-184; official overview PDF p. 1, supplementary section 3.",
+      "labeling_level": "strong",
+      "election_level": "strong",
       "non_consensual_level": "weak",
-      "provider_liability_level": "weak",
+      "provider_liability_level": "strong",
       "penalty_level": "weak"
     },
     {
